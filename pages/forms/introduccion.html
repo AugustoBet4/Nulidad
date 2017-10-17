@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -155,100 +155,126 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>NUEVO CASO - INDAGACIÓN PREVIA</h2>
-                            <h1>Demandante</h1>
+                            <h2>FASE INTRODUCTORIA - NULIDAD MATRIMONIAL</h2>
                         </div>
                         <div class="body">
-                            <form id="wizard_with_validation" method="POST">
-                                <h3>Informacion Basica</h3>
-                                <fieldset>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_primer_nombre" required>
-                                            <label class="form-label">Primer Nombre</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_segundo_nombre" required>
-                                            <label class="form-label">Segundo Nombre</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="number" class="form-control" name="demandante_ci" required>
-                                            <label class="form-label">Cedula de Identidad*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_lugar" required>
-                                            <label class="form-label">Lugar de nacimiento*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_date" required>
-                                            <label class="form-label">Fecha de Nacimiento*</label>
-                                            <div class="help-info">Formato de la fecha: YYYY-MM-DD</div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_domicilio" required>
-                                            <label class="form-label">Domicilio*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_estado" required>
-                                            <label class="form-label">Estado civil*</label>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <h3>Informacion Biografica</h3>
-                                <fieldset>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandando_nombre" required>
-                                            <label class="form-label">Nombre Completo*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="number" class="form-control" name="demandado_ci" required>
-                                            <label class="form-label">Cedula de Identidad*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandado_lugar" required>
-                                            <label class="form-label">Lugar de nacimiento*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandado_date" required>
-                                            <label class="form-label">Fecha de Nacimiento*</label>
-                                            <div class="help-info">Formato de la fecha: YYYY-MM-DD</div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandado_domicilio" required>
-                                            <label class="form-label">Domicilio*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="deman_estado" required>
-                                            <label class="form-label">Estado civil*</label>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
+                          <div class="row clearfix">
+                              <div class="col-md-2">
+                                  <div class="form-group">
+                                      <div class="form-line">
+                                        <h4>Número de expediente</h4>
+                                          <input type="text" class="form-control" placeholder="" value="/201">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="form-group">
+                                      <div class="form-line">
+                                        <h4>Número de entrada</h4>
+                                          <input type="text" class="form-control" placeholder="" value="/201">
+                                      </div>
+                                  </div>
+                              </div>
                         </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                                <label for="email_address_2">Telefono Demandante</label>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="Telefono Demandante" class="form-control" placeholder="Telf. o Cel.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                                <label for="email_address_2">Telefono Demandante</label>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="Telefono Demandado" class="form-control" placeholder="Telf. o Cel.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>A llenar por el Vicario Judicial</h4>
+                        <h4>Formula de dudas</h4>
+                        <div class="row clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                                <label for="email_address_2">Canon:</label>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="canon1" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                                <label for="email_address_2">Canon:</label>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="canon2" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
+                                <label for="email_address_2">Canon:</label>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input type="text" id="canon3" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Citación</h4>
+                        <div align="center" class="demo-checkbox">
+                          <input type="checkbox" id="basic_checkbox_1" />
+                          <label for="basic_checkbox_1">Ordinaria</label>
+                          <input type="checkbox" id="basic_checkbox_2"  />
+                          <label for="basic_checkbox_2">Edictos</label>
+                          <input type="checkbox" id="basic_checkbox_3" />
+                          <label for="basic_checkbox_3">Exhortos</label>
+                        </div>
+                        <h4>Posición del demandado</h4>
+                        <div align="center" class="demo-checkbox">
+                          <input type="checkbox" id="basic_checkbox_4" />
+                          <label for="basic_checkbox_4">Conformidad-Remision Tribunal</label>
+                          <input type="checkbox" id="basic_checkbox_5"  />
+                          <label for="basic_checkbox_5">Oposicion-Reconvencion</label>
+                          <input type="checkbox" id="basic_checkbox_6" />
+                          <label for="basic_checkbox_6">Oposicion-Remision Tribunal</label>
+                          <input type="checkbox" id="basic_checkbox_7" />
+                          <label for="basic_checkbox_7">No responde-Ausente del juicio</label>
+                        </div>
+                        <h4>¿El demandado se suma a la demanda?</h4>
+                        <div align="center" class="demo-radio-button">
+                          <input name="group1" type="radio" id="radio_1" checked />
+                          <label for="radio_1">Si</label>
+                          <input name="group1" type="radio" id="radio_2" />
+                          <label for="radio_2">No</label>
+                        </div>
+                        <h3>Esta demanda debe pasar a:</h3>
+                        <div align="center" class="demo-checkbox">
+                          <input type="checkbox" id="basic_checkbox_8" />
+                          <label for="basic_checkbox_8">Proceso Ordinario</label><br>
+                          <input type="checkbox" id="basic_checkbox_9" />
+                          <label for="basic_checkbox_9">Proceso Breve</label><br>
+                          <input type="checkbox" id="basic_checkbox_10" />
+                          <label for="basic_checkbox_10">Proceso Documental</label><br>
+                        </div>
+
                     </div>
                 </div>
             </div>
