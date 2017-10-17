@@ -2,7 +2,7 @@
 ========================
 
 En este repositorio se encuentra la interfaz del template del sistema.
-**GRUPO 2 - SISTEMA DE NULIDAD** por el
+**GRUPO 2 - SISTEMA DE NULIDAD** Haciendo pruebita
 
 Requerimientos
 ------------
