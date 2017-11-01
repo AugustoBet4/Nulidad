@@ -211,41 +211,131 @@
                                 <fieldset>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandando_nombre" required>
-                                            <label class="form-label">Nombre Completo*</label>
+                                            <input type="text" class="form-control" name="demandante_primer_nombre" required>
+                                            <label class="form-label">Fecha de nacimiento:</label>
+                                            <div class="help-info">Formato de la fecha: DD-MM-AAAA</div>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
+                                            <label class="form-label">Lugar de nacimiento:</label>
+                                            <div class="row clearfix">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Ciudad:">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Departamento:">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Estado:">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                    </div>
+                                    <div class="demo-radio-button">
+                                      <h5>¿Recibió el bautismo antes de que su matrimonio se efectuara?</h1>
+                                      <input name="group1" type="radio" id="radio_1" checked="">
+                                      <label for="radio_1">Si</label>
+                                      <input name="group1" type="radio" id="radio_2">
+                                      <label for="radio_2">No</label>
+                                    </div>
+                                    <div class="demo-radio-button">
+                                      <h5>Si es así ¿En que religión o denominación fue bautizado?<br>Católica:</br></h1>
+                                      <input name="group2" type="radio" id="radio_3" checked="">
+                                      <label for="radio_3">Si</label>
+                                      <input name="group2" type="radio" id="radio_4">
+                                      <label for="radio_4">No</label>
+                                      <div class="form-line focused">
+                                          <input type="text" class="form-control" value="" placeholder="Otro:">
+                                      </div>
+                                    </div>
+                                    <div class="input-group">
+                                      <h5>Fecha del bautismo:</h5>
+                                      <div class="input-group">
+                                      <span class="input-group-addon">
+                                          <i class="material-icons">date_range</i>
+                                      </span>
+                                      <div class="form-line">
+                                          <input type="text" class="form-control date" placeholder="30/07/2016">
+                                      </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="number" class="form-control" name="demandado_ci" required>
-                                            <label class="form-label">Cedula de Identidad*</label>
+                                            <input type="text" class="form-control" name="demandante_lugar" required>
+                                            <label class="form-label">Diocesis:</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandado_lugar" required>
-                                            <label class="form-label">Lugar de nacimiento*</label>
-                                        </div>
+                                            <label class="form-label"></label>
+                                            <div class="row clearfix">
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Libro:">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Página:">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Número:">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandado_date" required>
-                                            <label class="form-label">Fecha de Nacimiento*</label>
-                                            <div class="help-info">Formato de la fecha: DD/MM/AAAA</div>
+                                          <h5>¿Es usted católico practicante?</h5>
+                                            <input type="text" class="form-control" name="demandante_date" required>
+                                            <label class="form-label"></label>
+                                        </div>
+                                        <div class="demo-radio-button">
+                                          <h5>¿Pertenece o frecuenta algún grupo o movimiento eclesiástico?</br></h1>
+                                          <input name="group3" type="radio" id="radio_5" checked="">
+                                          <label for="radio_5">Si</label>
+                                          <input name="group3" type="radio" id="radio_6">
+                                          <label for="radio_6">No</label>
+                                          <div class="form-line focused">
+                                              <input type="text" class="form-control" value="" placeholder="Si es así especifique:">
+                                          </div>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
                                             <input type="text" class="form-control" name="demandado_domicilio" required>
-                                            <label class="form-label">Domicilio*</label>
+                                            <label class="form-label">Parroquia:</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
                                             <input type="text" class="form-control" name="deman_estado" required>
-                                            <label class="form-label">Estado civil*</label>
+                                            <label class="form-label">Diócesis:</label>
                                         </div>
                                     </div>
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" name="deman_estado" required>
+                                            <label class="form-label">Estado:</label>
                                 </fieldset>
                             </form>
                         </div>
