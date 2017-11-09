@@ -244,18 +244,19 @@
                                     </div>
                                     <div class="demo-radio-button">
                                       <h5>¿Recibió el bautismo antes de que su matrimonio se efectuara?</h1>
-                                      <input name="group1" type="radio" id="radio_1" checked="">
+                                      <input name="group1" type="radio" id="radio_1" >
                                       <label for="radio_1">Si</label>
                                       <input name="group1" type="radio" id="radio_2">
                                       <label for="radio_2">No</label>
                                     </div>
                                     <div class="demo-radio-button">
                                       <h5>Si es así ¿En que religión o denominación fue bautizado?<br>Católica:</br></h1>
-                                      <input name="group2" type="radio" id="radio_3" checked="">
+                                      <input name="group2" type="radio" id="radio_3" >
                                       <label for="radio_3">Si</label>
                                       <input name="group2" type="radio" id="radio_4">
                                       <label for="radio_4">No</label>
                                       <div class="form-line focused">
+                                        <h5>Si la repuesta es <b>no</b> diga de que iglesia:</h5>
                                           <input type="text" class="form-control" value="" placeholder="Otro:">
                                       </div>
                                     </div>
@@ -311,7 +312,7 @@
                                         </div>
                                         <div class="demo-radio-button">
                                           <h5>¿Pertenece o frecuenta algún grupo o movimiento eclesiástico?</br></h1>
-                                          <input name="group3" type="radio" id="radio_5" checked="">
+                                          <input name="group3" type="radio" id="radio_5">
                                           <label for="radio_5">Si</label>
                                           <input name="group3" type="radio" id="radio_6">
                                           <label for="radio_6">No</label>
@@ -336,6 +337,154 @@
                                         <div class="form-line">
                                             <input type="text" class="form-control" name="deman_estado" required>
                                             <label class="form-label">Estado:</label>
+                                </fieldset>
+
+                                <h3>Historia Familiar</h3>
+                                <fieldset>
+                                  <h3>PADRES</h3>
+                                    <div class="demo-radio-button">
+                                      <h5>¿Sus padres son católicos?</h5>
+                                      <input name="group4" type="radio" id="radio_7" >
+                                      <label for="radio_7">Si</label>
+                                      <input name="group4" type="radio" id="radio_8">
+                                      <label for="radio_8">No</label>
+                                    </div>
+                                    <div class="demo-radio-button">
+                                      <h5>¿Sus padres están casados por la iglesia católica?</h5>
+                                      <input name="group5" type="radio" id="radio_9" >
+                                      <label for="radio_9">Si</label>
+                                      <input name="group5" type="radio" id="radio_10">
+                                      <label for="radio_10">No</label>
+                                      <div class="form-line focused">
+                                          <input type="text" class="form-control" value="" placeholder="Otro:">
+                                      </div>
+                                    </div>
+                                    <div class="demo-radio-button">
+                                      <h5>¿El matrimonio de sus padres es un matrimonio de toda la vida?</h5>
+                                      <input name="group6" type="radio" id="radio_11" >
+                                      <label for="radio_11">Si</label>
+                                      <input name="group6" type="radio" id="radio_12">
+                                      <label for="radio_12">No</label>
+                                      <div class="form-line focused">
+                                        <h5>Si no es así ¿Cómo ha sido el matrimonio de sus padres?</h5>
+                                          <input type="text" class="form-control" value="" placeholder="Detalles:">
+                                      </div>
+                                    </div>
+                                    <div class="form-line focused">
+                                      <h5>¿Si sus padres se han separado, que edad tenía usted al momento de la separación?</h5>
+                                        <input type="text" class="form-control" value="" placeholder="Detalles:">
+                                    </div>
+                                    <div class="demo-radio-button">
+                                      <h5>¿Sus padres son católicos practicantes?</h1>
+                                      <p>
+                                      <h6>Padre:</h6>
+                                      <input name="group7" type="radio" id="radio_13" >
+                                      <label for="radio_13">Si</label>
+                                      <input name="group7" type="radio" id="radio_14">
+                                      <label for="radio_14">No</label>
+                                      <div class="form-line focused">
+                                      </p>
+                                      <p>
+                                      <h6>Madre:</h6>
+                                      <input name="group8" type="radio" id="radio_15" >
+                                      <label for="radio_15">Si</label>
+                                      <input name="group8" type="radio" id="radio_16">
+                                      <label for="radio_16">No</label>
+                                      <div class="form-line focused">
+                                      </p>
+                                      <h3>HERMANOS</h3>
+                                      <label class="form-label">¿Cuántos hermanos son, incluido usted?</label>
+                                      <div class="row clearfix">
+                                          <div class="col-sm-4">
+                                              <div class="form-group">
+                                                <div class="form-line focused">
+                                                  <input type="text" class="form-control" value="" placeholder="Varones:">
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <div class="form-group">
+                                                <div class="form-line focused">
+                                                  <input type="text" class="form-control" value="" placeholder="Mujeres:">
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-line">
+                                          <label class="form-label">¿Qué número ocupa usted entre sus hermanos?</label>
+                                          <input type="number" class="form-control" name="demandante_ci" required>
+                                      </div>
+                                      <div class="demo-radio-button">
+                                        <h5>¿Ha fracasado el matrimonio de alguno de sus hermanos?</h5>
+                                        <input name="group9" type="radio" id="radio_17" >
+                                        <label for="radio_17">Si</label>
+                                        <input name="group9" type="radio" id="radio_18">
+                                        <label for="radio_18">No</label>
+                                        <div class="form-line focused">
+                                          <h5>Expliquese:</h5>
+                                            <input type="text" class="form-control" value="" placeholder="Detalles:">
+                                        </div>
+                                      </div>
+                                </fieldset>
+                                <h3>Noviazgo y matrimonio</h3>
+                                <fieldset>
+                                  <label class="form-label">Brevemente ¿Cuándo y cómo conoció a la parte Demandada?</label>
+                                  <div class="row clearfix">
+                                      <div class="col-sm-4">
+                                          <div class="form-group">
+                                            <div class="form-line focused">
+                                              <input type="text" class="form-control" value="" placeholder="Fecha:">
+                                            </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="row clearfix">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                          <div class="form-line focused">
+                                            <input type="text" class="form-control" value="" placeholder="Circusntancias:">
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Cuánto duró el noviazgo antes de tomar la desición de casarse?</h5>
+                                          <input type="text" class="form-control" name="duracion_noviazgo" required>
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Hubo un compromiso formal antes del matrimonio?</h5>
+                                    <input name="group10" type="radio" id="radio_19" >
+                                    <label for="radio_19">Si</label>
+                                    <input name="group10" type="radio" id="radio_20">
+                                    <label for="radio_20">No</label>
+                                    <div class="form-line focused">
+                                      <h5>Si es así, fecha del compromiso:</h5>
+                                        <input type="text" class="form-control" value="" >
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Cuánto tiempo duró el compromiso?</h5>
+                                          <input type="text" class="form-control" name="duracion_compromiso" required>
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Vivieron juntos antes de casarse?</h5>
+                                    <input name="group11" type="radio" id="radio_21" >
+                                    <label for="radio_21">Si</label>
+                                    <input name="group1" type="radio" id="radio_22">
+                                    <label for="radio_22">No</label>
+                                    <div class="form-line focused">
+                                      <h5>Si es así, ¿Cuánto tiempo vivieron juntos antes de casarse?:</h5>
+                                        <input type="text" class="form-control" value="" >
+                                      <h5>Si es así, explique ¿Porqué decidió casarse?:</h5>
+                                        <input type="text" class="form-control" value="" >
+                                    </div>
+                                  </div>
                                 </fieldset>
                             </form>
                         </div>
