@@ -122,7 +122,7 @@ $matrimonio="LOPEZ-PEREZ";
                             <li>
                                 <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
                             </li>
                             <li>
@@ -131,7 +131,7 @@ $matrimonio="LOPEZ-PEREZ";
                             <li>
                                 <a href="pages/indagacion.html">Fase Alegatoria</a>
                             </li>
-                            <li >
+                            <li class="active">
                                 <a href="../forms/sentencia.html">Fase Decisoria</a>
                             </li>
                         </ul>
@@ -162,21 +162,21 @@ $matrimonio="LOPEZ-PEREZ";
                     <div class="card">
                         <div class="header">
                             <h2>
-                                CEDULA DE CITACIÓN
+                                SENTENCIA
                             </h2>
                         </div>
                         <div class="body">
-                            <textarea id="tinymce">
-                              <BR>
-                              <div align="right"><font face="arial" size=2>Nulidad de matrimonio<br><? echo $matrimonio;?></size></div><br><br>
-  <font size=5 face="arial"><center><p>CEDULA DE CITACIÓN</p></center><font><br>
+                          <textarea id="tinymce">
+                            <BR>
+                            <div align="right"><font face="arial" size=2>Nulidad de matrimonio<br><? echo $matrimonio;?></size></div><br><br>
+<font size=5 face="arial"><center><p>CEDULA DE CITACIÓN</p></center><font><br>
 <font size=2 face="arial">El vicario Judicial del Arzobispado de La Paz, en conformidad con las prescripciones canónicas,<br>
-  1507-1512 del Código del Derecho Canónico, cita:</font><br><br>
-  <font size=2 face="arial">Al(a) Sr.(a).:</font><br><br>
-  <font size=2 face="arial"><? echo $demandado;?>, para que se presente en esta Vicaria Judicial, el<br>
-     día <b>...........</b> de <b>.............</b> a Hrs..........con el fin de imponerse del tramite de nulidad<br>
-     de su matrimonio canonico que ha presentado su esposo(a) el(la) Sr.(a) <?php echo $demandante;?> <br>
-      ante este Tribunal. El(la) declarante debe presentarse con su cedula de identidad personal.</font>
+1507-1512 del Código del Derecho Canónico, cita:</font><br><br>
+<font size=2 face="arial">Al(a) Sr.(a).:</font><br><br>
+<font size=2 face="arial"><? echo $demandado;?>, para que se presente en esta Vicaria Judicial, el<br>
+   día <b>...........</b> de <b>.............</b> a Hrs..........con el fin de imponerse del tramite de nulidad<br>
+   de su matrimonio canonico que ha presentado su esposo(a) el(la) Sr.(a) <?php echo $demandante;?> <br>
+    ante este Tribunal. El(la) declarante debe presentarse con su cedula de identidad personal.</font>
 <br><br><br>
 <font size=2 face="arial">La Paz, <?echo strftime("%d de %B de %Y");?></font><br><br>
 <br>
@@ -184,12 +184,12 @@ $matrimonio="LOPEZ-PEREZ";
 <br>
 <br>
 <table border="0" width="100%">
-  <tr>
+<tr>
 <td width="50%">
-  <font size=2 face="arial"><center>NOTARIO ECLESIASIASTICO</center></font>
+<font size=2 face="arial"><center>NOTARIO ECLESIASIASTICO</center></font>
 </td>
 <td width="50%">
-  <font size=2 face="arial"><center>VICARIO JUDICIAL</center></font>
+<font size=2 face="arial"><center>VICARIO JUDICIAL</center></font>
 </td>
 <tr>
 </table>
@@ -202,16 +202,16 @@ $matrimonio="LOPEZ-PEREZ";
 <br>
 <br>
 <table border="0" width="100%">
-  <tr>
+<tr>
 <td width="50%">
-  <font size=2 face="arial"><center>FIRMA DEL NOTIFICADO</center></font>
+<font size=2 face="arial"><center>FIRMA DEL NOTIFICADO</center></font>
 </td>
 <td width="50%">
-  <font size=2 face="arial"><center>SECRETARIO DE LA VICARIA JUDICIAL</center></font>
+<font size=2 face="arial"><center>SECRETARIO DE LA VICARIA JUDICIAL</center></font>
 </td>
 <tr>
 </table>
-                            </textarea>
+                          </textarea>
                         </div>
                     </div>
                 </div>
