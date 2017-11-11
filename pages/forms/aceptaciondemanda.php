@@ -2,7 +2,10 @@
 setlocale(LC_ALL,”es_ES”);
 $demandante="Ejemplo demandante";
 $demandado="Ejemplo demandado";
+$parroquia="Apostol Santiago";
 $matrimonio="LOPEZ-PEREZ";
+$canones="1507-1508";
+$fechamatrimonio="30 de febrero de 2010";
  ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +13,7 @@ $matrimonio="LOPEZ-PEREZ";
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sentencia - Nulidad Matrimonial</title>
+    <title>Introducción - Nulidad Matrimonial</title>
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
@@ -51,7 +54,7 @@ $matrimonio="LOPEZ-PEREZ";
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
+                <a class="navbar-brand" href="../../index.html">NULIDAD MATRIMONIAL</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -94,7 +97,7 @@ $matrimonio="LOPEZ-PEREZ";
                             <li>
                                 <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
                             </li>
                             <li>
@@ -103,7 +106,7 @@ $matrimonio="LOPEZ-PEREZ";
                             <li>
                                 <a href="pages/indagacion.html">Fase Alegatoria</a>
                             </li>
-                            <li class="active">
+                            <li >
                                 <a href="../forms/sentencia.html">Fase Decisoria</a>
                             </li>
                         </ul>
@@ -130,56 +133,38 @@ $matrimonio="LOPEZ-PEREZ";
                 <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24">
                     <div class="card">
                         <div class="header">
-                            <h2>
-                                SENTENCIA
-                            </h2>
+                            <h2>ACEPTACION DEMANDA</h2>
                         </div>
                         <div class="body">
                           <textarea id="tinymce">
                             <BR>
-                            <div align="right"><font face="arial" size=2>Nulidad de matrimonio<br><? echo $matrimonio;?></size></div><br><br>
-<font size=8 face="arial"><center><p>CEDULA DE CITACIÓN</p></center><font><br>
-<font size=2 face="arial">El vicario Judicial del Arzobispado de La Paz, en conformidad con las prescripciones canónicas,<br>
-1507-1512 del Código del Derecho Canónico, cita:</font><br><br>
-<font size=2 face="arial">Al(a) Sr.(a).:</font><br><br>
-<font size=2 face="arial"><? echo $demandado;?>, para que se presente en esta Vicaria Judicial, el<br>
-   día <b>...........</b> de <b>.............</b> a Hrs..........con el fin de imponerse del tramite de nulidad<br>
-   de su matrimonio canonico que ha presentado su esposo(a) el(la) Sr.(a) <?php echo $demandante;?> <br>
-    ante este Tribunal. El(la) declarante debe presentarse con su cedula de identidad personal.</font>
-<br><br><br>
-<font size=2 face="arial">La Paz, <?echo strftime("%d de %B de %Y");?></font><br><br>
-<br>
-<br>
-<br>
-<br>
-<table border="0" width="100%">
-<tr>
-<td width="50%">
-<font size=2 face="arial"><center>NOTARIO ECLESIASIASTICO</center></font>
-</td>
-<td width="50%">
-<font size=2 face="arial"><center>VICARIO JUDICIAL</center></font>
-</td>
-<tr>
-</table>
-<h3></h3>
-<br>
-<br>
-<br>
-<font size=2 face="arial">Notificado el...............del mes de.............mes...........de <?echo date("Y");?> a Hrs..........</font>
-<br>
-<br>
-<br>
-<table border="0" width="100%">
-<tr>
-<td width="50%">
-<font size=2 face="arial"><center>FIRMA DEL NOTIFICADO</center></font>
-</td>
-<td width="50%">
-<font size=2 face="arial"><center>SECRETARIO DE LA VICARIA JUDICIAL</center></font>
-</td>
-<tr>
-</table>
+<center><font color="#A3A3A3" face="tahoma" size="4"><b>INTRODUCTORIA - DOCUMENTOS 1</b></font></center>
+<center><font color="#A3A3A3" face="tahoma" size="3">ACEPTACIÓN DEMANDA</font></center><br>
+<center><font color="#000000" face="tahoma" size="4"><b>Nulidad de Matrimonio</b></font></center>
+<center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
+<font color="#000000" face="times new roman" size="4"><b>DECRETO DE ADMISIÓN DE LA DEMANDA Y FORMULA DE DUDAS</b></font><br><br><br>
+<font size="4" face="times new roman">
+  VISTO el escrito de demanda presentado  por <?php echo $demandante;?>, donde solicita se declare la nulidad de su matrimonio canónico contraído con <?php echo $demandado;?>, en la parroquia “<?php echo $parroquia;?>” el <?php echo $fechamatrimonio;?>.<br>
+
+            EN VIRTUD de los cc. <?php echo $canones;?>, oído el Defensor del Vínculo y sin oposición por parte del mismo, como Nos consta de nuestra competencia a tenor del c. 1673, y de la capacidad legal para actuar en juicio de la parte actora, y estimando que la demanda está jurídicamente fundada en hecho y en derecho,
+por el presente el infrascrito Vicario Judicial en esta causa.<br><br>
+
+</font><br><br>
+<font color="#000000" face="times new roman" size="4"><b>DECRETA:</b></font><br><br>
+<font color="#000000" face="times new roman" size="4"><b>1.- ADMITASE el escrito de demanda en la causa arriba indicada.</b></font><br>
+<font color="#000000" face="times new roman" size="4"><b>2.- ADMITASE  al Letrado</b> D. N. N., que tiene la aprobación para la Provincia Eclesiástica, para que ostente la representación, y ejerza la defensa de la parte actora.</font><br>
+<font color="#000000" face="times new roman" size="4"><b>3.- NOTIFIQUESE al Defensor del Vínculo, a la Parte Actora y a la Parte Demandada,</b> y a quienes corresponda y archívese.</font><br>
+<font color="#000000" face="times new roman" size="4"><b>4.- MANDO que se cite a la Parte demandada,</b>para que se persone en juicio, y conteste por escrito a la demanda, en el plazo de QUINCE DÍAS, según lo establecido en los cc. 1507 y 1677.</font><br><br><br><br>
+<center><font color="#000000" face="times new roman" size="4"><b>DADO</b> en la Sede del Tribunal  Metropolitano de La Paz,  el <?echo strftime("%d de %B de %Y");?></font><br><br><br><br><br></center>
+<center><font face="times new roman" size="4">Pbro. Dr. Roberto Boceta Fernández</font></center>
+<center><font face="times new roman" size="4">VICARIO JUDICIAL</font></center><br><br>
+<font face="times new roman" size="4">NOTARIO</font><br>
+<font face="times new roman" size="4">Me doy por notificado:</font><br><br>
+<font face="times new roman" size="4">Defensor del Vínculo:........................................</font><br><br>
+<font face="times new roman" size="4">Parte Actora:................................................</font><br><br>
+<font face="times new roman" size="4">Parte Demandada:.............................................</font><br><br>
+<font face="times new roman" size="4">Cursor:......................................................</font><br><br>
+
                           </textarea>
                         </div>
                     </div>
