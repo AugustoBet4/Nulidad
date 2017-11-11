@@ -164,58 +164,150 @@
                                 <fieldset>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_primer_nombre" required>
-                                            <label class="form-label">Primer Nombre</label>
+                                            <input type="text" class="form-control" name="ipibprimernomrbredemandante" required>
+                                            <label class="form-label">Primer Nombre*</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_segundo_nombre" required>
+                                            <input type="text" class="form-control" name="ipibsegundonomrbredemandante">
                                             <label class="form-label">Segundo Nombre</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="number" class="form-control" name="demandante_ci" required>
+                                            <input type="text" class="form-control" name="ipibapellidopaternodemandante" required>
+                                            <label class="form-label">Apellido paterno*</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" name="ipapellidomaternodemandante" required>
+                                            <label class="form-label">Apellido materno*</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-float">
+                                        <div class="form-line">
+                                            <input type="number" class="form-control" name="ipibdemandanteci" required>
                                             <label class="form-label">Cedula de Identidad*</label>
                                         </div>
                                     </div>
+                                    <div class="demo-radio-button">
+                                      <h5>Sexo</h1>
+                                      <input name="ipibrbsexo" type="radio" id="rbsexomasculino" >
+                                      <label for="rbsexomasculino">Masculino</label>
+                                      <input name="ipibrbsexo" type="radio" id="rbsexofemenino">
+                                      <label for="rbsexofemenino">Femenino</label>
+                                    </div>
+                                    <div class="form-group form-float">
+                                            <label class="form-label">Dirección:</label>
+                                            <div class="row clearfix">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Calle:" name="ipibdemandantediraccioncalle">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="number" class="form-control" value="" placeholder="Número:" name="ipibdemandantedireccionnumero">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Zona:" name="ipibdemandantedireccionzona">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipibdemandantedireccionciudad">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                    </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_lugar" required>
-                                            <label class="form-label">Lugar de nacimiento*</label>
+                                            <input type="number" class="form-control" name="ipibdemandanteedad" required>
+                                            <label class="form-label">Edad*</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_date" required>
-                                            <label class="form-label">Fecha de Nacimiento*</label>
-                                            <div class="help-info">Formato de la fecha: DD-MM-AAAA</div>
+                                            <input type="text" class="form-control" name="ipibdemandantecorreo">
+                                            <label class="form-label">Correo Electrónico</label>
                                         </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_domicilio" required>
-                                            <label class="form-label">Domicilio*</label>
+                                            <input type="text" class="form-control" name="ipibdemandanteocupacion">
+                                            <label class="form-label">Ocupación</label>
                                         </div>
+                                    </div>
+                                    <h5>Favor indique como podemos comunicarnos con Ud. acerca de su proceso:</h5>
+                                    <div class="form-group form-float">
+                                            <label class="form-label"></label>
+                                            <div class="row clearfix">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="number" class="form-control" value="" placeholder="Teléfono de casa:" name="ipibdemandantetelefonocasa">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="number" class="form-control" value="" placeholder="Teléfono de celular:" name="ipibdemandantetelefonocelular">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                      <div class="form-line focused">
+                                                        <input type="number" class="form-control" value="" placeholder="Teléfono de trabajo:" name="ipibdemandantetelefonotrabajo">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
                                     </div>
                                     <div class="form-group form-float">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_estado" required>
-                                            <label class="form-label">Estado civil*</label>
+                                            <input type="text" class="form-control" name="ipibparroquiamatrimonio" required>
+                                            <label class="form-label">¿Parroquia donde se celebró el matrimonio?*</label>
                                         </div>
+                                    </div>
+                                    <div class="input-group">
+                                      <h5>¿Fecha de celebración de su matrimonio?</h5>
+                                      <div class="input-group">
+                                      <span class="input-group-addon">
+                                          <i class="material-icons">date_range</i>
+                                      </span>
+                                      <div class="form-line">
+                                          <input type="text" class="form-control date" placeholder="30/07/2016" name="ipibfechamatrimonio" required>
+                                      </div>
+                                      </div>
                                     </div>
                                 </fieldset>
-
-                                <h3>Informacion Biografica</h3>
+                                <h3>Información Biográfica</h3>
                                 <fieldset>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_primer_nombre" required>
-                                            <label class="form-label">Fecha de nacimiento:</label>
-                                            <div class="help-info">Formato de la fecha: DD-MM-AAAA</div>
-                                        </div>
+                                  <div class="input-group">
+                                    <h5>Fecha de nacimiento:</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="date" class="form-control date" placeholder="30/07/2016" name="ipbdemandantefechanacimiento" required>
                                     </div>
+                                    </div>
+                                  </div>
                                     <div class="form-group form-float">
                                             <label class="form-label">Lugar de nacimiento:</label>
                                             <div class="row clearfix">
