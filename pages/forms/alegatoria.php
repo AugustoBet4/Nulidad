@@ -60,15 +60,7 @@
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
     <!-- Search Bar -->
-    <div class="search-bar">
-        <div class="search-icon">
-            <i class="material-icons">search</i>
-        </div>
-        <input type="text" placeholder="Ingrese caso a buscar">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div>
+
     <!-- #END# Search Bar -->
     <!-- Top Bar -->
     <nav class="navbar">
@@ -77,13 +69,6 @@
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
                 <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Call Search -->
-                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-                    <!-- #END# Call Search -->
-                </ul>
             </div>
         </div>
     </nav>
@@ -130,7 +115,7 @@
                                 <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
                             </li>
                             <li>
-                                <a href="../../pages/indagacion.html">Fase de Instrucción</a>
+                                <a href="../../pages/insctruccion.html">Fase de Instrucción</a>
                             </li>
                             <li class="active">
                                 <a href="../../pages/alegatoria.html">Fase Alegatoria</a>
@@ -172,11 +157,11 @@
                                       <h4>Demandante</h4>
                                       <div class=form-group>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" disabled>
+                                            <input type="text" class="form-control" name="fanombredemandante" disabled>
                                             <label class="form-label">Nombre</label>
                                         </div>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="FechaInico" disabled>
+                                            <input type="text" class="form-control" name="fafechainicio" disabled>
                                             <label class="form-label">Fecha de inicio del proceso de Nulidad</label>
                                         </div>
                                       </div>
@@ -185,11 +170,11 @@
                                       <h4>Parte Demandada</h4>
                                       <div class=form-group>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_primer_nombre" disabled>
+                                            <input type="text" class="form-control" name="fanombredemandado" disabled>
                                             <label class="form-label">Nombre del Cónyuge</label>
                                         </div>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_primer_nombre" disabled>
+                                            <input type="text" class="form-control" name="fadireccion" disabled>
                                             <label class="form-label">Direccion</label>
                                         </div>
                                       </div>
@@ -198,11 +183,11 @@
                                     <div class="col-sm-4">
                                       <div class=form-group>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" disabled>
+                                            <input type="text" class="form-control" name="fafecha" disabled>
                                             <label class="form-label">Fecha</label>
                                         </div>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="FechaInico" disabled>
+                                            <input type="text" class="form-control" name="faarquidiocesis" disabled>
                                             <label class="form-label">Arquidiócesis/Diócesis</label>
                                         </div>
                                       </div>
@@ -210,11 +195,11 @@
                                     <div class="col-sm-8">
                                       <div class=form-group>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" disabled>
+                                            <input type="text" class="form-control" name="faciudadydepartamento" disabled>
                                             <label class="form-label">Ciudad y Departamento</label>
                                         </div>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="FechaInico" disabled>
+                                            <input type="text" class="form-control" name="fanombreparroquia" disabled>
                                             <label class="form-label">Nombre de la Parroquia</label>
                                         </div>
                                       </div>
@@ -222,56 +207,56 @@
                                     <div class="col-sm-6">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" placeholder="Duración convivencia matrimonial">
+                                            <input type="text" class="form-control" name="faduracionconvivencia" placeholder="Duración convivencia matrimonial">
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-3">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" placeholder="Concubinato Previo">
+                                            <input type="text" class="form-control" name="faconcubinatoprevio" placeholder="Concubinato Previo">
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-3">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" placeholder="Duración">
+                                            <input type="text" class="form-control" name="faconcubinatioduracion" placeholder="Duración">
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-6">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="Duración del noviazgo">
+                                            <input type="text" class="form-control" name="faduracionnoviazgo" placeholder="Duración del noviazgo">
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-6">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="Embarazo Previo">
+                                            <input type="text" class="form-control" name="faembarazo" placeholder="Embarazo Previo">
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-6">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" placeholder="Nº Hijos">
+                                            <input type="text" class="form-control" name="fanumhijos" placeholder="Nº Hijos">
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-3">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" placeholder="Divorcio">
+                                            <input type="text" class="form-control" name="fadivorcio" placeholder="Divorcio">
                                         </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-3">
                                       <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="NombreDemandate" placeholder="Fecha">
+                                            <input type="text" class="form-control" name="fadivorciofecha" placeholder="Fecha">
                                         </div>
                                       </div>
                                     </div>
@@ -279,70 +264,70 @@
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="1. Canon">
+                                            <input type="text" class="form-control" name="fanomcanon1" placeholder="1. Canon">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-4">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="De parte del:">
+                                            <input type="text" class="form-control" name="fapartecanon1" placeholder="De parte del:">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="2. Canon">
+                                            <input type="text" class="form-control" name="fanomcanon2" placeholder="2. Canon">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-4">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="De parte del:">
+                                            <input type="text" class="form-control" name="fapartecanon2" placeholder="De parte del:">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="3. Canon">
+                                            <input type="text" class="form-control" name="fanomcanon3" placeholder="3. Canon">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-4">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="De parte del:">
+                                            <input type="text" class="form-control" name="fapartecanon3" placeholder="De parte del:">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="4. Canon">
+                                            <input type="text" class="form-control" name="fanomcanon4" placeholder="4. Canon">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-4">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="De parte del:">
+                                            <input type="text" class="form-control" name="fapartecanon4" placeholder="De parte del:">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-8">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="5. Canon">
+                                            <input type="text" class="form-control" name="fanomcanon5" placeholder="5. Canon">
                                           </div>
                                       </div>
                                     </div>
                                     <div class="col-sm-4">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <input type="text" class="form-control" name="" placeholder="De parte del:">
+                                            <input type="text" class="form-control" name="fapartecanon5" placeholder="De parte del:">
                                           </div>
                                       </div>
                                     </div>
@@ -350,7 +335,7 @@
                                     <div class="col-sm-12">
                                       <div class="form-group">
                                           <div class="form-line">
-                                            <textarea rows="1" class="form-control no-resize auto-growth" placeholder="" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                            <textarea rows="1" class="form-control no-resize auto-growth" name="fahechos" placeholder="" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                           </div>
                                       </div>
                                     </div>
@@ -358,19 +343,19 @@
                                     <div class="col-sm-12">
                                       <div class="form-group">
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="1. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faderechocanon1" placeholder="1. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="2. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faderechocanon2" placeholder="2. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="3. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faderechocanon3" placeholder="3. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="4. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faderechocanon4" placeholder="4. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="5. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faderechocanon5" placeholder="5. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                       </div>
                                     </div>
@@ -378,19 +363,19 @@
                                     <div class="col-sm-12">
                                       <div class="form-group">
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="1. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faobscanon1" placeholder="1. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="2. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faobscanon2" placeholder="2. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="3. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faobscanon3" placeholder="3. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="4. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faobscanon4" placeholder="4. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                         <div class="form-line">
-                                          <textarea rows="1" class="form-control no-resize auto-growth" placeholder="5. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                          <textarea rows="1" class="form-control no-resize auto-growth" name="faobscanon5" placeholder="5. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
                                         </div>
                                       </div>
                                     </div>
@@ -458,6 +443,9 @@
 
     <!-- Dropzone Plugin Js -->
     <script src="../../plugins/dropzone/dropzone.js"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
 
     <!-- Multi Select Plugin Js -->
     <script src="../../plugins/multi-select/js/jquery.multi-select.js"></script>
