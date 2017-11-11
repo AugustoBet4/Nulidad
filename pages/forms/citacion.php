@@ -1,3 +1,9 @@
+<?php
+setlocale(LC_ALL,”es_ES”);
+$demandante="Ejemplo demandante";
+$demandado="Ejemplo demandado";
+
+ ?>
 <!DOCTYPE html>
 <html>
 
@@ -116,7 +122,7 @@
                             <li>
                                 <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
                             </li>
                             <li>
@@ -125,7 +131,7 @@
                             <li>
                                 <a href="pages/indagacion.html">Fase Alegatoria</a>
                             </li>
-                            <li class="active">
+                            <li >
                                 <a href="../forms/sentencia.html">Fase Decisoria</a>
                             </li>
                         </ul>
@@ -172,33 +178,46 @@
 
 <h3>Al(a) Sr.(a).:</h3>
 
-<li>-----demandante-----, para que se presente en esta Vicaria Judicial,<br>
-   el día ---dia--- de ----mes---- a Hrs. ---hora--- con el fin de imponerse del tramite de nulidad<br>
-   de su matrimonio canonico que ha presentado su esposo(a) el(la) Sr.(a)-------demandado--------<br>
-   ante este Tribunal. El(la) declarante debe presentarse con su cedula de indentidad personal.</li>
+<li><?php echo $demandado;?>, para que se presente en esta Vicaria Judicial,<br>
+   el día <b>...........</b> de <b>.............</b> a Hrs..........con el fin de imponerse del tramite de nulidad<br>
+   de su matrimonio canonico que ha presentado su esposo(a) el(la) Sr.(a)<?php echo $demandante;?> <br>
+   ante este Tribunal. El(la) declarante debe presentarse con su cedula de identidad personal.</li>
+<h3>La Paz, <?echo strftime("%d de %B de %Y");?> </h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table border="0" width="100%">
+  <tr>
+<td width="50%">
+  <center>NOTARIO ECLESIASIASTICO</center>
+</td>
+<td width="50%">
+  <center>VICARIO JUDICIAL</center>
+</td>
+<tr>
+</table>
+<h3></h3>
 
-<h3>La Paz, ---dia--- de ------mes-----de 2017.</h3>
-
-
 <br>
 <br>
 <br>
+Notificado el...............del mes de.............mes...........de <?echo date("Y");?> a Hrs..........
 <br>
 <br>
 <br>
-<h3>NOTARIO ECLESIASIASTICO                                         VICARIO JUDICIAL</h3>
-
-<br>
-<br>
-<br>
-<li>Notificado el ---------dia--------- del mes de -------mes------- de 2017 a Hrs.---hora---
-</li>
-<br>
-<br>
-<br>
-<li>FIRMA DEL NOTIFICADO                                        SECRETARIO DE LA VICARIA JUDICIAL</li>
-
-
+<table border="0" width="100%">
+  <tr>
+<td width="50%">
+  <center>FIRMA DEL NOTIFICADO</center>
+</td>
+<td width="50%">
+  <center>SECRETARIO DE LA VICARIA JUDICIAL</center>
+</td>
+<tr>
+</table>
                             </textarea>
                         </div>
                     </div>
