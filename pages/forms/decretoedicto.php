@@ -1,9 +1,20 @@
 <?php
 setlocale(LC_ALL,”es_ES”);
 $demandante="Ejemplo demandante";
-$demandado="Ejemplo demandado";
-$matrimonio="LOPEZ-PEREZ";
 $notario="Ejemplo notario";
+$notarioactuario="Ejemplo notario actuario";
+$notarioactuario="Ejemplo notario";
+$cursor="Ejemplo cursor";
+$demandado="Ejemplo demandado";
+$parroquia="Apostol Santiago";
+$matrimonio="LOPEZ-PEREZ";
+$canones="1507-1508";
+$fechamatrimonio="30 de febrero de 2010";
+$ciudaddemandado="La Paz";
+$calledemandado="8";
+$numerodemandado="4567";
+$callearzobispado="10";
+$numeroarzobispado="6";
  ?>
 <!DOCTYPE html>
 <html>
@@ -131,45 +142,30 @@ $notario="Ejemplo notario";
                 <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24">
                     <div class="card">
                         <div class="header">
-                            <h2>
-                                COMPARECENCIA
-                            </h2>
+                            <h2>CITACION DE LA DEMANDA</h2>
                         </div>
                         <div class="body">
                           <textarea id="tinymce">
                             <BR>
-<center><font color="#A3A3A3" face="tahoma" size="4"><b>INTRODUCTORIA - DOCUMENTO 1</b></font></center>
-<center><font color="#A3A3A3" face="tahoma" size="3">COMPARECENCIA DEL DEMANDADO</font></center><br>
+<center><font color="#A3A3A3" face="tahoma" size="4"><b>INTRODUCTORIA - DOCUMENTOS 1</b></font></center>
+<center><font color="#A3A3A3" face="tahoma" size="3">DECRETO CITACION POR EDICTO</font></center><br>
 <center><font color="#000000" face="tahoma" size="4"><b>Nulidad de Matrimonio</b></font></center>
-<center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br><br><br><br>
-<font color="#000000" face="times new roman" size="4"><b>COMPARECENCIA DE <?php echo $demandado;?></b></font><br><br>
+<center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
+<font color="#000000" face="times new roman" size="4"><b>DECRETO DEL VICARIO JUDICIAL DISPONIENDO CITAR POR EDICTO
+</b></font><br><br><br>
+<font color="#000000" face="times new roman" size="4">DECRETO:En La Paz,  a <?echo strftime("%d de %B de %Y");?></font><br><br>
 <font size="4" face="times new roman">
-En la ciudad de La Paz y Sala del Tribunal Eclesiástico Metropolitano de La Paz de, siendo las.......horas del día <?echo strftime("%d de %B de %Y");?> comparece ante el Ilmo. Sr. Vicario Judicial el Sr O Sra quien acredita su personalidad con la C.I.N°: <?PHP ECHO $cidemandado;?> y preguntado/a si no tiene inconveniente que la causa que pretende inciar su esposo/a, se tramite en el Tribunal Eclesiástico Metropolitano de La Paz, por residir en esa ciudad su esposo/a, dice que si/no tiene incoveniente.
-</font><br><br>
-<font color=red size="4" face="times new roman">
-Si se tratara de otro supuesto, que se tramite en el Tribunal en donde se ha de recoger la mayor parte de las pruebas, se le interrogará:
-</font><font size="4" face="times new roman">
-«Si tiene alguna objeción que hacer a que se tramite la causa de nulidad de matrimonio en la diócesis de La Paz por residir allí todos o la mayor parte de los testigos».
-</font><br><br>
-</font><font size="4" face="times new roman">
-De todo lo cual se hace esta relación, que firman todos los presentes y el Notario Actuario que da fe.
-</font><br><br><br>
-<font size="4" face="times new roman">
-Parte demandada.......................................
-</font><br><br>
-<font size="4" face="times new roman">
-Vicario judicial.......................................
-</font><br><br>
-<font size="4" face="times new roman">
-Defensor del vinculo.......................................
-</font><br><br><br><br><br><br>
-<font size="4" face="times new roman">
-<?php echo $notario;?>, Notario
-</font><br><br><br><br><br><br><br><br><br>
-<font size="4" face="times new roman">
-(Sello)
-</font>
-
+  Ignorándose el paradero actual de <?php echo $demandado;?>, por el presente disponemos se cite al demandado por Edicto, que se insertará en el Diario Jornada de La Paz y se fijará en el tablón de Anuncios del Tribunal Eclesiástico durante siete días, señalándose el día primero del próximo mes y hora de las ..., para la comparecencia ante este Tribunal.<br>
+  Notifiquese.<br>
+  Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial de que yo, el Notario, doy fe.<br>
+</font><br><br><br><br><br><br><br><br><br><br>
+<center><font face="times new roman" size="4">Pbro. Dr. Roberto Boceta Fernández</font></center>
+<center><font face="times new roman" size="4">VICARIO JUDICIAL</font></center><br><br>
+<font face="times new roman" size="4"><?php echo $notarioactuario;?>, Notario Actuario</font><br><br><br><br><br><br><br><br><br><br>
+<font face="times new roman" size="4">Sello</font><br><br><br><br><br><br><br><br><br><br>
+<font face="times new roman" size="4">NOTIFICACIÓN.—Con esta fecha y por correo envío copia del decreto anterior a la parte actora. Lo notifico al Defensor del Vínculo. </font><br><br><br>
+<font face="times new roman" size="4">Doy fe en ..., a ... de ... de ...</font><br><br>
+<font face="times new roman" size="4"><?php echo $notario;?>, Notario</font><br><br>
                           </textarea>
                         </div>
                     </div>
