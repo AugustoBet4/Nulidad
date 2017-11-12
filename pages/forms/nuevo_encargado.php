@@ -80,7 +80,7 @@ setlocale(LC_ALL,”es_ES”);
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
+                <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
             </div>
         </div>
     </nav>
@@ -109,7 +109,7 @@ setlocale(LC_ALL,”es_ES”);
             <div class="menu">
                 <ul class="list">
                     <li>
-                        <a href="../../index.html">
+                        <a href="indagacion.php">
                             <i class="material-icons">library_add</i>
                             <span>Caso nuevo</span>
                         </a>
@@ -121,30 +121,30 @@ setlocale(LC_ALL,”es_ES”);
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+                                <a href="indagacion.php">Indagacion Previa</a>
                             </li>
                             <li>
-                                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                                <a href="introduccion.php">Fase Introductoria</a>
                             </li>
                             <li>
-                                <a href="../../pages/forms/insctruccion.html">Fase de Instrucción</a>
+                                <a href="insctruccion.php">Fase de Instrucción</a>
                             </li>
                             <li>
-                                <a href="../forms/alegatoria.php">Fase Alegatoria</a>
+                                <a href="alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li>
-                                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                                <a href="sentencia.php">Fase Decisoria</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../forms/buscador.html">
+                        <a href="buscador.php">
                             <i class="material-icons">search</i>
                             <span>Buscar caso</span>
                         </a>
                     </li>
                     <li class="active">
-                        <a href="../../pages/forms/nuevo_encargado.php">
+                        <a href="nuevo_encargado.php">
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>
