@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+setlocale(LC_ALL,”es_ES”);
+ ?>
 <html>
 
 <head>
@@ -21,20 +24,23 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
+    <!-- Wait Me Css -->
+    <link href="../../plugins/waitme/waitMe.css" rel="stylesheet" />
+
     <!-- Sweet Alert Css -->
     <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+    <link href="../../css/themes/theme-blue.css" rel="stylesheet" />
 
     <!-- Dropzone Css -->
     <link href="../../plugins/dropzone/dropzone.css" rel="stylesheet">
-
-    <!-- Colorpicker Css -->
-    <link href="../../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet">
 
 </head>
 
@@ -157,7 +163,7 @@
                                       <h4>Demandante</h4>
                                       <div class=form-group>
                                         <div class="form-line">
-                                            <input type="text" class="form-control" name="fanombredemandante" disabled>
+                                            <input type="text" class="form-control" name="fanombredemandante" value="<?php echo @fanombredemandante?>" disabled>
                                             <label class="form-label">Nombre</label>
                                         </div>
                                         <div class="form-line">
@@ -379,6 +385,9 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="col-sm-6">
+                                      <button type="button" class="btn btn bg-blue btn-block btn-lg waves-effect">Enviar</button>
+                                    </div>
                                 </fieldset>
                             </form>
                         </div>
@@ -408,6 +417,9 @@
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
 
+    <!-- Autosize Js -->
+    <script src="../../plugins/autosize/autosize.js"></script>
+
     <!-- Bootstrap Core Js -->
     <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
 
@@ -417,13 +429,9 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- Autosize Plugin Js -->
-    <script src="../../plugins/autosize/autosize.js"></script>
-
     <!-- Jquery Validation Plugin Css -->
     <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
 
-    <!-- JQuery Steps Plugin Js -->
     <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
 
     <!-- Sweet Alert Plugin Js -->
@@ -432,23 +440,25 @@
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
-    <!-- Input Mask Plugin Js -->
-    <script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
-
-    <!-- Custom Js -->
-    <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/forms/form-wizard.js"></script>
-    <script src="../../js/pages/forms/basic-form-elements.js"></script>
-    <script src="../../js/pages/forms/advanced-form-elements.js"></script>
-
     <!-- Dropzone Plugin Js -->
     <script src="../../plugins/dropzone/dropzone.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="../../plugins/momentjs/moment.js"></script>
+
+    <script src="../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
     <!-- Input Mask Plugin Js -->
     <script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
 
     <!-- Multi Select Plugin Js -->
     <script src="../../plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/pages/forms/form-wizard.js"></script>
+    <script src="../../js/pages/forms/basic-form-elements.js"></script>
+    <script src="../../js/pages/forms/advanced-form-elements.js"></script>
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
