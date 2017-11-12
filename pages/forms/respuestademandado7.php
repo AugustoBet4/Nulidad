@@ -154,37 +154,28 @@ $nombreabogado="Ejemplo abogado";
 <center><font color="#A3A3A3" face="tahoma" size="3">RESPUESTA DEMANDADO</font></center><br>
 <center><font color="#000000" face="tahoma" size="4"><b>Nulidad de Matrimonio</b></font></center>
 <center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
-<font color="#000000" face="times new roman" size="4"><b>En la citación al demandado, en segundo señalamiento, se puede hacer constar que, si no quisiera intervenir el juicio, puede remitirse a la justicia del tribunal</b></font><br><br><br>
+<font color="#000000" face="times new roman" size="4"><b>En el caso en que el demandado, en segundo señalamiento, no quiera recibir la citación, procederá la declaración de ausencia en juicio del demandado</b></font><br><br><br>
 87<font color="#000000" face="times new roman" size="4">DECRETO: En La Paz,  a <?echo strftime("%d de %B de %Y");?></font><br><br>
-<font size="4" face="times new roman">Igual que la cédula de citación expuesta anteriormente. Pero haciendo constar lo siguiente<br><br>
+<font size="4" face="times new roman">
+  Habiendo citado al demandado/a <?php echo $demandado;?>, en primero y segundo señalamientos, y habiéndose negado a recibir la citación, sin alegar causa alguna, y sin ninguna justificación, por el presente y a tenor del c. 1592 § 1, le declaramos ausente en juicio y, por tanto, correrán los autos hasta sentencia definitiva.
+<br><br>
+Notifíquese.<br><br>
 
-CITACIÓN<br><br>
-
-En segundo señalamiento<br><br>
-
-Por el presente se cita a <?php echo $demandado;?>, ...<br>
-……………………………………………………………………………………………………
-Se le significa que, si no quisiera intervenir en el juicio, puede remitirse a la justicia del Tribunal.<br>
-En caso de incomparecencia no justificada, se le seguirán los perjuicios que hubiera lugar en Derecho.<br>
-<br>
-Dado en ..., a ... de ... de ...<br><br><br><br><br><br>
-
-
-
-(Sello)	N. N., Vicario Judicial Presidente<br><br><br><br><br><br>
+Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial de que, yo el Notario, doy fe.<br><br><br><br>
 
 
 
 
+<br><br>
+N. N., Vicario Judicial y Presidente
+<br><br><br><br><br><br><br><br>
 
-<?php echo $notarioactuario;?>, Notario Actuario<br><br><br><br><br><br>
 
 
+(Sello)	<?php echo $notarioactuario;?>, Notario Actuario
+<br><br><br><br><br><br>
 
 
-DILIGENCIA.—La pongo yo, el Cursor, para hacer constar que, con esta fecha ... de ... de ..., D./D.ª N. N., no ha querido hacerse cargo, por segunda vez, del original de la citación. En ..., a ... de ... de ...<br><br><br><br><br><br>
-
-<?php echo $cursor;?>, Cursor
 </font><br><br><br><br>
                           </textarea>
                         </div>
