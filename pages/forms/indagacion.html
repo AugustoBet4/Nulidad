@@ -881,7 +881,7 @@
                                       <div class="col-sm-4">
                                           <div class="form-group">
                                             <div class="form-line focused">
-                                              <input type="text" class="form-control" value="" placeholder="Fecha:">
+                                              <input type="text" class="form-control" value="" placeholder="Fecha:" name="ipnmfecha" required>
                                             </div>
                                           </div>
                                       </div>
@@ -890,7 +890,7 @@
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                           <div class="form-line focused">
-                                            <input type="text" class="form-control" value="" placeholder="Circusntancias:">
+                                            <input type="text" class="form-control" value="" placeholder="Circusntancias:" name="ipnmcircu" required>
                                           </div>
                                         </div>
                                     </div>
@@ -898,46 +898,536 @@
                                   <div class="form-group form-float">
                                       <div class="form-line">
                                         <h5>¿Cuánto duró el noviazgo antes de tomar la desición de casarse?</h5>
-                                          <input type="text" class="form-control" name="duracion_noviazgo" required>
+                                          <input type="text" class="form-control" name="ipnmdurnov" required>
                                           <label class="form-label"></label>
                                       </div>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Hubo un compromiso formal antes del matrimonio?</h5>
-                                    <input name="group10" type="radio" id="radio_19" >
-                                    <label for="radio_19">Si</label>
-                                    <input name="group10" type="radio" id="radio_20">
-                                    <label for="radio_20">No</label>
+                                    <input name="ipnmrbcompro" type="radio" id="rbcomprosi" required >
+                                    <label for="rbcomprosi">Si</label>
+                                    <input name="ipnmrbcompro" type="radio" id="rbcomprono" required>
+                                    <label for="rbcomprono">No</label>
                                     <div class="form-line focused">
                                       <h5>Si es así, fecha del compromiso:</h5>
-                                        <input type="text" class="form-control" value="" >
+                                        <input type="text" class="form-control" name="ipnmfechacompro">
                                     </div>
                                   </div>
                                   <div class="form-group form-float">
                                       <div class="form-line">
                                         <h5>¿Cuánto tiempo duró el compromiso?</h5>
-                                          <input type="text" class="form-control" name="duracion_compromiso" required>
+                                          <input type="text" class="form-control" name="ipnmtiempocompro">
                                           <label class="form-label"></label>
                                       </div>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Vivieron juntos antes de casarse?</h5>
-                                    <input name="group11" type="radio" id="radio_21" >
-                                    <label for="radio_21">Si</label>
-                                    <input name="group1" type="radio" id="radio_22">
-                                    <label for="radio_22">No</label>
+                                    <input name="ipnmrbvivirantes" type="radio" id="rbvivirantessi" required>
+                                    <label for="rbvivirantessi">Si</label>
+                                    <input name="ipnmrbvivirantes" type="radio" id="rbvivirantesno" required>
+                                    <label for="rbvivirantesno">No</label>
                                     <div class="form-line focused">
                                       <h5>Si es así, ¿Cuánto tiempo vivieron juntos antes de casarse?:</h5>
-                                        <input type="text" class="form-control" value="" >
+                                        <input type="text" class="form-control" name="ipnmantescas" >
                                       <h5>Si es así, explique ¿Porqué decidió casarse?:</h5>
-                                        <input type="text" class="form-control" value="" >
+                                        <input type="text" class="form-control" name="ipsnmporquecas" >
                                     </div>
                                   </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Hubo algun embarazo o sospecha de un embarazo antes de contraer matrimonio?</h5>
+                                    <input name="ipnmrbsospecha" type="radio" id="rbsospechasi" required>
+                                    <label for="rbsospechasi">Si</label>
+                                    <input name="ipnmrbsospecha" type="radio" id="rbsospechano" required>
+                                    <label for="rbsospechano">No</label>
+                                    <div class="form-line focused">
+                                      <h5>Si es así, ¿Como afecto la desicion de contraer matrimonio?:</h5>
+                                        <input type="text" class="form-control" name="ipnmcontraer" >
+                                    </div>
+                                  </div>
+
+                                  <div class="demo-radio-button">
+                                    <h5>¿Usted y la parte demandada firmaron algun acuerdo o convenio prenupcial antes de la boda?</h5>
+                                    <input name="ipnmrbacuerdo" type="radio" id="rbacuedosi" required>
+                                    <label for="rbacuedosi">Si</label>
+                                    <input name="ipnmrbacuerdo" type="radio" id="rbacuedono" required>
+                                    <label for="rbacuedono">No</label>
+                                    <div class="form-line focused">
+                                      <h5>Si es así, porfavor agregue una copia de este acuerdo:</h5>
+                                      <h2>SUBIR ARCHIVO</h2>
+                                    </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>Fecha exacta de la boda:</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipnmfechaboda">
+                                    </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="demo-radio-button">
+                                    <h5>El matrimonio fue oficiado por un: </h5>
+                                    <input name="ipnmrboficiado" type="radio" id="rbsac" required>
+                                    <label for="rbsac">sacerdote o diacono catolico</label>
+                                    <input name="ipnmrboficiado" type="radio" id="rbdiacono" required>
+                                    <label for="rbdiacono">Otro religiso oficial</label>
+                                    <input name="ipnmrboficiado" type="radio" id="rbcivil" required>
+                                    <label for="rbcivil">Oficia de registro civil</label>
+                                  </div>
+
+
+
+
                                 </fieldset>
                                 <h3>Matrimonios contraídos anteriormente</h3>
                                 <fieldset>
                                   <h3>A)DEMANDANTE</h3>
-                                    
+                                  <h4>Matrimonio Nº1</h4>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Nombre de su ex-cónyuge</h5>
+                                          <input type="text" class="form-control" name="ipmcademandantenombreexconyuge">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>¿Fecha de celebración de su matrimonio?</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandantefechamatrimonio">
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Lugar de la Boda:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipbfdemandanteciudadmatrimonio">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Departamento:" name="ipmcademandantedepartamentomatrimonio">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Estado:" name="ipmcademandanteestadomatrimonio">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Tipo de ceremonia</h5>
+                                    <input name="ipmcarbdemandantetipoceremonia" type="radio" id="rbdemandantetipoceremoniacivil" >
+                                    <label for="rbdemandantetipoceremoniacivil">Civil</label>
+                                    <input name="ipmcarbdemandantetipoceremonia" type="radio" id="rbdemandantetipoceremoniareligiosa">
+                                    <label for="rbdemandantetipoceremoniareligiosa">Religiosa</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
+                                    <input name="ipmcarbdemandantematrimonioconyuge" type="radio" id="rbdemandantematrimonioconyugesi" >
+                                    <label for="rbdemandantematrimonioconyugesi">Si</label>
+                                    <input name="ipmcarbdemandantematrimonioconyuge" type="radio" id="rbdemandantematrimonioconyugeno">
+                                    <label for="rbdemandantematrimonioconyugeno">No</label>
+                                    <h5>De no ser así:</h5>
+                                      <input type="text" class="form-control" value="Descripción" name="ipmcademandantedescripcionmatrimonioconyuge" >
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">De ser aplicable:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-5">
+                                                <div class="input-group">
+                                                  <h5>Fecha de la muerte de su cónyuge</h5>
+                                                  <div class="input-group">
+                                                  <span class="input-group-addon">
+                                                      <i class="material-icons">date_range</i>
+                                                  </span>
+                                                  <div class="form-line">
+                                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandantefechamuerteconyugue">
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                  <div class="form-group">
+                                                    <h5>Lugar de muerte de su cónyuge</h5>
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Lugar:" name="ipmcademandantelugarmuerteconyugue">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado" type="radio" id="rbdemandantematrimonioconyugeanuladosi" >
+                                    <label for="rbdemandantematrimonioconyugeanuladosi">Si</label>
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado" type="radio" id="rbdemandantematrimonioconyugeanuladono">
+                                    <label for="rbdemandantematrimonioconyugeanuladono">No</label>
+                                    <h5>De  ser así:</h5>
+                                      <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandantetribunalmatrimonioconyugeanulado">
+                                      <input type="text" class="form-control" value="" placeholder="Lugar" name="ipmcademandantelugarmatrimonioconyugeanulado">
+                                      <input type="number" class="form-control" value="" placeholder="Nº Caso" name="ipmcademandantenrocasomatrimonioconyugeanulado">
+                                      <div class="input-group">
+                                        <h5>Fecha de anulación de su matrimonio</h5>
+                                        <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">date_range</i>
+                                        </span>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandantefechamatrimonioconyugeanulado">
+                                        </div>
+                                        </div>
+                                      </div>
+                                  </div>
+
+                                  <h4>Matrimonio Nº2</h4>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Nombre de su ex-cónyuge</h5>
+                                          <input type="text" class="form-control" name="ipmcademandantenombreexconyuge2">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>¿Fecha de celebración de su matrimonio?</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandantefechamatrimonio2">
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Lugar de la Boda:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipbfdemandanteciudadmatrimonio2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Departamento:" name="ipmcademandantedepartamentomatrimonio2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Estado:" name="ipmcademandanteestadomatrimonio2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Tipo de ceremonia</h5>
+                                    <input name="ipmcarbtipoceremonia2" type="radio" id="rbtipoceremoniacivil2" >
+                                    <label for="rbtipoceremoniacivil2">Civil</label>
+                                    <input name="ipmcarbtipoceremonia2" type="radio" id="rbtipoceremoniareligiosa2">
+                                    <label for="rbtipoceremoniareligiosa2">Religiosa</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
+                                    <input name="ipmcarbdemandantematrimonioconyuge2" type="radio" id="rbdemandantematrimonioconyugesi2" >
+                                    <label for="rbdemandantematrimonioconyugesi2">Si</label>
+                                    <input name="ipmcarbdemandantematrimonioconyuge2" type="radio" id="rbdemandantematrimonioconyugeno2">
+                                    <label for="rbdemandantematrimonioconyugeno2">No</label>
+                                    <h5>De no ser así:</h5>
+                                      <input type="text" class="form-control" value="Descripción" name="ipmcademandantedescripcionmatrimonioconyuge2" >
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">De ser aplicable:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-5">
+                                                <div class="input-group">
+                                                  <h5>Fecha de la muerte de su cónyuge</h5>
+                                                  <div class="input-group">
+                                                  <span class="input-group-addon">
+                                                      <i class="material-icons">date_range</i>
+                                                  </span>
+                                                  <div class="form-line">
+                                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandantefechamuerteconyugue2">
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                  <div class="form-group">
+                                                    <h5>Lugar de muerte de su cónyuge</h5>
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Lugar:" name="ipmcademandantelugarmuerteconyugue2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado2" type="radio" id="rbdemandantematrimonioconyugeanuladosi2" >
+                                    <label for="rbdemandantematrimonioconyugeanuladosi2">Si</label>
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado2" type="radio" id="rbdemandantematrimonioconyugeanuladono2">
+                                    <label for="rbdemandantematrimonioconyugeanuladono2">No</label>
+                                    <h5>De  ser así:</h5>
+                                      <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandantetribunalmatrimonioconyugeanulado2">
+                                      <input type="text" class="form-control" value="" placeholder="Lugar" name="ipmcademandantelugarmatrimonioconyugeanulado2">
+                                      <input type="number" class="form-control" value="" placeholder="Nº Caso" name="ipmcademandantenrocasomatrimonioconyugeanulado2">
+                                      <div class="input-group">
+                                        <h5>Fecha de anulación de su matrimonio</h5>
+                                        <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">date_range</i>
+                                        </span>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandantefechamatrimonioconyugeanulado2">
+                                        </div>
+                                        </div>
+                                      </div>
+                                  </div>
+
+                                  <h3>B)DEMANDADO</h3>
+                                  <h4>Matrimonio Nº1</h4>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Nombre de su ex-cónyuge</h5>
+                                          <input type="text" class="form-control" name="ipmcademandadonombreexconyuge">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>¿Fecha de celebración de su matrimonio?</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandadofechamatrimonio">
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Lugar de la Boda:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipbfdemandadociudadmatrimonio">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Departamento:" name="ipmcademandadodepartamentomatrimonio">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Estado:" name="ipmcademandadoestadomatrimonio">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Tipo de ceremonia</h5>
+                                    <input name="ipmcarbdemandadotipoceremonia" type="radio" id="rbdemandadotipoceremoniacivil" >
+                                    <label for="rbdemandadotipoceremoniacivil">Civil</label>
+                                    <input name="ipmcarbdemandadotipoceremonia" type="radio" id="rbdemandadotipoceremoniareligiosa">
+                                    <label for="rbdemandadotipoceremoniareligiosa">Religiosa</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
+                                    <input name="ipmcarbdemandadomatrimonioconyuge" type="radio" id="rbdemandadomatrimonioconyugesi" >
+                                    <label for="rbdemandadomatrimonioconyugesi">Si</label>
+                                    <input name="ipmcarbdemandadomatrimonioconyuge" type="radio" id="rbdemandadomatrimonioconyugeno">
+                                    <label for="rbdemandadomatrimonioconyugeno">No</label>
+                                    <h5>De no ser así:</h5>
+                                      <input type="text" class="form-control" value="Descripción" name="ipmcademandadodescripcionmatrimonioconyuge" >
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">De ser aplicable:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-5">
+                                                <div class="input-group">
+                                                  <h5>Fecha de la muerte de su cónyuge</h5>
+                                                  <div class="input-group">
+                                                  <span class="input-group-addon">
+                                                      <i class="material-icons">date_range</i>
+                                                  </span>
+                                                  <div class="form-line">
+                                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandadofechamuerteconyugue">
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                  <div class="form-group">
+                                                    <h5>Lugar de muerte de su cónyuge</h5>
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Lugar:" name="ipmcademandadolugarmuerteconyugue">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado" type="radio" id="rbdemandadomatrimonioconyugeanuladosi" >
+                                    <label for="rbdemandadomatrimonioconyugeanuladosi">Si</label>
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado" type="radio" id="rbdemandadomatrimonioconyugeanuladono">
+                                    <label for="rbdemandadomatrimonioconyugeanuladono">No</label>
+                                    <h5>De  ser así:</h5>
+                                      <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandadotribunalmatrimonioconyugeanulado">
+                                      <input type="text" class="form-control" value="" placeholder="Lugar" name="ipmcademandadolugarmatrimonioconyugeanulado">
+                                      <input type="number" class="form-control" value="" placeholder="Nº Caso" name="ipmcademandadonrocasomatrimonioconyugeanulado">
+                                      <div class="input-group">
+                                        <h5>Fecha de anulación de su matrimonio</h5>
+                                        <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">date_range</i>
+                                        </span>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandadofechamatrimonioconyugeanulado">
+                                        </div>
+                                        </div>
+                                      </div>
+                                  </div>
+
+                                  <h4>Matrimonio Nº2</h4>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Nombre de su ex-cónyuge</h5>
+                                          <input type="text" class="form-control" name="ipmcademandadonombreexconyuge2">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>¿Fecha de celebración de su matrimonio?</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandadofechamatrimonio2">
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Lugar de la Boda:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipbfdemandadociudadmatrimonio2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Departamento:" name="ipmcademandadodepartamentomatrimonio2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Estado:" name="ipmcademandadoestadomatrimonio2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Tipo de ceremonia</h5>
+                                    <input name="ipmcarbdemandadotipoceremonia2" type="radio" id="rbdemandadotipoceremoniacivil2" >
+                                    <label for="rbdemandadotipoceremoniacivil2">Civil</label>
+                                    <input name="ipmcarbdemandadotipoceremonia2" type="radio" id="rbdemandadotipoceremoniareligiosa2">
+                                    <label for="rbdemandadotipoceremoniareligiosa2">Religiosa</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
+                                    <input name="ipmcarbdemandadomatrimonioconyuge2" type="radio" id="rbdemandadomatrimonioconyugesi2" >
+                                    <label for="rbdemandadomatrimonioconyugesi2">Si</label>
+                                    <input name="ipmcarbdemandadomatrimonioconyuge2" type="radio" id="rbdemandadomatrimonioconyugeno2">
+                                    <label for="rbdemandadomatrimonioconyugeno2">No</label>
+                                    <h5>De no ser así:</h5>
+                                      <input type="text" class="form-control" value="Descripción" name="ipmcademandadodescripcionmatrimonioconyuge2" >
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">De ser aplicable:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-5">
+                                                <div class="input-group">
+                                                  <h5>Fecha de la muerte de su cónyuge</h5>
+                                                  <div class="input-group">
+                                                  <span class="input-group-addon">
+                                                      <i class="material-icons">date_range</i>
+                                                  </span>
+                                                  <div class="form-line">
+                                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandadofechamuerteconyugue2">
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                  <div class="form-group">
+                                                    <h5>Lugar de muerte de su cónyuge</h5>
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Lugar:" name="ipmcademandadolugarmuerteconyugue2">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado2" type="radio" id="rbdemandadomatrimonioconyugeanuladosi2" >
+                                    <label for="rbdemandadomatrimonioconyugeanuladosi2">Si</label>
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado2" type="radio" id="rbdemandadomatrimonioconyugeanuladono2">
+                                    <label for="rbdemandadomatrimonioconyugeanuladono2">No</label>
+                                    <h5>De  ser así:</h5>
+                                      <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandadotribunalmatrimonioconyugeanulado2">
+                                      <input type="text" class="form-control" value="" placeholder="Lugar" name="ipmcademandadolugarmatrimonioconyugeanulado2">
+                                      <input type="number" class="form-control" value="" placeholder="Nº Caso" name="ipmcademandadonrocasomatrimonioconyugeanulado2">
+                                      <div class="input-group">
+                                        <h5>Fecha de anulación de su matrimonio</h5>
+                                        <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">date_range</i>
+                                        </span>
+                                        <div class="form-line">
+                                            <input type="text" class="form-control date" placeholder="30/07/2016" name="ipmcademandadofechamatrimonioconyugeanulado2">
+                                        </div>
+                                        </div>
+                                      </div>
+                                  </div>
+
+
+
                                 </fieldset>
 
                             </form>
@@ -948,7 +1438,6 @@
             <!-- #END# Advanced Form Example With Validation -->
         </div>
     </section>
-
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
