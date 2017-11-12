@@ -149,3 +149,41 @@ Fecha exacta de la boda:
     rbsac
     rbdiacono
     rbcivil
+    rbotro
+
+Nombre del sacerdote, ministro u oficiante
+  ipnmsacerdote
+
+Parroquia o lugar donde se contrajo matrimonio
+  ipnmparroquia
+
+Ciudad
+  ipnmciudad
+
+Departamento 
+  ipnmdepart
+
+Estado
+  ipnmestado
+
+Pais
+  ipnmpais
+
+¿Donde realizo el matrimonio civil?
+  ipnmcivil
+
+Si hubo un matrimonio civil antes del matrimonio de la Iglesia, fecha
+  ipnmfechabodacivil
+
+¿Fue su matrimonio con la parte demandada, su primer matrimonio?
+  ipnmrbmatrimoniodm
+    si  rbmatrimoniodmsi
+    no  rbmatrimoniodmno
+
+¿Fue el matrimonio con usted el primer matrimonio para la parte Demandada?
+  ipnmrbprimermatrimonio
+    si  rbprimermatrimoniosi
+    no  rbprimermatrimoniono
+
+Duracion del Noviazgo
+  ipnmduracion
