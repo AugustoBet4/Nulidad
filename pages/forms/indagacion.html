@@ -1517,11 +1517,138 @@
                                         </div>
                                       </div>
                                   </div>
-
-
+                                </fieldset>
+                                <h3>Separación y Divorcio/Disolución</h3>
+                                <fieldset>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Cuánto tiempo (aproximadamente) vivieron casados antes de la separación final?</h5>
+                                          <input type="text" class="form-control" name="ipsdtiempocasados">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Cuánto tiempo (aproximadamente) vivieron casados antes de la separación final?</h5>
+                                          <input type="text" class="form-control" name="ipsdnumeroseparaciones">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <h5>Fecha aproximada de la primera separación</h5>
+                                  <div class="form-line">
+                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipsdfechaprimeraseparacion">
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Qué fue lo que causó la primera separación?(indique brevemente)</h5>
+                                          <input type="text" class="form-control" name="ipsdcausaprimeraseparacion">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Otras separaciones?(indique brevemente)</h5>
+                                          <input type="text" class="form-control" name="ipsdotrasseparaciones">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Qué causó la separación definitiva?(indique brevemente)</h5>
+                                          <input type="text" class="form-control" name="ipsdseparaciondefinitiva">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Fecha de la separación definitiva:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Año:" name="ipsdañoseparacion">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Mes:" name="ipsdmesseparacion">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <h5>Fecha del divorcio civil</h5>
+                                  <div class="form-line">
+                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipsdfechadivorciocivil" required>
+                                  </div>
+                                  <h5>Fue un</h5>
+                                  <input name="ipsdrbdivorcioanulacion" type="radio" id="rbdivorcio" >
+                                  <label for="rbdivorcio">Si</label>
+                                  <input name="ipsdrbdivorcioanulacion" type="radio" id="rbanulacioncivil">
+                                  <label for="rbanulacioncivil">No</label>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Con cuál causal se obtuvo el divorcio/anulación civil?</h5>
+                                          <input type="text" class="form-control" name="ipsdcausaldivorciocivil">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label"></label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Departamento:" name="ipsddepartamentodivorciocivil">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Estado:" name="ipsdestadodivorciocivil">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="País (si corresponde):" name="ipsdpaisdivorciocivil">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <h5>¿Quién pidió el divorcio?</h5>
+                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorcioyo" >
+                                  <label for="rbpedidodivorcioyo">Yo lo hice</label>
+                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorciodemandado">
+                                  <label for="rbpedidodivorciodemandado">La parte demandada</label>
+                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorcioambos">
+                                  <label for="rbpedidodivorcioambos">Ambos</label>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Duración de la convivencia del matrimonio</h5>
+                                          <input type="text" class="form-control" name="ipsdduracionconvivenciamatrimonio">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
 
                                 </fieldset>
 
+                              </form>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <!-- #END# Advanced Form Example With Validation -->
+                              </div>
+                              </section>
+
+
+
+<!-- -->
                             </form>
                         </div>
                     </div>
