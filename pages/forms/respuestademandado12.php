@@ -154,35 +154,40 @@ $nombreabogado="Ejemplo abogado";
 <center><font color="#A3A3A3" face="tahoma" size="3">RESPUESTA DEMANDADO</font></center><br>
 <center><font color="#000000" face="tahoma" size="4"><b>Nulidad de Matrimonio</b></font></center>
 <center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
-<font color="#000000" face="times new roman" size="4"><b>FIJACIÓN DE LA FÓRMULA DE DUDAS
-</b></font><br><br><br>
-<font color="#000000" face="times new roman" size="4">DECRETO: En La Paz,  a <?echo strftime("%d de %B de %Y");?></font><br><br>
 <font size="4" face="times new roman">
-A tenor de lo establecido en el c. 1513, § 1, y teniendo en cuenta la peticiones y respuestas de las partes, fijamos los límites de la controversia, en la Causa arriba indicada, en los siguientes términos: «SI CONSTA O NO DE LA NULIDAD DEL MATRIMONIO EN ESTE CASO POR IN- CAPACIDAD DEL ESPOSO MOTIVADA POR FALTA DE DISCRECIÓN DE JUICIO Y, SUBSIDIARIAMENTE, POR EXCLUSIÓN DE LOS HIJOS TAMBIÉN POR PARTE DEL MISMO».<br>
-Notifíquese a las partes, a los efectos del § 3 del mismo canon, y al Defensor del Vínculo. Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial de que yo, el Notario Actuario, doy fe.
-<br><br><br><br><br><br>
+Verificadas las declaraciones de las partes de la causa de nulidad de matrimonio “GUTIERREZ-ESCOBAR”, y formulado los interrogatorios para los testigos, señálese día y hora para la declaración de los testigos propuestos por la parte actora.<br><br>
+                                                              Lo decretó y firma el Vicario Judicial, a <?echo strftime("%d de %B de %Y");?>. Doy fe.<br><br><br><br>
+<center>                                                                          Pbro.Dr. Roberto Boceta Fernández<br>
+                                                                                    VICARIO JUDICIAL.</center><br><br>
+  Ante mi,
+<br><br>
+        <center><? echo $notario;?><br>
+                              NOTARIO</center>
 
-
-
-N. N., Vicario Judicial
-<br><br><br><br><br><br>
-
-
-
-
-
-(Sello)	<?php echo $notarioactuario;?>, Notario Actuario
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 
 
 
-NOTIFICACIÓN.—Con esta fecha y por correo certificado con acuse de recibo envío copia del decreto anterior a los procuradores de las partes. Lo notifico al Defensor del Vínculo. En ..., a ... de ... de ... Doy fe.<br><br><br>
 
 
-<?php echo $notarioactuario;?>, Notario
 
 
+
+
+  En el mismo día de su fecha notifico el decreto que precede mediante lectura íntegra del mismo y entrega de copia literal al Sr. Defensor del Vínculo y a las partes.- Doy fe.<br>
+<br><br><br><br><br><br><br><br>
+
+
+                                                                                          NOTARIO.
+
+  Defensor del Vinculo    ……………….<br>
+
+  Parte Actora                   ………………<br>
+
+  Parte Demandada           ……………….<br>
+
+  Cursor: …………<br>
 </font><br><br><br><br>
                           </textarea>
                         </div>
