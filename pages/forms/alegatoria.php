@@ -74,7 +74,7 @@ setlocale(LC_ALL,”es_ES”);
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
+                <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
             </div>
         </div>
     </nav>
@@ -93,7 +93,7 @@ setlocale(LC_ALL,”es_ES”);
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.html">Cerrar Sesion</a></a></li>
+                            <li><a href="../../pages/forms/ingreso.php">Cerrar Sesion<i class="material-icons">input</i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -115,19 +115,19 @@ setlocale(LC_ALL,”es_ES”);
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+                                <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
                             </li>
                             <li>
-                                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                                <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
                             </li>
                             <li>
-                                <a href="../../pages/insctruccion.html">Fase de Instrucción</a>
+                                <a href="../../pages/insctruccion.php">Fase de Instrucción</a>
                             </li>
                             <li class="active">
-                                <a href="../../pages/alegatoria.php">Fase Alegatoria</a>
+                                <a href="../../pages/forms/alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li>
-                                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                                <a href="../forms/sentencia.php">Fase Decisoria</a>
                             </li>
                         </ul>
                     </li>
@@ -138,7 +138,7 @@ setlocale(LC_ALL,”es_ES”);
                         </a>
                     </li>
                     <li>
-                        <a href="../../pages/nuevo_encargado.html">
+                        <a href="../../pages/forms/nuevo_encargado.php">
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>

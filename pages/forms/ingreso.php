@@ -35,7 +35,7 @@
                   <small><font color = "black">Iglesia Católica Boliviana</font></small>
               </div>
                 <form id="sign_in" method="POST">
-                    <div class="msg">Ingresa tus datos para <a href="../../index.html">iniciar sesión</a></div>
+                    <div class="msg">Ingresa tus datos para <a href="../../index.php">iniciar sesión</a></div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
@@ -64,7 +64,7 @@
                     <div class="row m-t-15 m-b--20">
                         </div>
                         <div class="col-xs-10 align-center">
-                            <a href="forgot-password.html">¿Olvidaste tu contraseña?</a>
+                            <a href="../examples/forgot-password.php">¿Olvidaste tu contraseña?</a>
                         </div>
                     </div>
                     <br>
