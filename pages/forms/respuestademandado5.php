@@ -154,13 +154,19 @@ $nombreabogado="Ejemplo abogado";
 <center><font color="#A3A3A3" face="tahoma" size="3">RESPUESTA DEMANDADO</font></center><br>
 <center><font color="#000000" face="tahoma" size="4"><b>Nulidad de Matrimonio</b></font></center>
 <center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
-<font color="#000000" face="times new roman" size="4"><b>Decreto sobre admisión o no de la acción reconvencional</b></font><br><br><br>
+<font color="#000000" face="times new roman" size="4"><b>CUANDO  EL DEMANDADO  SE NIEGA A RECIBIR  LA CITACIÓN, ANTES DE PROCEDER A DECLARARLE AUSENTE EN JUICIO AL DEMANDADO, PUEDE  DARSE  OTRO  DECRETO  DEL SIGUIENTE  TENOR:</b></font><br><br><br>
 <font color="#000000" face="times new roman" size="4">DECRETO: En La Paz,  a <?echo strftime("%d de %B de %Y");?></font><br><br>
-<font size="4" face="times new roman">Por recibido el escrito de acción reconvencional de nulidad de matrimonio que ha presentado, ante este Tribunal Eclesiástico, el Procurador del Ilustre Colegio de ... D. N. N., bajo la dirección del Letrado/a D./D.ª N. N., en nombre y representación de <?php echo $demandado;?><br>
-Como ya está constituido el Tribunal, cuyos jueces diocesanos fueron designados en su día para conocer, juzgar y sentenciar en la causa, que arriba se indica, por incapacidad del esposo para prestar un consentimiento válido y por incapacidad para asumir las obligaciones esenciales del matrimonio, constándonos de nuestra competencia a tenor del c. 1673.1.º y 2.º; de la capacidad legal del demandado reconviniente para actuar en juicio, y estimando que la demanda recovencional está jurídicamente fundada en hecho y en derecho, según se exige en los cc. 1504 y 1505, por el presente la admitimos a trámite, y disponemos que se tramiten simultáneamente.<br>
-Se admite al Procurador D./D.ª N. N. y al Abogado D./D.ª N. N. para que represente el primero y defienda el segundo a D. N. N.<br>
-Notifíquese a los jueces diocesanos, al Defensor del Vínculo, al Procurador de la parte demandada y reconviniente y al de la parte demandante y reconvenida, al que junto con la copia de este decreto deberá enviársele también copia de la demanda reconvencional, para que conteste en el plazo de VEINTE DÍAS a la acción de nulidad promovida por el demandado.
-Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial del Obispado de que yo, el infrascrito Notario Actuario, doy fe.</font><br><br><br><br><br>
+<font size="4" face="times new roman">Habiendo rehusado el demandado la cédula de citación, por el presente disponemos se cite, en segundo señalamiento, a <?php echo $demandado;?>, para que comparezca ante este Tribunal de ..., el día ... de
+... de ..., mediante Procurador y Abogado, legítimamente constituidos, con el fin de contestar al escrito de demanda, presentado por su esposo/a <?php echo $demandante;?>.<br>
+Notifíquese.<br>
+Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial de que yo, el Notario Actuario, doy fe.<br><br>
+(Sello)	N. N., Vicario Judicial<br><br><br>
+<?php echo $notarioactuario;?>, Notario Actuario<br><br><br>
+
+NOTIFICACIÓN.—Con esta fecha ... de ... de ..., envío copia del decreto anterior al Procurado de la parte demandante. Lo notifico al Defensor del Vínculo. Doy fe en ... Fecha ut supra.<br><br><br>
+
+<?php echo $notario;?>, Notario<br>
+</font><br><br><br><br><br>
 <br><br><br><br>
 <center><font face="times new roman" size="4">Pbro. Dr. Roberto Boceta Fernández</font></center>
 <center><font face="times new roman" size="4">VICARIO JUDICIAL</font></center><br><br><br>
@@ -170,7 +176,7 @@ Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial del Obispado de q
 <center><font face="times new roman" size="4"><?php echo $notario;?>, Notario</font></center><br>
 5. 	EN EL CASO DE QUE EL DEMANDADO  REHÚSE  RECIBIR  LA CITACIÓN, EL CURSOR  LO HARÁ  CONSTAR  CON LA SIGUIENTE<br><br>
 DILIGENCIA.—La pongo yo, el Cursor, para hacer constar que, personado en el domicilio de D./D.ª N. N., éste se negó a recibir la citación. En ..., a ... de ... de ...<br><br>
-<center><font face="times new roman" size="4"><?php echo $cursor;?>, Cursor.</font></center><br>
+<center><font face="times new roman" size="4"><?php echo $cursor;?>, Cursor</font></center><br>
                           </textarea>
                         </div>
                     </div>
