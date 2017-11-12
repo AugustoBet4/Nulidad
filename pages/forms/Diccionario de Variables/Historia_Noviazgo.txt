@@ -100,3 +100,52 @@ Expliquese
 
   Expliquese
     iphfexplidmd
+    --------------------------------------------------------
+NOVIAZGO Y MATRIMONIO
+Brevemente ¿Cuándo y cómo conoció a la parte Demandada?
+  ipnmfecha
+  ipnmcircu
+
+¿Cuánto duró el noviazgo antes de tomar la desición de casarse?
+  ipnmdurnov
+
+¿Hubo un compromiso formal antes del matrimonio?
+  ipnmrbcompro
+    si  rbcomprosi
+    no  rbcomprono
+
+Si es así, fecha del compromiso:
+  ipnmfechacompro
+
+¿Cuánto tiempo duró el compromiso?
+  ipnmtiempocompro
+
+¿Vivieron juntos antes de casarse?
+  ipnmrbvivirantes
+    si  rbvivirantessi
+    no  rbvivirantesno
+
+Si es así, ¿Cuánto tiempo vivieron juntos antes de casarse?
+  ipnmantescas
+
+Si es así, explique ¿Porqué decidió casarse?:
+  ipsnmporquecas
+
+¿Hubo algun embarazo o sospecha de un embarazo antes de contraer matrimonio?
+  ipnmrbsospecha
+    si  rbsospechasi
+    no  rbsospechano
+
+>Si es así, ¿Como afecto la desicion de contraer matrimonio?
+  ipnmcontraer
+
+¿Usted y la parte demandada firmaron algun acuerdo o convenio prenupcial?
+  ipnmrbacuerdo
+  si  rbacuedosi
+  no  rbacuedono
+
+Fecha exacta de la boda:
+  ipnmfechaboda
+    rbsac
+    rbdiacono
+    rbcivil
