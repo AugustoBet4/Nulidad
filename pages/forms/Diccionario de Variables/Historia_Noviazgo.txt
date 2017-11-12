@@ -1,0 +1,102 @@
+HISTORIA FAMILIAR
+DEMANDANTE
+¿Sus padres son catolicos?
+  iphfrbpadcatdemandante
+    si  rbpadcatdmtsi
+    no  rbpadcatdmtno
+
+¿Sus padres están casados por la iglesia católica?
+  iphfrbcasadcatdmt
+    si  rbcasadcatdmtsi
+    no  rbcasadcatdmtno
+
+Otro
+  iphfcatotrodmt
+
+¿El matrimonio de sus padres es un matrimonio de toda la vida?
+  iphfrbpadmatdmt
+    si rbpadmatdmtdmtsi
+    no rbpadmatdmtdmtno
+
+Si no es así ¿Cómo ha sido el matrimonio de sus padres?
+  iphfmatrimoniodmt
+
+¿Si sus padres se han separado, que edad tenía usted al momento de la separación?
+  iphfseparaciondmt
+
+¿Sus padres son católicos practicantes?
+  iphfrbcatpracpadredmt
+    si  rbcatpracpadredmtsi
+    no  rbcatpracpadredmtno
+  iphfrbcatpracmadredmt
+    si  rbcatpracmadredmtsi
+    no  rbcatpracmadredmtno
+----------------
+DEMANDADO
+¿Sus padres son catolicos?
+  iphfrbpadcatdmd
+    si  rbpadcatdmdsi
+    no  rbpadcatdmdno
+
+¿Sus padres están casados por la iglesia católica?
+  iphfrbcasadcatdmd
+    si  rbcasadcatdmdsi
+    no  rbcasadcatdmdno
+
+Otro
+  iphfcatotrodmd
+
+¿El matrimonio de sus padres es un matrimonio de toda la vida?
+  iphfrbpadmatdmd
+    si rbpadmatdmdsi
+    no rbpadmatdmdno
+
+Si no es así ¿Cómo ha sido el matrimonio de sus padres?
+  iphfmatrimoniodmd
+
+¿Si sus padres se han separado, que edad tenía usted al momento de la separación?
+  iphfseparaciondmd
+
+¿Sus padres son católicos practicantes?
+  iphfrbcatpracpadredmd
+    si  rbcatpracpadredmdsi
+    no  rbcatpracpadredmdno
+  iphfrbcatpracmadredmd
+    si  rbcatpracmadredmdsi
+    no  rbcatpracmadredmdno
+
+
+Hermanos
+DEMANDANTE
+  varones
+    iphfhnovardmt
+  mujeres
+    iphfhnamujdmt
+
+¿Qué número ocupa usted entre sus hermanos?
+  iphfnumherdmt
+
+¿Ha fracasado el matrimonio de alguno de sus hermanos?
+  iphfrbmathnodmt
+    si  rbmathnodmtsi
+    no  rbmathnodmtno
+
+Expliquese
+  iphfexplidmt
+
+  DEMANDANDADO
+    varones
+      iphfhnovardmd
+    mujeres
+      iphfhnamujdmd
+
+  ¿Qué número ocupa usted entre sus hermanos?
+    iphfnumherdmd
+
+  ¿Ha fracasado el matrimonio de alguno de sus hermanos?
+    iphfrbmathnodmt
+      si  rbmathnodmdsi
+      no  rbmathnodmdno
+
+  Expliquese
+    iphfexplidmd
