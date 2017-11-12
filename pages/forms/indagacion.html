@@ -72,7 +72,7 @@
                 <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <!-- <ul class="nav navbar-nav navbar-right"> -->
                     <!-- Call Search -->
                     <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
                     <!-- #END# Call Search -->
@@ -155,365 +155,475 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>NUEVO CASO - INDAGACIÓN PREVIA</h2>
-                            <h1>Demandante</h1>
-                        </div>
-                        <div class="body">
-                            <form id="wizard_with_validation" method="POST">
-                                <h3>Informacion Basica</h3>
-                                <fieldset>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="ipibprimernomrbredemandante" required>
-                                            <label class="form-label">Primer Nombre*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="ipibsegundonomrbredemandante">
-                                            <label class="form-label">Segundo Nombre</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="ipibapellidopaternodemandante" required>
-                                            <label class="form-label">Apellido paterno*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="ipapellidomaternodemandante" required>
-                                            <label class="form-label">Apellido materno*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="number" class="form-control" name="ipibdemandanteci" required>
-                                            <label class="form-label">Cedula de Identidad*</label>
-                                        </div>
-                                    </div>
-                                    <div class="demo-radio-button">
-                                      <h5>Sexo</h1>
-                                      <input name="ipibrbsexo" type="radio" id="rbsexomasculino" >
-                                      <label for="rbsexomasculino">Masculino</label>
-                                      <input name="ipibrbsexo" type="radio" id="rbsexofemenino">
-                                      <label for="rbsexofemenino">Femenino</label>
-                                    </div>
-                                    <div class="form-group form-float">
-                                            <label class="form-label">Dirección:</label>
-                                            <div class="row clearfix">
+                          <h2>NUEVO CASO - INDAGACIÓN PREVIA</h2>
+                          <h1>Demandante</h1>
+                      </div>
+                      <div class="body">
+                          <form id="wizard_with_validation" method="POST">
+                              <h3>Informacion Basica</h3>
+                              <fieldset>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibprimernomrbredemandante" required>
+                                          <label class="form-label">Primer Nombre*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibsegundonomrbredemandante">
+                                          <label class="form-label">Segundo Nombre</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibapellidopaternodemandante" required>
+                                          <label class="form-label">Apellido paterno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipapellidomaternodemandante" required>
+                                          <label class="form-label">Apellido materno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipibdemandanteci" required>
+                                          <label class="form-label">Cedula de Identidad*</label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Sexo</h1>
+                                    <input name="ipibrbsexo" type="radio" id="rbsexomasculino" >
+                                    <label for="rbsexomasculino">Masculino</label>
+                                    <input name="ipibrbsexo" type="radio" id="rbsexofemenino">
+                                    <label for="rbsexofemenino">Femenino</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Dirección:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Calle:" name="ipibdemandantediraccioncalle">
+                                                    </div>
+                                                  </div>
+                                                </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Calle:" name="ipibdemandantediraccioncalle">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="number" class="form-control" value="" placeholder="Número:" name="ipibdemandantedireccionnumero">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Zona:" name="ipibdemandantedireccionzona">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipibdemandantedireccionciudad">
-                                                      </div>
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Número:" name="ipibdemandantedireccionnumero">
                                                     </div>
                                                   </div>
                                                 </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="number" class="form-control" name="ipibdemandanteedad" required>
-                                            <label class="form-label">Edad*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="ipibdemandantecorreo">
-                                            <label class="form-label">Correo Electrónico</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="ipibdemandanteocupacion">
-                                            <label class="form-label">Ocupación</label>
-                                        </div>
-                                    </div>
-                                    <h5>Favor indique como podemos comunicarnos con Ud. acerca de su proceso:</h5>
-                                    <div class="form-group form-float">
-                                            <label class="form-label"></label>
-                                            <div class="row clearfix">
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Zona:" name="ipibdemandantedireccionzona">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipibdemandantedireccionciudad">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipibdemandanteedad" required>
+                                          <label class="form-label">Edad*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibdemandantecorreo">
+                                          <label class="form-label">Correo Electrónico</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibdemandanteocupacion">
+                                          <label class="form-label">Ocupación</label>
+                                      </div>
+                                  </div>
+                                  <h5>Favor indique como podemos comunicarnos con Ud. acerca de su proceso:</h5>
+                                  <div class="form-group form-float">
+                                          <label class="form-label"></label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-3">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Teléfono de casa:" name="ipibdemandantetelefonocasa">
+                                                    </div>
+                                                  </div>
+                                                </div>
                                                 <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="number" class="form-control" value="" placeholder="Teléfono de casa:" name="ipibdemandantetelefonocasa">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="number" class="form-control" value="" placeholder="Teléfono de celular:" name="ipibdemandantetelefonocelular">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-3">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="number" class="form-control" value="" placeholder="Teléfono de trabajo:" name="ipibdemandantetelefonotrabajo">
-                                                      </div>
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Teléfono de celular:" name="ipibdemandantetelefonocelular">
                                                     </div>
                                                   </div>
                                                 </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="ipibparroquiamatrimonio" required>
-                                            <label class="form-label">¿Parroquia donde se celebró el matrimonio?*</label>
-                                        </div>
-                                    </div>
-                                    <div class="input-group">
-                                      <h5>¿Fecha de celebración de su matrimonio?</h5>
-                                      <div class="input-group">
-                                      <span class="input-group-addon">
-                                          <i class="material-icons">date_range</i>
-                                      </span>
+                                                <div class="col-sm-3">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Teléfono de trabajo:" name="ipibdemandantetelefonotrabajo">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="form-group form-float">
                                       <div class="form-line">
-                                          <input type="text" class="form-control date" placeholder="30/07/2016" name="ipibfechamatrimonio" required>
+                                          <input type="text" class="form-control" name="ipibparroquiamatrimonio" required>
+                                          <label class="form-label">¿Parroquia donde se celebró el matrimonio?*</label>
                                       </div>
-                                      </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>¿Fecha de celebración de su matrimonio?</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipibfechamatrimonio" required>
                                     </div>
-                                </fieldset>
-                                <h3>Informacion Biografica</h3>
-                                <fieldset>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_primer_nombre" required>
-                                            <label class="form-label">Fecha de nacimiento:</label>
-                                            <div class="help-info">Formato de la fecha: DD-MM-AAAA</div>
-                                        </div>
                                     </div>
-                                    <div class="form-group form-float">
-                                            <label class="form-label">Lugar de nacimiento:</label>
-                                            <div class="row clearfix">
+                                  </div>
+                              </fieldset>
+                              <h3>Información Biográfica</h3>
+                              <fieldset>
+                                <div class="input-group">
+                                  <h5>Fecha de nacimiento</h5>
+                                  <div class="input-group">
+                                  <span class="input-group-addon">
+                                      <i class="material-icons">date_range</i>
+                                  </span>
+                                  <div class="form-line">
+                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipbfdemandantefechanacimiento" required>
+                                  </div>
+                                  </div>
+                                </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Lugar de nacimiento:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipbfdemandanteciudadnacimiento" required>
+                                                    </div>
+                                                  </div>
+                                                </div>
                                                 <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Ciudad:">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Departamento:">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Estado:">
-                                                      </div>
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Departamento:" name="ipbfdemandantedepartamentonacimiento" required>
                                                     </div>
                                                   </div>
                                                 </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Estado:" name="ipbfdemandanteestadonacimiento"required>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Recibió el bautismo antes de que su matrimonio se efectuara?</h1>
+                                    <input name="ipbfrbbautismo" type="radio" id="rbbautismosi" >
+                                    <label for="rbbautismosi">Si</label>
+                                    <input name="ipbfrbbautismo" type="radio" id="rbbautismono">
+                                    <label for="rbbautismono">No</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Si es así ¿En que religión o denominación fue bautizado?<br>Católica:</br></h1>
+                                    <input name="ipbfrbbautizado" type="radio" id="rbbautizadosi" >
+                                    <label for="rbbautizadosi">Si</label>
+                                    <input name="ipbfrbbautizado" type="radio" id="rbbautizadono">
+                                    <label for="rbbautizadono">No</label>
+                                    <div class="form-line focused">
+                                      <h5>Si la repuesta es no diga de que iglesia:</h5>
+                                        <input type="text" class="form-control" value="" placeholder="Otro:" name="ipbfdemandantebautizoiglesia">
                                     </div>
-                                    <div class="demo-radio-button">
-                                      <h5>¿Recibió el bautismo antes de que su matrimonio se efectuara?</h1>
-                                      <input name="group1" type="radio" id="radio_1" >
-                                      <label for="radio_1">Si</label>
-                                      <input name="group1" type="radio" id="radio_2">
-                                      <label for="radio_2">No</label>
-                                    </div>
-                                    <div class="demo-radio-button">
-                                      <h5>Si es así ¿En que religión o denominación fue bautizado?<br>Católica:</br></h1>
-                                      <input name="group2" type="radio" id="radio_3" >
-                                      <label for="radio_3">Si</label>
-                                      <input name="group2" type="radio" id="radio_4">
-                                      <label for="radio_4">No</label>
-                                      <div class="form-line focused">
-                                        <h5>Si la repuesta es <b>no</b> diga de que iglesia:</h5>
-                                          <input type="text" class="form-control" value="" placeholder="Otro:">
-                                      </div>
-                                    </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>Fecha del bautismo:</h5>
                                     <div class="input-group">
-                                      <h5>Fecha del bautismo:</h5>
-                                      <div class="input-group">
-                                      <span class="input-group-addon">
-                                          <i class="material-icons">date_range</i>
-                                      </span>
-                                      <div class="form-line">
-                                          <input type="text" class="form-control date" placeholder="30/07/2016">
-                                      </div>
-                                      </div>
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipbfdemandantefechabautismo">
                                     </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipbfdemandantediocesisbautismo" required>
+                                          <label class="form-label">Diocesis:</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label"></label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Libro:" name="ipbfdemandantelibrobautismo">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Página:" name="ipbfdemandantepaginabautismo">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Número:" name="ipbfdemandantenumerobautismo">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Es usted católico practicante?</h5>
+                                          <input type="text" class="form-control" name="ipbfdemandantecatolico">
+                                          <label class="form-label"></label>
+                                      </div>
+                                      <div class="demo-radio-button">
+                                        <h5>¿Pertenece o frecuenta algún grupo o movimiento eclesiástico?</br></h1>
+                                        <input name="ipbfrbgrupoeclesiastico" type="radio" id="rbgrupoeclesiasticosi">
+                                        <label for="rbgrupoeclesiasticosi">Si</label>
+                                        <input name="ipbfrbgrupoeclesiastico" type="radio" id="rbgrupoeclesiasticono">
+                                        <label for="rbgrupoeclesiasticono">No</label>
+                                        <div class="form-line focused">
+                                            <input type="text" class="form-control" value="" placeholder="Si es así especifique:" name="ipbfgrupoespecificacion">
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipbfdemandanteparroquia">
+                                          <label class="form-label">Parroquia:</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipbfdemandantediocesis">
+                                          <label class="form-label">Diócesis:</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipbfdemandanteestado">
+                                          <label class="form-label">Estado:</label>
+                              </fieldset>
 
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandante_lugar" required>
-                                            <label class="form-label">Diocesis:</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                            <label class="form-label"></label>
-                                            <div class="row clearfix">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Libro:">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Página:">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="col-sm-4">
-                                                    <div class="form-group">
-                                                      <div class="form-line focused">
-                                                        <input type="text" class="form-control" value="" placeholder="Número:">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                          <h5>¿Es usted católico practicante?</h5>
-                                            <input type="text" class="form-control" name="demandante_date" required>
-                                            <label class="form-label"></label>
-                                        </div>
-                                        <div class="demo-radio-button">
-                                          <h5>¿Pertenece o frecuenta algún grupo o movimiento eclesiástico?</br></h1>
-                                          <input name="group3" type="radio" id="radio_5">
-                                          <label for="radio_5">Si</label>
-                                          <input name="group3" type="radio" id="radio_6">
-                                          <label for="radio_6">No</label>
-                                          <div class="form-line focused">
-                                              <input type="text" class="form-control" value="" placeholder="Si es así especifique:">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="demandado_domicilio" required>
-                                            <label class="form-label">Parroquia:</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="deman_estado" required>
-                                            <label class="form-label">Diócesis:</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="deman_estado" required>
-                                            <label class="form-label">Estado:</label>
-                                </fieldset>
 
                                 <h3>Historia Familiar</h3>
                                 <fieldset>
-                                  <h3>PADRES</h3>
+
+                                  <!-- DEMANDANTE PADRES -->
+                                  <h2>PADRES</h2>
+                                  <h3>A) DEMANDANTE</h3>
                                     <div class="demo-radio-button">
                                       <h5>¿Sus padres son católicos?</h5>
-                                      <input name="iphfrbpadcat" type="radio" id="rbpadcatsi" >
-                                      <label for="rbpadcatsi">Si</label>
-                                      <input name="iphfrbpadcat" type="radio" id="rbpadcatno">
-                                      <label for="rbpadcatno">No</label>
+                                      <input name="iphfrbpadcatdmt" type="radio" id="rbpadcatdmtsi" >
+                                      <label for="rbpadcatdmtsi">Si</label>
+                                      <input name="iphfrbpadcatdmt" type="radio" id="rbpadcatdmtno">
+                                      <label for="rbpadcatdmtno">No</label>
                                     </div>
                                     <div class="demo-radio-button">
                                       <h5>¿Sus padres están casados por la iglesia católica?</h5>
-                                      <input name="iphfrbcasadcat" type="radio" id="rbcasadcatsi" >
-                                      <label for="rbcasadcatsi">Si</label>
-                                      <input name="iphfrbcasadcat" type="radio" id="rbcasadcatno">
-                                      <label for="rbcasadcatno">No</label>
+                                      <input name="iphfrbcasadcatdmt" type="radio" id="rbcasadcatdmtsi" >
+                                      <label for="rbcasadcatdmtsi">Si</label>
+                                      <input name="iphfrbcasadcatdmt" type="radio" id="rbcasadcatdmtno">
+                                      <label for="rbcasadcatdmtno">No</label>
                                       <div class="form-line focused">
-                                          <input type="text" class="form-control" value="" placeholder="Otro:">
+                                          <input type="text" class="form-control" value="" placeholder="Otro:" name="iphfcatotrodmt">
                                       </div>
                                     </div>
                                     <div class="demo-radio-button">
                                       <h5>¿El matrimonio de sus padres es un matrimonio de toda la vida?</h5>
-                                      <input name="iphfrbpadmat" type="radio" id="rbpadmatsi" >
-                                      <label for="rbpadmatsi">Si</label>
-                                      <input name="iphfrbpadmat" type="radio" id="rbpadmatno">
-                                      <label for="rbpadmatno">No</label>
+                                      <input name="iphfrbpadmatdmt" type="radio" id="rbpadmatdmtsi" >
+                                      <label for="rbpadmatdmtsi">Si</label>
+                                      <input name="iphfrbpadmatdmt" type="radio" id="rbpadmatdmtno">
+                                      <label for="rbpadmatdmtno">No</label>
                                       <div class="form-line focused">
                                         <h5>Si no es así ¿Cómo ha sido el matrimonio de sus padres?</h5>
-                                          <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfmatrimonio">
+                                          <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfmatrimoniodmt">
                                       </div>
                                     </div>
                                     <div class="form-line focused">
                                       <h5>¿Si sus padres se han separado, que edad tenía usted al momento de la separación?</h5>
-                                        <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfseparacion">
+                                        <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfseparaciondmt">
                                     </div>
                                     <div class="demo-radio-button">
                                       <h5>¿Sus padres son católicos practicantes?</h1>
                                       <p>
                                       <h6>Padre:</h6>
-                                      <input name="iphfrbcatpracpadre" type="radio" id="rbcatpracpadresi" >
-                                      <label for="rbcatpracpadresi">Si</label>
-                                      <input name="iphfrbcatpracpadre" type="radio" id="rbcatpracpadreno">
-                                      <label for="rbcatpracpadreno">No</label>
+                                      <input name="iphfrbcatpracpadredmt" type="radio" id="rbcatpracpadredmtsi" >
+                                      <label for="rbcatpracpadredmtsi">Si</label>
+                                      <input name="iphfrbcatpracpadredmt" type="radio" id="rbcatpracpadredmtno">
+                                      <label for="rbcatpracpadredmtno">No</label>
                                       <div class="form-line focused">
                                       </p>
                                       <p>
                                       <h6>Madre:</h6>
-                                      <input name="iphfrbcatpracmadre" type="radio" id="rbcatpracmadresi" >
-                                      <label for="rbcatpracmadresi">Si</label>
-                                      <input name="iphfrbcatpracmadre" type="radio" id="rbcatpracmadreno">
-                                      <label for="rbcatpracmadreno">No</label>
+                                      <input name="iphfrbcatpracmadredmt" type="radio" id="rbcatpracmadredmtsi" >
+                                      <label for="rbcatpracmadredmtsi">Si</label>
+                                      <input name="iphfrbcatpracmadredmt" type="radio" id="rbcatpracmadredmtno">
+                                      <label for="rbcatpracmadredmtno">No</label>
                                       <div class="form-line focused">
                                       </p>
-                                      <h3>HERMANOS</h3>
+                                      <br>
+                                      <!-- DEMANDADO PADRES -->
+                                      <h3>B) DEMANDADO</h3>
+                                        <div class="demo-radio-button">
+                                          <h5>¿Sus padres son católicos?</h5>
+                                          <input name="iphfrbpadcatdmd" type="radio" id="rbpadcatdmdsi" >
+                                          <label for="rbpadcatdmdsi">Si</label>
+                                          <input name="iphfrbpadcatdmd" type="radio" id="rbpadcatdmdno">
+                                          <label for="rbpadcatdmdno">No</label>
+                                        </div>
+                                        <div class="demo-radio-button">
+                                          <h5>¿Sus padres están casados por la iglesia católica?</h5>
+                                          <input name="iphfrbcasadcatdmd" type="radio" id="rbcasadcatdmdsi" >
+                                          <label for="rbcasadcatdmdsi">Si</label>
+                                          <input name="iphfrbcasadcatdmd" type="radio" id="rbcasadcatdmdno">
+                                          <label for="rbcasadcatdmdno">No</label>
+                                          <div class="form-line focused">
+                                              <input type="text" class="form-control" value="" placeholder="Otro:" name="iphfcatotrodmd">
+                                          </div>
+                                        </div>
+                                        <div class="demo-radio-button">
+                                          <h5>¿El matrimonio de sus padres es un matrimonio de toda la vida?</h5>
+                                          <input name="iphfrbpadmatdmd" type="radio" id="rbpadmatdmdsi" >
+                                          <label for="rbpadmatdmdsi">Si</label>
+                                          <input name="iphfrbpadmatdmd" type="radio" id="rbpadmatdmdno">
+                                          <label for="rbpadmatdmdno">No</label>
+                                          <div class="form-line focused">
+                                            <h5>Si no es así ¿Cómo ha sido el matrimonio de sus padres?</h5>
+                                          </div>
+                                          <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfmatrimoniodmd">
+                                        </div>
+                                        <div class="form-line focused">
+                                          <h5>¿Si sus padres se han separado, que edad tenía usted al momento de la separación?</h5>
+                                            <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfseparaciondmd">
+                                        </div>
+                                        <div class="demo-radio-button">
+                                          <h5>¿Sus padres son católicos practicantes?</h1>
+                                          <p>
+                                          <h6>Padre:</h6>
+                                          <input name="iphfrbcatpracpadredmd" type="radio" id="rbcatpracpadredmdsi" >
+                                          <label for="rbcatpracpadredmdsi">Si</label>
+                                          <input name="iphfrbcatpracpadredmd" type="radio" id="rbcatpracpadredmdno">
+                                          <label for="rbcatpracpadredmdno">No</label>
+                                          <div class="form-line focused">
+                                          </p>
+                                          <p>
+                                          <h6>Madre:</h6>
+                                          <input name="iphfrbcatpracmadredmd" type="radio" id="rbcatpracmadredmdsi" >
+                                          <label for="rbcatpracmadredmdsi">Si</label>
+                                          <input name="iphfrbcatpracmadredmd" type="radio" id="rbcatpracmadredmdno">
+                                          <label for="rbcatpracmadrenodmd">No</label>
+                                          <div class="form-line focused">
+                                          </p>
+                                          <br>
+                                          <br>
+                                          <hr>
+                                      <!-- -->
+
+                                      <h2>HERMANOS</h3>
+                                      <h3>A) DEMANDANTE</h3>
                                       <label class="form-label">¿Cuántos hermanos son, incluido usted?</label>
                                       <div class="row clearfix">
                                           <div class="col-sm-4">
                                               <div class="form-group">
                                                 <div class="form-line focused">
-                                                  <input type="text" class="form-control" value="" placeholder="Varones:" name="iphfhnovar">
+                                                  <input type="text" class="form-control" value="" placeholder="Varones:" name="iphfhnovardmt">
                                                 </div>
                                               </div>
                                           </div>
                                           <div class="col-sm-4">
                                               <div class="form-group">
                                                 <div class="form-line focused">
-                                                  <input type="text" class="form-control" value="" placeholder="Mujeres:" name="iphfhnamuj">
+                                                  <input type="text" class="form-control" value="" placeholder="Mujeres:" name="iphfhnamujdmt">
                                                 </div>
                                               </div>
                                           </div>
                                       </div>
                                       <div class="form-line">
                                           <label class="form-label">¿Qué número ocupa usted entre sus hermanos?</label>
-                                          <input type="number" class="form-control" name="iphfnumher" required>
+                                          <input type="number" class="form-control" name="iphfnumherdmt" required>
                                       </div>
                                       <div class="demo-radio-button">
                                         <h5>¿Ha fracasado el matrimonio de alguno de sus hermanos?</h5>
-                                        <input name="iphfrbmathno" type="radio" id="rbmathnosi" >
-                                        <label for="rbmathnosi">Si</label>
-                                        <input name="iphfrbmathno" type="radio" id="rbmathnono">
-                                        <label for="rbmathnono">No</label>
+                                        <input name="iphfrbmathnodmt" type="radio" id="rbmathnodmtsi" >
+                                        <label for="rbmathnodmtsi">Si</label>
+                                        <input name="iphfrbmathnodmt" type="radio" id="rbmathnodmtno">
+                                        <label for="rbmathnodmtno">No</label>
                                         <div class="form-line focused">
                                           <h5>Expliquese:</h5>
-                                            <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfexpli">
+                                            <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfexplidmt">
                                         </div>
                                       </div>
+                                      <br>
+                                      <!-- -->
+                                      <h3>B) DEMANDADO</h3>
+                                      <label class="form-label">¿Cuántos hermanos son, incluido usted?</label>
+                                      <div class="row clearfix">
+                                          <div class="col-sm-4">
+                                              <div class="form-group">
+                                                <div class="form-line focused">
+                                                  <input type="text" class="form-control" value="" placeholder="Varones:" name="iphfhnovardmd">
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                              <div class="form-group">
+                                                <div class="form-line focused">
+                                                  <input type="text" class="form-control" value="" placeholder="Mujeres:" name="iphfhnamujdmd">
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-line">
+                                          <label class="form-label">¿Qué número ocupa usted entre sus hermanos?</label>
+                                          <input type="number" class="form-control" name="iphfnumherdmd" required>
+                                      </div>
+                                      <div class="demo-radio-button">
+                                        <h5>¿Ha fracasado el matrimonio de alguno de sus hermanos?</h5>
+                                        <input name="iphfrbmathnodmd" type="radio" id="rbmathnodmdsi" >
+                                        <label for="rbmathnodmdsi">Si</label>
+                                        <input name="iphfrbmathnodmd" type="radio" id="rbmathnodmdno">
+                                        <label for="rbmathnodmdno">No</label>
+                                        <div class="form-line focused">
+                                          <h5>Expliquese:</h5>
+                                            <input type="text" class="form-control" value="" placeholder="Detalles:" name="iphfexplidmd">
+                                        </div>
+                                      </div>
+                                      <!-- -->
+
+                                      <div class="form-line">
+                                        <textarea rows="1" class="form-control no-resize auto-growth" name="faobscanon1" placeholder="1. Canon" style="overflow: hidden; word-wrap: break-word; height: 46px;"></textarea>
+                                      </div>
+
+
                                 </fieldset>
+
+
                                 <h3>Noviazgo y matrimonio</h3>
                                 <fieldset>
                                   <label class="form-label">Brevemente ¿Cuándo y cómo conoció a la parte Demandada?</label>
@@ -582,6 +692,12 @@
             <!-- #END# Advanced Form Example With Validation -->
         </div>
     </section>
+
+    <!-- Autosize Plugin Js -->
+    <script src="../../plugins/autosize/autosize.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../../js/pages/forms/basic-form-elements.js"></script>
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
