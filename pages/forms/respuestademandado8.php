@@ -154,32 +154,31 @@ $nombreabogado="Ejemplo abogado";
 <center><font color="#A3A3A3" face="tahoma" size="3">RESPUESTA DEMANDADO</font></center><br>
 <center><font color="#000000" face="tahoma" size="4"><b>Nulidad de Matrimonio</b></font></center>
 <center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
-<font color="#000000" face="times new roman" size="4"><b>En el caso en que el demandado, en segundo señalamiento, no quiera recibir la citación, procederá la declaración de ausencia en juicio del demandado</b></font><br><br><br>
+<font color="#000000" face="times new roman" size="4"><b>CUANDO  EL QUE NO COMPARECE, PARA CONTESTAR  A LA DEMANDA RECONVENCIONAL O CONCORDAR  EL DUBIO, ES EL ACTOR, SE LE HA DE CITAR  DE NUEVO; Y, SI NI EN LA SEGUNDA  VEZ COMPARECE, SE ENTENDERÁ  QUE RENUNCIA  A LA INSTANCIA, A NO SER QUE EL DEMANDADO  O EL FISCAL  INSTE  EN PROSECUCIÓN  DE LA MISMA  (ART. 91).</b></font><br><br><br>
 87<font color="#000000" face="times new roman" size="4">DECRETO: En La Paz,  a <?echo strftime("%d de %B de %Y");?></font><br><br>
-<font size="4" face="times new roman">
-  Habiendo citado al demandado/a <?php echo $demandado;?>, en primero y segundo señalamientos, y habiéndose negado a recibir la citación, sin alegar causa alguna, y sin ninguna justificación, por el presente y a tenor del c. 1592 § 1, le declaramos ausente en juicio y, por tanto, correrán los autos hasta sentencia definitiva.
-<br><br>
-Notifíquese.<br><br>
-
-Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial de que, yo el Notario, doy fe.<br><br><br><br>
-
-
-
-
-<br><br>
-N. N., Vicario Judicial y Presidente
+<font size="4" face="times new roman">No habiendo presentado el actor escrito de contestación a la demanda reconvencional, ni haber comparecido para la litiscontestación, a tenor del n.º del c. 1594, por el presente citamos de nuevo a D./D.ª N. N. para que acuda al tribunal el día ... de ... de ..., y hora de las ...<br>
+<br>
+Le advertimos que, si no compareciere, a tenor del n.º 2.º del mismo canon, presumiremos que renuncia a la instancia.<br>
+Notifíquese a las partes y al Defensor del Vínculo.<br>
+Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial y Presidente, de que yo, el Notario Actuario, doy fe.<br>
 <br><br><br><br><br><br><br><br>
 
 
 
-(Sello)	<?php echo $notarioactuario;?>, Notario Actuario
-<br><br><br><br><br><br>
-NOTIFICACIÓN.—Con esta fecha, ... de ... de ... y por correo envío copia del decreto anterior al Procurador de la parte actora. Lo comunico al Sr. Defensor del Vínculo. Doy fe.
-<br><br><br><br><br><br>
+(Sello)	N. N., Vicario Judicial
+
+<br><br><br><br><br><br><br><br>
 
 
+
+<?php echo $notarioactuario;?>, Notario Actuario
+
+
+<br><br><br><br><br><br><br><br>
+
+
+NOTIFICACIÓN.—Con esta fecha y por correo ordinario envío copia del decreto anterior al Procurador de la parte demandada y reconviniente, D. N. N. y, por correo certificado con acuse de recibo, al Procurador de la parte actora y reconvenida, D. N. N. Lo notifico al Defensor del Vínculo. En ..., a ... de ... de ... Doy fe.<br><br><br>
 <?php echo $notario;?>, Notario
-
 
 </font><br><br><br><br>
                           </textarea>
