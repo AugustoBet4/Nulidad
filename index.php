@@ -60,7 +60,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">SEMINARIO</a>
+                <a class="navbar-brand" href="index.php">SEMINARIO</a>
             </div>
         </div>
     </nav>
@@ -79,7 +79,7 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../nulidad/pages/forms/ingreso.html">Cerrar Sesion</a></a></li>
+                          <li><a href="pages/forms/ingreso.php">Cerrar Sesion<i class="material-icons">input</i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
             <div class="menu">
                 <ul class="list">
                     <li class="active">
-                        <a href="pages/forms/indagacion.html">
+                        <a href="pages/forms/indagacion.php">
                             <i class="material-icons">library_add</i>
                             <span>Nuevo caso</span>
                         </a>
@@ -100,7 +100,7 @@
                             <span>Dar Seguimiento a caso</span>
                         </a>
                         <ul class="ml-menu">
-                            <li class="active">
+                            <li>
                                 <a href="../nulidad/pages/forms/indagacion.php">Indagacion Previa</a>
                             </li>
                             <li>
@@ -110,7 +110,7 @@
                                 <a href="../nulidad/pages/forms/instruccion.php">Fase de Instrucción</a>
                             </li>
                             <li>
-                                <a href="../nulidad/pages/forms/indagacion.php">Fase Alegatoria</a>
+                                <a href="../nulidad/pages/forms/alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li>
                                 <a href="../nulidad/pages/forms/sentencia.php">Fase Decisoria</a>
