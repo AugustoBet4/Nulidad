@@ -142,30 +142,30 @@ $numeroarzobispado="6";
                 <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24">
                     <div class="card">
                         <div class="header">
-                            <h2>DECRETO EDICTO</h2>
+                            <h2>EDICTO A PUBLICAR</h2>
                         </div>
                         <div class="body">
                           <textarea id="tinymce">
                             <BR>
 <center><font color="#A3A3A3" face="tahoma" size="4"><b>INTRODUCTORIA - DOCUMENTOS 1</b></font></center>
-<center><font color="#A3A3A3" face="tahoma" size="3">DECRETO CITACION POR EDICTO</font></center><br>
+<center><font color="#A3A3A3" face="tahoma" size="3">EDICTO</font></center><br>
 <center><font color="#000000" face="tahoma" size="4"><b>Nulidad de Matrimonio</b></font></center>
 <center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
-<font color="#000000" face="times new roman" size="4"><b>DECRETO DEL VICARIO JUDICIAL DISPONIENDO CITAR POR EDICTO
-</b></font><br><br><br>
+<font color="#000000" face="times new roman" size="4"><b>EDICTO A PUBLICAR</b></font><br><br><br>
 <font color="#000000" face="times new roman" size="4">DECRETO:En La Paz,  a <?echo strftime("%d de %B de %Y");?></font><br><br>
 <font size="4" face="times new roman">
-  Ignorándose el paradero actual de <?php echo $demandado;?>, por el presente disponemos se cite al demandado por Edicto, que se insertará en el Diario Jornada de La Paz y se fijará en el tablón de Anuncios del Tribunal Eclesiástico durante siete días, señalándose el día primero del próximo mes y hora de las ..., para la comparecencia ante este Tribunal.<br>
-  Notifiquese.<br>
-  Así lo decretó, mandó y firma el Ilmo. Sr. Vicario Judicial de que yo, el Notario, doy fe.<br>
-</font><br><br><br><br><br><br><br><br><br><br>
+Por el presente se cita y emplaza a <?PHP echo $demandado;?>, cuyo paradero se ignora, para que el día primero del próximo mes de..........comparezca en este TRIBUNAL ECLESIASTICO METROPOLITANO DE LA PAZ a personarse en forma para contestar al escrito de demanda de nulidad de matrimonio interpuesto por su esposo(a) <?php echo $demandante?>, con apercibimiento de los perjuicios que puedan irrogársele de no comparecer por si o por su procurador y abogados legítimamente constituidos.
+</font><br>
+<font size="4" face="times new roman">
+  Se ruega a cuantos pudieran saber del paradero de <?php echo $demandado;?>, procuren hacerle llegar esta citación.
+</font><br><br><br>
+<font color="#000000" face="times new roman" size="4">En La Paz,  a <?echo strftime("%d de %B de %Y");?></font><br><br><br><br><br><br><br><br><br>
 <center><font face="times new roman" size="4">Pbro. Dr. Roberto Boceta Fernández</font></center>
-<center><font face="times new roman" size="4">VICARIO JUDICIAL</font></center><br><br>
-<font face="times new roman" size="4"><?php echo $notarioactuario;?>, Notario Actuario</font><br><br><br><br><br><br><br><br><br><br>
-<font face="times new roman" size="4">Sello</font><br><br><br><br><br><br><br><br><br><br>
-<font face="times new roman" size="4">NOTIFICACIÓN.—Con esta fecha y por correo envío copia del decreto anterior a la parte actora. Lo notifico al Defensor del Vínculo. </font><br><br><br>
-<font face="times new roman" size="4">Doy fe en ..., a ... de ... de ...</font><br><br>
-<font face="times new roman" size="4"><?php echo $notario;?>, Notario</font><br><br>
+<center><font face="times new roman" size="4">VICARIO JUDICIAL</font></center><br><br><br>
+<font face="times new roman" size="4">Sello</font><br><br><br><br><br><br><br>
+<font face="times new roman" size="4"><?php echo $notarioactuario;?>, Notario Actuario</font><br><br><br><br>
+<font face="times new roman" size="4">DILIGENCIA.—La pongo yo, el Cursor del Tribunal Eclesiástico, para hacer constar que con esta fecha ... de ... de ... y a las ... horas fijé en el Tablón de Anuncios de este Tribunal, habiendo permanecido en el mismo hasta el día de la fecha; asimismo entrego tres números del Diario Jornada de los días ... en que dicho edicto se insertó, cumpliendo lo mandado.</font><br><br><br>
+<font face="times new roman" size="4"><?php echo $cursor;?>, Cursor</font><br><br>
                           </textarea>
                         </div>
                     </div>
