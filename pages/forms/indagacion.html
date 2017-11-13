@@ -183,7 +183,7 @@
                                   </div>
                                   <div class="form-group form-float">
                                       <div class="form-line">
-                                          <input type="text" class="form-control" name="ipapellidomaternodemandante" required>
+                                          <input type="text" class="form-control" name="ipibapellidomaternodemandante" required>
                                           <label class="form-label">Apellido materno*</label>
                                       </div>
                                   </div>
@@ -1636,6 +1636,106 @@
                                   </div>
 
                                 </fieldset>
+                                <h3>Estado actual</h3>
+                                <fieldset>
+                                  <h5>¿Cuál es su estado civil actual?</h5>
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilsoltero" >
+                                  <label for="rbestadocivilsoltero">Soltero(a)</label>
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilcomprometido">
+                                  <label for="rbestadocivilcomprometido">Comprometido(a)</label>
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilconviviendo">
+                                  <label for="rbestadocivilconviviendo">Conviviendo</label>
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilcasadocivilmente" >
+                                  <label for="rbestadocivilcasadocivilmente">Casado(a) civilmente</label>
+                                  <h5>Si está casado(a) nuevamente, conviviendo o comprometido(a)</h5>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="ipeaprimernombre">
+                                        <label class="form-label">Primer Nombre*</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="ipeasegundonomrbre">
+                                        <label class="form-label">Segundo Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="ipeaapellidopaterno">
+                                        <label class="form-label">Apellido paterno*</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="ipeaapellidomaterno">
+                                        <label class="form-label">Apellido materno*</label>
+                                    </div>
+                                </div>
+                                <div class="demo-radio-button">
+                                  <h5>Sexo</h1>
+                                  <input name="ipearbsexo" type="radio" id="rbeasexomasculino" required>
+                                  <label for="rbeasexomasculino">Masculino</label>
+                                  <input name="ipearbsexo" type="radio" id="rbeasexofemenino" required>
+                                  <label for="rbeasexofemenino">Femenino</label>
+                                </div>
+                                <br>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="ipeatiempojuntos">
+                                        <label class="form-label">¿Cuánto tiempo llevan juntos?</label>
+                                    </div>
+                                </div>
+                                <div class="demo-radio-button">
+                                  <h5>¿Tienen Hijos?</h1>
+                                  <input name="ipearbhijos" type="radio" id="rbhijossi" required>
+                                  <label for="rbhijossi">Si</label>
+                                  <input name="ipearbhijos" type="radio" id="rbhijosno" required>
+                                  <label for="rbhijosno">No</label>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="number" class="form-control" name="ipeanumerohijos">
+                                        <label class="form-label">¿Cuántos hijos?</label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                      <h5>Edades de los hijos</h5>
+                                        <input type="text" class="form-control" name="ipeaedadeshijos" placeholder="2/18/25(años)">
+                                        <label class="form-label"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="ipeareligionconyuge">
+                                        <label class="form-label">Religión de su actual ó futuro(a) cónyuge</label>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                  <h5>Fecha de nacimiento</h5>
+                                  <div class="input-group">
+                                  <span class="input-group-addon">
+                                      <i class="material-icons">date_range</i>
+                                  </span>
+                                  <div class="form-line">
+                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipeafechanacimiento">
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="demo-radio-button">
+                                  <h5>Si no es católico(a)¿está usted o su actual/futuro(a)cónyuge en el programa católico Rito de iniciación cristiana para adultos?</h1>
+                                  <input name="ipearbrito" type="radio" id="rbritosi" required>
+                                  <label for="rbritosi">Si</label>
+                                  <input name="ipearbrito" type="radio" id="rbritono" required>
+                                  <label for="rbritono">No</label>
+                                  <h5>Si es así, ¿En que parroquia?</h5>
+                                    <input type="text" class="form-control" value="" placeholder="Otro:" name="ipeaparroquia">
+                                </div>
+
+
+                                </fieldset>
+
 
                               </form>
                               </div>
