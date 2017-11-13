@@ -48,7 +48,7 @@
             <p>Porfavor espere...</p>
         </div>
     </div>
-    <!-- #END# Page Loader  -->
+    <!-- #END# Page Loader -->
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
@@ -183,7 +183,7 @@
                                   </div>
                                   <div class="form-group form-float">
                                       <div class="form-line">
-                                          <input type="text" class="form-control" name="ipapellidomaternodemandante" required>
+                                          <input type="text" class="form-control" name="ipibapellidomaternodemandante" required>
                                           <label class="form-label">Apellido materno*</label>
                                       </div>
                                   </div>
@@ -1636,7 +1636,103 @@
                                   </div>
 
                                 </fieldset>
+                                <h3>Hijos</h3>
+                                <fieldset>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Si no hubo hijos durante su matrimonio, ¿por qué no?</h5>
+                                          <input type="text" class="form-control" name="iphjhijosmat">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Cuántos niños tuvieron durante su matrimonio?</h5>
+                                          <input type="text" class="form-control" name="iphjninios">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Cuántos hijos son todavía menores de edad?</h5>
+                                          <input type="text" class="form-control" name="iphjhijosmenores">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Quién tiene ahora la custodia legal de los niños?</h5>
+                                          <input type="text" class="form-control" name="iphjcustodia">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>¿Ha cumplido usted con las visitas / custodia de los niños?</h5>
+                                          <input type="text" class="form-control" name="iphjvisita">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Está usted obligado a pagar manutención de niños y/o cónyuge fijada por el juez?</h5>
+                                    <input name="iphjrbmanutencion" type="radio" id="rbmanutencionsi" required>
+                                    <label for="rbmanutencionsi">Si</label>
+                                    <input name="iphjrbmanutencion" type="radio" id="rbmanutencionno" required>
+                                    <label for="rbmanutencionno">No</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Ha cumplido con el pago de pensiones?</h5>
+                                    <input name="iphjrbpensiones" type="radio" id="rbpensionesi" required>
+                                    <label for="rbpensionesi">Si</label>
+                                    <input name="iphjrbpensiones" type="radio" id="rbpensioneno" required>
+                                    <label for="rbpensioneno">No</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Hay alguna querella pendiente o en proceso en el Tribunal Civil entre usted y la parte demandada?</h5>
+                                    <input name="iphjrbtribunal" type="radio" id="rbtribunalsi" required>
+                                    <label for="rbtribunalsi">Si</label>
+                                    <input name="iphjrbtribunal" type="radio" id="rbtribunalno" required>
+                                    <label for="rbtribunalno">No</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Si es así, por favor descríbalo brevemente:</h5>
+                                          <input type="text" class="form-control" name="iphjdesp">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Hay en la actualidad una orden de “protección contra abuso”, “orden de restricción”, o una orden similar del Juez en
+                                    vigor entre usted y la parte Demandada?</h5>
+                                    <input name="iphjlargo" type="radio" id="rblargosi" required>
+                                    <label for="rblargosi">Si</label>
+                                    <input name="iphjlargo" type="radio" id="rblargono" required>
+                                    <label for="rblargono">No</label>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Existió alguna vez esa orden?</h5>
+                                    <input name="iphjorden" type="radio" id="rbordensi" required>
+                                    <label for="rbordensi">Si</label>
+                                    <input name="iphjorden" type="radio" id="rbordenno" required>
+                                    <label for="rbordenno">No</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Si es así, describa los hechos que han causado esta decisión</h5>
+                                          <input type="text" class="form-control" name="iphjhechos">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Numero de hijos</h5>
+                                          <input type="number" class="form-control" name="iphjhechos">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
 
+
+                                </fieldset>
                               </form>
                               </div>
                               </div>
