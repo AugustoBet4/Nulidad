@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 RODRI
+=======
+#PRIMEEEEEEEEEEEEEEEEEE
+>>>>>>> dbe8a2581d76ccc00da86556a7712b137ad564a7
 HISTORIA FAMILIAR
 DEMANDANTE
 ¿Sus padres son catolicos?
