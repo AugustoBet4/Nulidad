@@ -160,7 +160,7 @@ Parroquia o lugar donde se contrajo matrimonio
 Ciudad
   ipnmciudad
 
-Departamento 
+Departamento
   ipnmdepart
 
 Estado
@@ -187,3 +187,53 @@ Si hubo un matrimonio civil antes del matrimonio de la Iglesia, fecha
 
 Duracion del Noviazgo
   ipnmduracion
+
+
+----------------------------------------------
+HIJOS
+
+Si no hubo hijos durante su matrimonio, ¿por qué no?
+  iphjhijosmat
+
+¿Cuántos niños tuvieron durante su matrimonio?
+  iphjninios
+
+¿Cuántos hijos son todavía menores de edad?
+  iphjhijosmenores
+
+¿Quién tiene ahora la custodia legal de los niños?
+  iphjcustodia
+
+¿Ha cumplido usted con las visitas / custodia de los niños?
+  iphjvisita
+
+¿Está usted obligado a pagar manutención de niños y/o cónyuge fijada por el juez?
+  iphjrbmanutencion
+    si  rbmanutencionsi
+    no  rbmanutencionno
+
+¿Ha cumplido con el pago de pensiones?
+  iphjrbpensiones
+    si  rbpensionesi
+    no  rbpensioneno
+
+¿Hay alguna querella pendiente o en proceso en el Tribunal Civil entre usted y la parte demandada?
+  iphjrbtribunal
+    si  rbtribunalsi
+    no  rbtribunalsi
+
+Si es así, por favor descríbalo brevemente:
+  iphjdesp
+
+¿Hay en la actualidad una orden de “protección contra abuso”, “orden de restricción”, o una orden similar del Juez en vigor entre usted y la parte Demandada?
+  iphjlargo
+    si  rblargosi
+    no  rblargono
+
+¿Existió alguna vez esa orden?
+  iphjorden
+    si  rbordensi
+    no  rbordenno
+
+Si es así, describa los hechos que han causado esta decisión.
+  iphjhechos
