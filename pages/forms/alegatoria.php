@@ -39,6 +39,18 @@
   $faobscanon3;
   $faobscanon4;
   $faobscanon5;
+  $matrimonio = "LOPEZ-PEREZ";
+
+  if(!empty($_FILES)){
+    $targetDir = "../../Documentos/".$matrimonio."/";
+    $fileName = $_FILES['file']['name'];
+    $targetFile = $targetDir.$fileName;
+
+    if (!file_exists($targetDir)) {
+      mkdir($targetDir, 0777, true);
+    }
+    move_uploaded_file($_FILES['file']['tmp_name'],$targetFile);
+    }
 ?>
 <html>
 
@@ -141,7 +153,7 @@
             <div class="menu">
                 <ul class="list">
                     <li>
-                        <a href="../../index.html">
+                        <a href="../../index.php">
                             <i class="material-icons">library_add</i>
                             <span>Caso nuevo</span>
                         </a>
@@ -170,7 +182,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="../forms/buscador.html">
+                        <a href="../forms/buscador.php">
                             <i class="material-icons">search</i>
                             <span>Buscar caso</span>
                         </a>
@@ -469,7 +481,7 @@
                         <h3>Ingreso de documentación</h3>
                       </div>
                       <div class="body">
-                        <form action="/" id="frmFileUpload" class="dropzone dz-clickable" method="post" enctype="multipart/form-data">
+                        <form action="alegatoria.php" id="frmFileUpload" enctype="multipart/form-data" class="dropzone dz-clickable" method="post" enctype="multipart/form-data">
                                 <div class="dz-message">
                                     <div class="drag-icon-cph">
                                         <i class="material-icons">touch_app</i>
