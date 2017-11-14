@@ -30,3 +30,18 @@ En términos generales, ¿qué estaría esta persona dispuesta a declarar al Tri
 
 ¿Está de acuerdo esta persona en ser testigo?
   ipsttestigo
+/////////////////// 2,3,4,5 --> las demas variables
+
+¿Consultó a un Sacerdote, Psicólogo(a), Psiquiatra, Trabajador(a) Social?
+  ipstrperitos
+    no  rbprno
+    si1 rbprsi1
+    si2 rbprsi2
+    si3 rbprsi3
+
+¿Consultaron a un doctor en medicina o a un especialista en la salud (sobre asuntos relacionados a este matrimonio) en los últimos 5 años?
+  ipstrperitosuno
+    no  rbprunono
+    si1 rbprunosi1
+    si2 rbprunosi2
+    si3 rbprunosi3

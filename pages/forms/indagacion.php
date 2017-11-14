@@ -322,9 +322,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>Sexo</h1>
-                                    <input name="ipibrbsexo1" type="radio" id="rbsexomasculino1" required>
+                                    <input name="ipibrbsexo1" type="radio" id="rbsexomasculino1"  value="Masculino" required>
                                     <label for="rbsexomasculino1">Masculino</label>
-                                    <input name="ipibrbsexo1" type="radio" id="rbsexofemenino1" required>
+                                    <input name="ipibrbsexo1" type="radio" id="rbsexofemenino1"  value="Femenino" required>
                                     <label for="rbsexofemenino1">Femenino</label>
                                   </div>
                                   <div class="form-group form-float">
@@ -380,9 +380,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Se comunica regularmente con la parte Demandada?</h1>
-                                    <input name="ipibrbcomunicacion" type="radio" id="rbcomunicacionsi" required>
+                                    <input name="ipibrbcomunicacion" type="radio" id="rbcomunicacionsi"  value="Si" required>
                                     <label for="rbcomunicacionsi">Si</label>
-                                    <input name="ipibrbcomunicacion" type="radio" id="rbcomunicacionno" required>
+                                    <input name="ipibrbcomunicacion" type="radio" id="rbcomunicacionno"  value="No" required>
                                     <label for="rbcomunicacionno">No</label>
                                   </div>
                                   <div class="form-group form-float">
@@ -440,16 +440,16 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Recibió el bautismo antes de que su matrimonio se efectuara?</h1>
-                                    <input name="ipbfrbbautismo" type="radio" id="rbbautismosi" required>
+                                    <input name="ipbfrbbautismo" type="radio" id="rbbautismosi"  value="Si" required>
                                     <label for="rbbautismosi">Si</label>
-                                    <input name="ipbfrbbautismo" type="radio" id="rbbautismono" required>
+                                    <input name="ipbfrbbautismo" type="radio" id="rbbautismono"  value="No" required>
                                     <label for="rbbautismono">No</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>Si es así ¿En que religión o denominación fue bautizado?<br>Católica:</br></h1>
-                                    <input name="ipbfrbbautizado" type="radio" id="rbbautizadosi" required>
+                                    <input name="ipbfrbbautizado" type="radio" id="rbbautizadosi"  value="Si" required>
                                     <label for="rbbautizadosi">Si</label>
-                                    <input name="ipbfrbbautizado" type="radio" id="rbbautizadono" required>
+                                    <input name="ipbfrbbautizado" type="radio" id="rbbautizadono"  value="No" required>
                                     <label for="rbbautizadono">No</label>
                                     <div class="form-line focused">
                                       <h5>Si la repuesta es no diga de que iglesia:</h5>
@@ -507,9 +507,9 @@
                                       </div>
                                       <div class="demo-radio-button">
                                         <h5>¿Pertenece o frecuenta algún grupo o movimiento eclesiástico?</br></h1>
-                                        <input name="ipbfrbgrupoeclesiastico" type="radio" id="rbgrupoeclesiasticosi" required>
+                                        <input name="ipbfrbgrupoeclesiastico" type="radio" id="rbgrupoeclesiasticosi"  value="Si" required>
                                         <label for="rbgrupoeclesiasticosi">Si</label>
-                                        <input name="ipbfrbgrupoeclesiastico" type="radio" id="rbgrupoeclesiasticono" required>
+                                        <input name="ipbfrbgrupoeclesiastico" type="radio" id="rbgrupoeclesiasticono"  value="No" required>
                                         <label for="rbgrupoeclesiasticono">No</label>
                                         <div class="form-line focused">
                                             <input type="text" class="form-control" value="" placeholder="Si es así especifique:" name="ipbfgrupoespecificacion">
@@ -572,16 +572,16 @@
                                         </div>
                                         <div class="demo-radio-button">
                                           <h5>¿Recibió el bautismo antes de que su matrimonio se efectuara?</h1>
-                                          <input name="ipbfrbbautismo1" type="radio" id="rbbautismosi1" required>
+                                          <input name="ipbfrbbautismo1" type="radio" id="rbbautismosi1"  value="Si" required>
                                           <label for="rbbautismosi1">Si</label>
-                                          <input name="ipbfrbbautismo1" type="radio" id="rbbautismono1" required>
+                                          <input name="ipbfrbbautismo1" type="radio" id="rbbautismono1"  value="No" required>
                                           <label for="rbbautismono1">No</label>
                                         </div>
                                         <div class="demo-radio-button">
                                           <h5>Si es así ¿En que religión o denominación fue bautizado?<br>Católica:</br></h1>
-                                          <input name="ipbfrbbautizado1" type="radio" id="rbbautizadosi1" required>
+                                          <input name="ipbfrbbautizado1" type="radio" id="rbbautizadosi1"  value="Si" required>
                                           <label for="rbbautizadosi1">Si</label>
-                                          <input name="ipbfrbbautizado1" type="radio" id="rbbautizadono1" required>
+                                          <input name="ipbfrbbautizado1" type="radio" id="rbbautizadono1"  value="No" required>
                                           <label for="rbbautizadono1">No</label>
                                           <div class="form-line focused">
                                             <h5>Si la repuesta es no diga de que iglesia:</h5>
@@ -639,9 +639,9 @@
                                             </div>
                                             <div class="demo-radio-button">
                                               <h5>¿Pertenece o frecuenta algún grupo o movimiento eclesiástico?</br></h1>
-                                              <input name="ipbfrbgrupoeclesiastico1" type="radio" id="rbgrupoeclesiasticosi1" required>
+                                              <input name="ipbfrbgrupoeclesiastico1" type="radio" id="rbgrupoeclesiasticosi1"  value="Si" required>
                                               <label for="rbgrupoeclesiasticosi1">Si</label>
-                                              <input name="ipbfrbgrupoeclesiastico1" type="radio" id="rbgrupoeclesiasticono1" required>
+                                              <input name="ipbfrbgrupoeclesiastico1" type="radio" id="rbgrupoeclesiasticono1"  value="No" required>
                                               <label for="rbgrupoeclesiasticono1">No</label>
                                               <div class="form-line focused">
                                                   <input type="text" class="form-control" value="" placeholder="Si es así especifique:" name="ipbfgrupoespecificacion1">
@@ -675,16 +675,16 @@
                                   <h3>A) DEMANDANTE</h3>
                                     <div class="demo-radio-button">
                                       <h5>¿Sus padres son católicos?</h5>
-                                      <input name="iphfrbpadcatdmt" type="radio" id="rbpadcatdmtsi" required>
+                                      <input name="iphfrbpadcatdmt" type="radio" id="rbpadcatdmtsi"  value="Si" required>
                                       <label for="rbpadcatdmtsi">Si</label>
-                                      <input name="iphfrbpadcatdmt" type="radio" id="rbpadcatdmtno" required>
+                                      <input name="iphfrbpadcatdmt" type="radio" id="rbpadcatdmtno"  value="No" required>
                                       <label for="rbpadcatdmtno">No</label>
                                     </div>
                                     <div class="demo-radio-button">
                                       <h5>¿Sus padres están casados por la iglesia católica?</h5>
-                                      <input name="iphfrbcasadcatdmt" type="radio" id="rbcasadcatdmtsi" required>
+                                      <input name="iphfrbcasadcatdmt" type="radio" id="rbcasadcatdmtsi"  value="Si" required>
                                       <label for="rbcasadcatdmtsi">Si</label>
-                                      <input name="iphfrbcasadcatdmt" type="radio" id="rbcasadcatdmtno" required>
+                                      <input name="iphfrbcasadcatdmt" type="radio" id="rbcasadcatdmtno"  value="No" required>
                                       <label for="rbcasadcatdmtno">No</label>
                                       <div class="form-line focused">
                                           <input type="text" class="form-control" value="" placeholder="Otro:" name="iphfcatotrodmt">
@@ -692,9 +692,9 @@
                                     </div>
                                     <div class="demo-radio-button">
                                       <h5>¿El matrimonio de sus padres es un matrimonio de toda la vida?</h5>
-                                      <input name="iphfrbpadmatdmt" type="radio" id="rbpadmatdmtsi" required>
+                                      <input name="iphfrbpadmatdmt" type="radio" id="rbpadmatdmtsi"  value="Si" required>
                                       <label for="rbpadmatdmtsi">Si</label>
-                                      <input name="iphfrbpadmatdmt" type="radio" id="rbpadmatdmtno" required>
+                                      <input name="iphfrbpadmatdmt" type="radio" id="rbpadmatdmtno"  value="No" required>
                                       <label for="rbpadmatdmtno">No</label>
                                       <div class="form-line focused">
                                         <h5>Si no es así ¿Cómo ha sido el matrimonio de sus padres?</h5>
@@ -709,17 +709,17 @@
                                       <h5>¿Sus padres son católicos practicantes?</h1>
                                       <p>
                                       <h6>Padre:</h6>
-                                      <input name="iphfrbcatpracpadredmt" type="radio" id="rbcatpracpadredmtsi" required>
+                                      <input name="iphfrbcatpracpadredmt" type="radio" id="rbcatpracpadredmtsi"  value="Si" required>
                                       <label for="rbcatpracpadredmtsi">Si</label>
-                                      <input name="iphfrbcatpracpadredmt" type="radio" id="rbcatpracpadredmtno" required>
+                                      <input name="iphfrbcatpracpadredmt" type="radio" id="rbcatpracpadredmtno"  value="No" required>
                                       <label for="rbcatpracpadredmtno">No</label>
                                       <div class="form-line focused">
                                       </p>
                                       <p>
                                       <h6>Madre:</h6>
-                                      <input name="iphfrbcatpracmadredmt" type="radio" id="rbcatpracmadredmtsi" required>
+                                      <input name="iphfrbcatpracmadredmt" type="radio" id="rbcatpracmadredmtsi"  value="Si" required>
                                       <label for="rbcatpracmadredmtsi">Si</label>
-                                      <input name="iphfrbcatpracmadredmt" type="radio" id="rbcatpracmadredmtno" required>
+                                      <input name="iphfrbcatpracmadredmt" type="radio" id="rbcatpracmadredmtno"  value="No" required>
                                       <label for="rbcatpracmadredmtno">No</label>
                                       <div class="form-line focused">
                                       </p>
@@ -728,16 +728,16 @@
                                       <h3>B) DEMANDADO</h3>
                                         <div class="demo-radio-button">
                                           <h5>¿Sus padres son católicos?</h5>
-                                          <input name="iphfrbpadcatdmd" type="radio" id="rbpadcatdmdsi" required>
+                                          <input name="iphfrbpadcatdmd" type="radio" id="rbpadcatdmdsi"  value="Si" required>
                                           <label for="rbpadcatdmdsi">Si</label>
-                                          <input name="iphfrbpadcatdmd" type="radio" id="rbpadcatdmdno" required>
+                                          <input name="iphfrbpadcatdmd" type="radio" id="rbpadcatdmdno"  value="No" required>
                                           <label for="rbpadcatdmdno">No</label>
                                         </div>
                                         <div class="demo-radio-button">
                                           <h5>¿Sus padres están casados por la iglesia católica?</h5>
-                                          <input name="iphfrbcasadcatdmd" type="radio" id="rbcasadcatdmdsi" required>
+                                          <input name="iphfrbcasadcatdmd" type="radio" id="rbcasadcatdmdsi"  value="Si" required>
                                           <label for="rbcasadcatdmdsi">Si</label>
-                                          <input name="iphfrbcasadcatdmd" type="radio" id="rbcasadcatdmdno" required>
+                                          <input name="iphfrbcasadcatdmd" type="radio" id="rbcasadcatdmdno"  value="No" required>
                                           <label for="rbcasadcatdmdno">No</label>
                                           <div class="form-line focused">
                                               <input type="text" class="form-control" value="" placeholder="Otro:" name="iphfcatotrodmd">
@@ -745,9 +745,9 @@
                                         </div>
                                         <div class="demo-radio-button">
                                           <h5>¿El matrimonio de sus padres es un matrimonio de toda la vida?</h5>
-                                          <input name="iphfrbpadmatdmd" type="radio" id="rbpadmatdmdsi" required>
+                                          <input name="iphfrbpadmatdmd" type="radio" id="rbpadmatdmdsi"  value="Si" required>
                                           <label for="rbpadmatdmdsi">Si</label>
-                                          <input name="iphfrbpadmatdmd" type="radio" id="rbpadmatdmdno" required>
+                                          <input name="iphfrbpadmatdmd" type="radio" id="rbpadmatdmdno"  value="No" required>
                                           <label for="rbpadmatdmdno">No</label>
                                           <div class="form-line focused">
                                             <h5>Si no es así ¿Cómo ha sido el matrimonio de sus padres?</h5>
@@ -762,17 +762,17 @@
                                           <h5>¿Sus padres son católicos practicantes?</h1>
                                           <p>
                                           <h6>Padre:</h6>
-                                          <input name="iphfrbcatpracpadredmd" type="radio" id="rbcatpracpadredmdsi" required>
+                                          <input name="iphfrbcatpracpadredmd" type="radio" id="rbcatpracpadredmdsi"  value="Si" required>
                                           <label for="rbcatpracpadredmdsi">Si</label>
-                                          <input name="iphfrbcatpracpadredmd" type="radio" id="rbcatpracpadredmdno" required>
+                                          <input name="iphfrbcatpracpadredmd" type="radio" id="rbcatpracpadredmdno"  value="No" required>
                                           <label for="rbcatpracpadredmdno">No</label>
                                           <div class="form-line focused">
                                           </p>
                                           <p>
                                           <h6>Madre:</h6>
-                                          <input name="iphfrbcatpracmadredmd" type="radio" id="rbcatpracmadredmdsi" required>
+                                          <input name="iphfrbcatpracmadredmd" type="radio" id="rbcatpracmadredmdsi"  value="Si" required>
                                           <label for="rbcatpracmadredmdsi">Si</label>
-                                          <input name="iphfrbcatpracmadredmd" type="radio" id="rbcatpracmadredmdno" required>
+                                          <input name="iphfrbcatpracmadredmd" type="radio" id="rbcatpracmadredmdno"  value="No" required>
                                           <label for="rbcatpracmadredmdno">No</label>
                                           <div class="form-line focused">
                                           </p>
@@ -806,9 +806,9 @@
                                       </div>
                                       <div class="demo-radio-button">
                                         <h5>¿Ha fracasado el matrimonio de alguno de sus hermanos?</h5>
-                                        <input name="iphfrbmathnodmt" type="radio" id="rbmathnodmtsi" required>
+                                        <input name="iphfrbmathnodmt" type="radio" id="rbmathnodmtsi"  value="Si" required>
                                         <label for="rbmathnodmtsi">Si</label>
-                                        <input name="iphfrbmathnodmt" type="radio" id="rbmathnodmtno" required>
+                                        <input name="iphfrbmathnodmt" type="radio" id="rbmathnodmtno"  value="No" required>
                                         <label for="rbmathnodmtno">No</label>
                                         <div class="form-line focused">
                                           <h5>Expliquese:</h5>
@@ -841,9 +841,9 @@
                                       </div>
                                       <div class="demo-radio-button">
                                         <h5>¿Ha fracasado el matrimonio de alguno de sus hermanos?</h5>
-                                        <input name="iphfrbmathnodmd" type="radio" id="rbmathnodmdsi" required>
+                                        <input name="iphfrbmathnodmd" type="radio" id="rbmathnodmdsi"  value="Si" required>
                                         <label for="rbmathnodmdsi">Si</label>
-                                        <input name="iphfrbmathnodmd" type="radio" id="rbmathnodmdno" required>
+                                        <input name="iphfrbmathnodmd" type="radio" id="rbmathnodmdno"  value="No" required>
                                         <label for="rbmathnodmdno">No</label>
                                         <div class="form-line focused">
                                           <h5>Expliquese:</h5>
@@ -898,9 +898,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Hubo un compromiso formal antes del matrimonio?</h5>
-                                    <input name="ipnmrbcompro" type="radio" id="rbcomprosi" required >
+                                    <input name="ipnmrbcompro" type="radio" id="rbcomprosi"  value="Si" required >
                                     <label for="rbcomprosi">Si</label>
-                                    <input name="ipnmrbcompro" type="radio" id="rbcomprono" required>
+                                    <input name="ipnmrbcompro" type="radio" id="rbcomprono"  value="No" required>
                                     <label for="rbcomprono">No</label>
                                     <div class="form-line focused">
                                       <h5>Si es así, fecha del compromiso:</h5>
@@ -916,9 +916,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Vivieron juntos antes de casarse?</h5>
-                                    <input name="ipnmrbvivirantes" type="radio" id="rbvivirantessi" required>
+                                    <input name="ipnmrbvivirantes" type="radio" id="rbvivirantessi"  value="Si" required>
                                     <label for="rbvivirantessi">Si</label>
-                                    <input name="ipnmrbvivirantes" type="radio" id="rbvivirantesno" required>
+                                    <input name="ipnmrbvivirantes" type="radio" id="rbvivirantesno"  value="No" required>
                                     <label for="rbvivirantesno">No</label>
                                     <div class="form-line focused">
                                       <h5>Si es así, ¿Cuánto tiempo vivieron juntos antes de casarse?:</h5>
@@ -929,9 +929,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Hubo algun embarazo o sospecha de un embarazo antes de contraer matrimonio?</h5>
-                                    <input name="ipnmrbsospecha" type="radio" id="rbsospechasi" required>
+                                    <input name="ipnmrbsospecha" type="radio" id="rbsospechasi"  value="Si" required>
                                     <label for="rbsospechasi">Si</label>
-                                    <input name="ipnmrbsospecha" type="radio" id="rbsospechano" required>
+                                    <input name="ipnmrbsospecha" type="radio" id="rbsospechano"  value="No" required>
                                     <label for="rbsospechano">No</label>
                                     <div class="form-line focused">
                                       <h5>Si es así, ¿Como afecto la desicion de contraer matrimonio?:</h5>
@@ -941,9 +941,9 @@
 
                                   <div class="demo-radio-button">
                                     <h5>¿Usted y la parte demandada firmaron algun acuerdo o convenio prenupcial antes de la boda?</h5>
-                                    <input name="ipnmrbacuerdo" type="radio" id="rbacuedosi" required>
+                                    <input name="ipnmrbacuerdo" type="radio" id="rbacuedosi"  value="Si" required>
                                     <label for="rbacuedosi">Si</label>
-                                    <input name="ipnmrbacuerdo" type="radio" id="rbacuedono" required>
+                                    <input name="ipnmrbacuerdo" type="radio" id="rbacuedono"  value="No" required>
                                     <label for="rbacuedono">No</label>
                                     <div class="form-line focused">
                                       <h5>Si es así, porfavor agregue una copia de este acuerdo:</h5>
@@ -964,14 +964,14 @@
 
                                   <div class="demo-radio-button">
                                     <h5>El matrimonio fue oficiado por un: </h5>
-                                    <input name="ipnmrboficiado" type="radio" id="rbsac" required>
-                                    <label for="rbsac">sacerdote o diacono catolico</label>
-                                    <input name="ipnmrboficiado" type="radio" id="rbdiacono" required>
+                                    <input name="ipnmrboficiado" type="radio" id="rbsac"  value="Sacerdote católico" required>
+                                    <label for="rbsac">sacerdote o diacono católico</label>
+                                    <input name="ipnmrboficiado" type="radio" id="rbdiacono"  value="Otro religioso/diácono" required>
                                     <label for="rbdiacono">Otro religiso oficial</label>
-                                    <input name="ipnmrboficiado" type="radio" id="rbcivil" required>
-                                    <label for="rbcivil">Oficia de registro civil</label>
-                                    <input name="ipnmrboficiado" type="radio" id="rbotro" required>
-                                    <label for="rbotro">Oficia de registro civil</label>
+                                    <input name="ipnmrboficiado" type="radio" id="rbcivil"  value="Oficial de registro civil" required>
+                                    <label for="rbcivil">Oficial de registro civil</label>
+                                    <input name="ipnmrboficiado" type="radio" id="rbotro"  value="Otro" required>
+                                    <label for="rbotro">Otro</label>
                                   </div>
                                   <div class="form-group form-float">
                                       <div class="form-line">
@@ -1042,16 +1042,16 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue su matrimonio con la parte demandada, su primer matrimonio?</h5>
-                                    <input name="ipnmrbmatrimoniodm" type="radio" id="rbmatrimoniodmsi" required>
+                                    <input name="ipnmrbmatrimoniodm" type="radio" id="rbmatrimoniodmsi"  value="Si" required>
                                     <label for="rbmatrimoniodmsi">Si</label>
-                                    <input name="ipnmrbmatrimoniodm" type="radio" id="rbmatrimoniodmno" required>
+                                    <input name="ipnmrbmatrimoniodm" type="radio" id="rbmatrimoniodmno"  value="No" required>
                                     <label for="rbmatrimoniodmno">No</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue el matrimonio con usted el primer matrimonio para la parte Demandada?</h5>
-                                    <input name="ipnmrbprimermatrimonio" type="radio" id="rbprimermatrimoniosi" required>
+                                    <input name="ipnmrbprimermatrimonio" type="radio" id="rbprimermatrimoniosi"  value="Si" required>
                                     <label for="rbprimermatrimoniosi">Si</label>
-                                    <input name="ipnmrbprimermatrimonio" type="radio" id="rbprimermatrimoniono" required>
+                                    <input name="ipnmrbprimermatrimonio" type="radio" id="rbprimermatrimoniono"  value="No" required>
                                     <label for="rbprimermatrimoniono">No</label>
                                   </div>
 
@@ -1118,16 +1118,16 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>Tipo de ceremonia</h5>
-                                    <input name="ipmcarbdemandantetipoceremonia" type="radio" id="rbdemandantetipoceremoniacivil" >
+                                    <input name="ipmcarbdemandantetipoceremonia" type="radio" id="rbdemandantetipoceremoniacivil"  value="Civil" >
                                     <label for="rbdemandantetipoceremoniacivil">Civil</label>
-                                    <input name="ipmcarbdemandantetipoceremonia" type="radio" id="rbdemandantetipoceremoniareligiosa">
+                                    <input name="ipmcarbdemandantetipoceremonia" type="radio" id="rbdemandantetipoceremoniareligiosa" value="Religiosa" >
                                     <label for="rbdemandantetipoceremoniareligiosa">Religiosa</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
-                                    <input name="ipmcarbdemandantematrimonioconyuge" type="radio" id="rbdemandantematrimonioconyugesi" >
+                                    <input name="ipmcarbdemandantematrimonioconyuge" type="radio" id="rbdemandantematrimonioconyugesi"  value="Si" >
                                     <label for="rbdemandantematrimonioconyugesi">Si</label>
-                                    <input name="ipmcarbdemandantematrimonioconyuge" type="radio" id="rbdemandantematrimonioconyugeno">
+                                    <input name="ipmcarbdemandantematrimonioconyuge" type="radio" id="rbdemandantematrimonioconyugeno" value="No" >
                                     <label for="rbdemandantematrimonioconyugeno">No</label>
                                     <h5>De no ser así:</h5>
                                       <input type="text" class="form-control" value="Descripción" name="ipmcademandantedescripcionmatrimonioconyuge" >
@@ -1160,9 +1160,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
-                                    <input name="ipmcarbdemandantematrimonioconyugeanulado" type="radio" id="rbdemandantematrimonioconyugeanuladosi" >
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado" type="radio" id="rbdemandantematrimonioconyugeanuladosi"  value="Si" >
                                     <label for="rbdemandantematrimonioconyugeanuladosi">Si</label>
-                                    <input name="ipmcarbdemandantematrimonioconyugeanulado" type="radio" id="rbdemandantematrimonioconyugeanuladono">
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado" type="radio" id="rbdemandantematrimonioconyugeanuladono" value="No" >
                                     <label for="rbdemandantematrimonioconyugeanuladono">No</label>
                                     <h5>De  ser así:</h5>
                                       <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandantetribunalmatrimonioconyugeanulado">
@@ -1228,16 +1228,16 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>Tipo de ceremonia</h5>
-                                    <input name="ipmcarbtipoceremonia2" type="radio" id="rbtipoceremoniacivil2" >
+                                    <input name="ipmcarbtipoceremonia2" type="radio" id="rbtipoceremoniacivil2"  value="Civil" >
                                     <label for="rbtipoceremoniacivil2">Civil</label>
-                                    <input name="ipmcarbtipoceremonia2" type="radio" id="rbtipoceremoniareligiosa2">
+                                    <input name="ipmcarbtipoceremonia2" type="radio" id="rbtipoceremoniareligiosa2" value="Religiosa" >
                                     <label for="rbtipoceremoniareligiosa2">Religiosa</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
-                                    <input name="ipmcarbdemandantematrimonioconyuge2" type="radio" id="rbdemandantematrimonioconyugesi2" >
+                                    <input name="ipmcarbdemandantematrimonioconyuge2" type="radio" id="rbdemandantematrimonioconyugesi2"  value="Si" >
                                     <label for="rbdemandantematrimonioconyugesi2">Si</label>
-                                    <input name="ipmcarbdemandantematrimonioconyuge2" type="radio" id="rbdemandantematrimonioconyugeno2">
+                                    <input name="ipmcarbdemandantematrimonioconyuge2" type="radio" id="rbdemandantematrimonioconyugeno2" value="No" >
                                     <label for="rbdemandantematrimonioconyugeno2">No</label>
                                     <h5>De no ser así:</h5>
                                       <input type="text" class="form-control" value="Descripción" name="ipmcademandantedescripcionmatrimonioconyuge2" >
@@ -1270,9 +1270,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
-                                    <input name="ipmcarbdemandantematrimonioconyugeanulado2" type="radio" id="rbdemandantematrimonioconyugeanuladosi2" >
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado2" type="radio" id="rbdemandantematrimonioconyugeanuladosi2"  value="Si" >
                                     <label for="rbdemandantematrimonioconyugeanuladosi2">Si</label>
-                                    <input name="ipmcarbdemandantematrimonioconyugeanulado2" type="radio" id="rbdemandantematrimonioconyugeanuladono2">
+                                    <input name="ipmcarbdemandantematrimonioconyugeanulado2" type="radio" id="rbdemandantematrimonioconyugeanuladono2" value="No" >
                                     <label for="rbdemandantematrimonioconyugeanuladono2">No</label>
                                     <h5>De  ser así:</h5>
                                       <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandantetribunalmatrimonioconyugeanulado2">
@@ -1339,16 +1339,16 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>Tipo de ceremonia</h5>
-                                    <input name="ipmcarbdemandadotipoceremonia" type="radio" id="rbdemandadotipoceremoniacivil" >
+                                    <input name="ipmcarbdemandadotipoceremonia" type="radio" id="rbdemandadotipoceremoniacivil"  value="Civil" >
                                     <label for="rbdemandadotipoceremoniacivil">Civil</label>
-                                    <input name="ipmcarbdemandadotipoceremonia" type="radio" id="rbdemandadotipoceremoniareligiosa">
+                                    <input name="ipmcarbdemandadotipoceremonia" type="radio" id="rbdemandadotipoceremoniareligiosa" value="Religiosa" >
                                     <label for="rbdemandadotipoceremoniareligiosa">Religiosa</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
-                                    <input name="ipmcarbdemandadomatrimonioconyuge" type="radio" id="rbdemandadomatrimonioconyugesi" >
+                                    <input name="ipmcarbdemandadomatrimonioconyuge" type="radio" id="rbdemandadomatrimonioconyugesi"  value="Si" >
                                     <label for="rbdemandadomatrimonioconyugesi">Si</label>
-                                    <input name="ipmcarbdemandadomatrimonioconyuge" type="radio" id="rbdemandadomatrimonioconyugeno">
+                                    <input name="ipmcarbdemandadomatrimonioconyuge" type="radio" id="rbdemandadomatrimonioconyugeno" value="No" >
                                     <label for="rbdemandadomatrimonioconyugeno">No</label>
                                     <h5>De no ser así:</h5>
                                       <input type="text" class="form-control" value="Descripción" name="ipmcademandadodescripcionmatrimonioconyuge" >
@@ -1381,9 +1381,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
-                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado" type="radio" id="rbdemandadomatrimonioconyugeanuladosi" >
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado" type="radio" id="rbdemandadomatrimonioconyugeanuladosi"  value="Si" >
                                     <label for="rbdemandadomatrimonioconyugeanuladosi">Si</label>
-                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado" type="radio" id="rbdemandadomatrimonioconyugeanuladono">
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado" type="radio" id="rbdemandadomatrimonioconyugeanuladono" value="No" >
                                     <label for="rbdemandadomatrimonioconyugeanuladono">No</label>
                                     <h5>De  ser así:</h5>
                                       <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandadotribunalmatrimonioconyugeanulado">
@@ -1449,16 +1449,16 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>Tipo de ceremonia</h5>
-                                    <input name="ipmcarbdemandadotipoceremonia2" type="radio" id="rbdemandadotipoceremoniacivil2" >
+                                    <input name="ipmcarbdemandadotipoceremonia2" type="radio" id="rbdemandadotipoceremoniacivil2"  value="Si" >
                                     <label for="rbdemandadotipoceremoniacivil2">Civil</label>
-                                    <input name="ipmcarbdemandadotipoceremonia2" type="radio" id="rbdemandadotipoceremoniareligiosa2">
+                                    <input name="ipmcarbdemandadotipoceremonia2" type="radio" id="rbdemandadotipoceremoniareligiosa2" value="No" >
                                     <label for="rbdemandadotipoceremoniareligiosa2">Religiosa</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue este el primer matrimonio para su cónyuge?</h5>
-                                    <input name="ipmcarbdemandadomatrimonioconyuge2" type="radio" id="rbdemandadomatrimonioconyugesi2" >
+                                    <input name="ipmcarbdemandadomatrimonioconyuge2" type="radio" id="rbdemandadomatrimonioconyugesi2" value="Si"  >
                                     <label for="rbdemandadomatrimonioconyugesi2">Si</label>
-                                    <input name="ipmcarbdemandadomatrimonioconyuge2" type="radio" id="rbdemandadomatrimonioconyugeno2">
+                                    <input name="ipmcarbdemandadomatrimonioconyuge2" type="radio" id="rbdemandadomatrimonioconyugeno2" value="No" >
                                     <label for="rbdemandadomatrimonioconyugeno2">No</label>
                                     <h5>De no ser así:</h5>
                                       <input type="text" class="form-control" value="Descripción" name="ipmcademandadodescripcionmatrimonioconyuge2" >
@@ -1491,9 +1491,9 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Fue anulado este matrimonio por la Iglesia Católica?</h5>
-                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado2" type="radio" id="rbdemandadomatrimonioconyugeanuladosi2" >
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado2" type="radio" id="rbdemandadomatrimonioconyugeanuladosi2"  value="Si" >
                                     <label for="rbdemandadomatrimonioconyugeanuladosi2">Si</label>
-                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado2" type="radio" id="rbdemandadomatrimonioconyugeanuladono2">
+                                    <input name="ipmcarbdemandadomatrimonioconyugeanulado2" type="radio" id="rbdemandadomatrimonioconyugeanuladono2" value="No" >
                                     <label for="rbdemandadomatrimonioconyugeanuladono2">No</label>
                                     <h5>De  ser así:</h5>
                                       <input type="text" class="form-control" value="" placeholder="Tribunal" name="ipmcademandadotribunalmatrimonioconyugeanulado2">
@@ -1577,9 +1577,9 @@
                                       <input type="text" class="form-control date" placeholder="30/07/2016" name="ipsdfechadivorciocivil" required>
                                   </div>
                                   <h5>Fue un</h5>
-                                  <input name="ipsdrbdivorcioanulacion" type="radio" id="rbdivorcio" >
+                                  <input name="ipsdrbdivorcioanulacion" type="radio" id="rbdivorcio"  value="Si" >
                                   <label for="rbdivorcio">Si</label>
-                                  <input name="ipsdrbdivorcioanulacion" type="radio" id="rbanulacioncivil">
+                                  <input name="ipsdrbdivorcioanulacion" type="radio" id="rbanulacioncivil" value="No" >
                                   <label for="rbanulacioncivil">No</label>
                                   <div class="form-group form-float">
                                       <div class="form-line">
@@ -1615,11 +1615,11 @@
                                               </div>
                                   </div>
                                   <h5>¿Quién pidió el divorcio?</h5>
-                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorcioyo" >
+                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorcioyo"  value="Demandante" >
                                   <label for="rbpedidodivorcioyo">Yo lo hice</label>
-                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorciodemandado">
+                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorciodemandado" value="Demandado" >
                                   <label for="rbpedidodivorciodemandado">La parte demandada</label>
-                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorcioambos">
+                                  <input name="ipsdrbpedidodivorcio" type="radio" id="rbpedidodivorcioambos" value="Ambos" >
                                   <label for="rbpedidodivorcioambos">Ambos</label>
                                   <div class="form-group form-float">
                                       <div class="form-line">
@@ -1670,23 +1670,23 @@
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Está usted obligado a pagar manutención de niños y/o cónyuge fijada por el juez?</h5>
-                                    <input name="iphjrbmanutencion" type="radio" id="rbmanutencionsi" required>
+                                    <input name="iphjrbmanutencion" type="radio" id="rbmanutencionsi"  value="Si" required>
                                     <label for="rbmanutencionsi">Si</label>
-                                    <input name="iphjrbmanutencion" type="radio" id="rbmanutencionno" required>
+                                    <input name="iphjrbmanutencion" type="radio" id="rbmanutencionno"  value="No" required>
                                     <label for="rbmanutencionno">No</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Ha cumplido con el pago de pensiones?</h5>
-                                    <input name="iphjrbpensiones" type="radio" id="rbpensionesi" required>
+                                    <input name="iphjrbpensiones" type="radio" id="rbpensionesi"  value="Si" required>
                                     <label for="rbpensionesi">Si</label>
-                                    <input name="iphjrbpensiones" type="radio" id="rbpensioneno" required>
+                                    <input name="iphjrbpensiones" type="radio" id="rbpensioneno"  value="No" required>
                                     <label for="rbpensioneno">No</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Hay alguna querella pendiente o en proceso en el Tribunal Civil entre usted y la parte demandada?</h5>
-                                    <input name="iphjrbtribunal" type="radio" id="rbtribunalsi" required>
+                                    <input name="iphjrbtribunal" type="radio" id="rbtribunalsi"  value="Si" required>
                                     <label for="rbtribunalsi">Si</label>
-                                    <input name="iphjrbtribunal" type="radio" id="rbtribunalno" required>
+                                    <input name="iphjrbtribunal" type="radio" id="rbtribunalno"  value="No" required>
                                     <label for="rbtribunalno">No</label>
                                   </div>
                                   <div class="form-group form-float">
@@ -1699,16 +1699,16 @@
                                   <div class="demo-radio-button">
                                     <h5>¿Hay en la actualidad una orden de “protección contra abuso”, “orden de restricción”, o una orden similar del Juez en
                                     vigor entre usted y la parte Demandada?</h5>
-                                    <input name="iphjlargo" type="radio" id="rblargosi" required>
+                                    <input name="iphjlargo" type="radio" id="rblargosi"  value="Si" required>
                                     <label for="rblargosi">Si</label>
-                                    <input name="iphjlargo" type="radio" id="rblargono" required>
+                                    <input name="iphjlargo" type="radio" id="rblargono"  value="No" required>
                                     <label for="rblargono">No</label>
                                   </div>
                                   <div class="demo-radio-button">
                                     <h5>¿Existió alguna vez esa orden?</h5>
-                                    <input name="iphjorden" type="radio" id="rbordensi" required>
+                                    <input name="iphjorden" type="radio" id="rbordensi"  value="Si" required>
                                     <label for="rbordensi">Si</label>
-                                    <input name="iphjorden" type="radio" id="rbordenno" required>
+                                    <input name="iphjorden" type="radio" id="rbordenno"  value="No" required>
                                     <label for="rbordenno">No</label>
                                   </div>
                                   <div class="form-group form-float">
@@ -1731,13 +1731,13 @@
                                 <h3>Estado actual</h3>
                                 <fieldset>
                                   <h5>¿Cuál es su estado civil actual?</h5>
-                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilsoltero" >
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilsoltero"  value="Soltero(a)" >
                                   <label for="rbestadocivilsoltero">Soltero(a)</label>
-                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilcomprometido">
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilcomprometido" value="Comprometido(a)" >
                                   <label for="rbestadocivilcomprometido">Comprometido(a)</label>
-                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilconviviendo">
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilconviviendo" value="Conviviendo" >
                                   <label for="rbestadocivilconviviendo">Conviviendo</label>
-                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilcasadocivilmente" >
+                                  <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilcasadocivilmente"  value="Casado(a)" >
                                   <label for="rbestadocivilcasadocivilmente">Casado(a) civilmente</label>
                                   <h5>Si está casado(a) nuevamente, conviviendo o comprometido(a)</h5>
                                 <div class="form-group form-float">
@@ -1766,9 +1766,9 @@
                                 </div>
                                 <div class="demo-radio-button">
                                   <h5>Sexo</h1>
-                                  <input name="ipearbsexo" type="radio" id="rbeasexomasculino" required>
+                                  <input name="ipearbsexo" type="radio" id="rbeasexomasculino"  value="Masculino" required>
                                   <label for="rbeasexomasculino">Masculino</label>
-                                  <input name="ipearbsexo" type="radio" id="rbeasexofemenino" required>
+                                  <input name="ipearbsexo" type="radio" id="rbeasexofemenino"  value="Femenino" required>
                                   <label for="rbeasexofemenino">Femenino</label>
                                 </div>
                                 <br>
@@ -1780,9 +1780,9 @@
                                 </div>
                                 <div class="demo-radio-button">
                                   <h5>¿Tienen Hijos?</h1>
-                                  <input name="ipearbhijos" type="radio" id="rbhijossi" required>
+                                  <input name="ipearbhijos" type="radio" id="rbhijossi"  value="Si" required>
                                   <label for="rbhijossi">Si</label>
-                                  <input name="ipearbhijos" type="radio" id="rbhijosno" required>
+                                  <input name="ipearbhijos" type="radio" id="rbhijosno"  value="No" required>
                                   <label for="rbhijosno">No</label>
                                 </div>
                                 <div class="form-group form-float">
@@ -1817,9 +1817,9 @@
                                 </div>
                                 <div class="demo-radio-button">
                                   <h5>Si no es católico(a)¿está usted o su actual/futuro(a)cónyuge en el programa católico Rito de iniciación cristiana para adultos?</h1>
-                                  <input name="ipearbrito" type="radio" id="rbritosi" required>
+                                  <input name="ipearbrito" type="radio" id="rbritosi"  value="Si" required>
                                   <label for="rbritosi">Si</label>
-                                  <input name="ipearbrito" type="radio" id="rbritono" required>
+                                  <input name="ipearbrito" type="radio" id="rbritono"  value="No" required>
                                   <label for="rbritono">No</label>
                                   <h5>Si es así, ¿En que parroquia?</h5>
                                     <input type="text" class="form-control" value="" placeholder="Otro:" name="ipeaparroquia">
@@ -1862,9 +1862,9 @@
                                 </div>
                                 <div class="demo-radio-button">
                                   <h5>¿Es este su único matrimonio después del contraído con la parte Demandada?</h1>
-                                  <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniosi">
+                                  <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniosi" value="Si" >
                                   <label for="rbunicomatrimoniosi">Si</label>
-                                  <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniono">
+                                  <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniono" value="No" >
                                   <label for="rbunicomatrimoniono">No</label>
                                 </div>
                                 <div class="form-group form-float">
