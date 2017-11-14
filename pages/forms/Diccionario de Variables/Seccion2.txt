@@ -1,0 +1,58 @@
+ipsd -> indagacion previa - seccion dos
+Nombre completo de la parte Demandada
+  Primer Nombre
+    ipsdpnombre
+  Segundo Nombre
+    ipsdsnombre
+  Apellido paterno
+    ipsdapaterno
+  Apellido materno
+    ipsdamaterno
+
+¿Ha sido esta persona conocida con otro nombre (por ejemplo, apellido de soltera, un alias o apodo)?
+  ipsdrbapodo
+  si  rbapodosi
+  no  rbapodono
+
+Si es así, por favor escriba todos los alias o apellido de soltera/nombres anteriores:
+  ipsdalias
+
+
+¿Cómo fue la última vez que habló con la parte Demandada?
+  ipsdrbdemandada
+    Personalmente rbpersonalmente
+    por telefono  rbtelefono
+    Correo        rbcorreo
+
+¿Cómo fue lla conversación la última vez que habló con la parte Demandada?
+  ipsdultimadmd
+
+Ultima dirección que conoció de la parte Demandada:
+  ipsdultima
+  ipsdcalle
+  ipsdciudad
+  ipsdzona
+
+¿Cuál fue la última vez que supo que la parte Demandada vivía en la dirección arriba señalada?
+  ipsddireccion
+
+Último número de teléfono conocido:
+  ipsdultnumero
+
+Correo electrónico:
+  ipsdultcorreo
+
+Último trabajo: compañía o empleador:
+  ipsdcalleult
+  ipsdciudadult
+  ipsdzonault
+  ipsddepartault
+
+Si tuvieron hijos, explique por qué los hijos no pueden darle la información actual de la parte Demandada:
+  ipsdinfoact
+
+Direcciones de parientes de la parte Demandada que le puedan hacer llegar la correspondencia:
+  ipsdcorrespondencia
+
+Otros esfuerzos que ha efectuado y cuándo:
+  ipsdotro
