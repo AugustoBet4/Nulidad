@@ -5,34 +5,17 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Nulidad Matrimonial - Caso nuevo</title>
-    <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-
-    <!-- Bootstrap Core Css -->
     <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Waves Effect Css -->
     <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
-
-    <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
-
-    <!-- Sweet Alert Css -->
     <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
-
-    <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
-
-    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../../css/themes/all-themes.css" rel="stylesheet" />
 </head>
-
 <body class="theme-blue">
-    <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="preloader">
@@ -48,11 +31,7 @@
             <p>Porfavor espere...</p>
         </div>
     </div>
-    <!-- #END# Page Loader -->
-    <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
-    <!-- #END# Overlay For Sidebars -->
-    <!-- Top Bar -->
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -62,11 +41,8 @@
             </div>
         </div>
     </nav>
-    <!-- #Top Bar -->
     <section>
-        <!-- Left Sidebar -->
         <aside id="leftsidebar" class="sidebar">
-            <!-- User Info -->
             <div class="user-info">
                 <div class="image">
                     <img src="../../images/user.png" width="48" height="48" alt="User" />
@@ -82,8 +58,6 @@
                     </div>
                 </div>
             </div>
-            <!-- #User Info -->
-            <!-- Menu -->
             <div class="menu">
                 <ul class="list">
                     <li>
@@ -127,24 +101,24 @@
                             <span>Agregar nuevo encargado</span>
                         </a>
         </aside>
-        <!-- #END# Left Sidebar -->
     </section>
 
     <section class="content">
         <div class="container-fluid">
-            <!-- Advanced Form Example With Validation -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
                             <h2>FASE INTRODUCTORIA - NULIDAD MATRIMONIAL</h2>
+                            <font color=red><h6><em>* Espacio requerido</em></h6></font>
                         </div>
+                        <form method="post" action="introducciondocs.php">
                         <div class="body">
                           <div class="row clearfix">
                               <div class="col-md-2">
                                   <div class="form-group">
                                       <div class="form-line">
-                                        <h4>Número de expediente</h4>
+                                        <h4>Número de expediente*</h4>
                                           <input type="text" id="NumEpx" class="form-control" placeholder="" value="/201" required>
                                       </div>
                                   </div>
@@ -152,7 +126,7 @@
                               <div class="col-md-2">
                                   <div class="form-group">
                                       <div class="form-line">
-                                        <h4>Número de entrada</h4>
+                                        <h4>Número de entrada*</h4>
                                           <input type="text" id="NumEntr" class="form-control" placeholder="" value="/201" required>
                                       </div>
                                   </div>
@@ -160,24 +134,24 @@
                         </div>
                         <div class="row clearfix">
                             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                <label for="email_address_2">Telefono Demandante</label>
+                                <label for="email_address_2">Telefono Demandante*</label>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="TelfDemandante" class="form-control" placeholder="Telf. o Cel." required>
+                                        <input type="number" id="TelfDemandante" class="form-control" placeholder="Telf. o Cel." required>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row clearfix">
                             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                <label for="email_address_2">Telefono Demandado</label>
+                                <label for="email_address_2">Telefono Demandado*</label>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="TelfDemandado" class="form-control" placeholder="Telf. o Cel." required>
+                                        <input type="number" id="TelfDemandado" class="form-control" placeholder="Telf. o Cel." required>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +160,7 @@
                         <h4>Formula de dudas</h4>
                         <div class="row clearfix">
                             <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                <label for="email_address_2">Canon:</label>
+                                <label for="email_address_2">Canon:*</label>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                 <div class="form-group">
@@ -220,18 +194,18 @@
                                 </div>
                             </div>
                         </div>
-                        <h4>Citación</h4>
+                        <h4>Citación*</h4>
                         <div align="center" class="demo-checkbox">
-                          <input type="checkbox" id="basic_checkbox_1" />
+                          <input type="checkbox" id="basic_checkbox_1" checked/>
                           <label for="basic_checkbox_1">Ordinaria</label>
                           <input type="checkbox" id="basic_checkbox_2"  />
                           <label for="basic_checkbox_2">Edictos</label>
                           <input type="checkbox" id="basic_checkbox_3" />
                           <label for="basic_checkbox_3">Exhortos</label>
                         </div>
-                        <h4>Posición del demandado</h4>
+                        <h4>Posición del demandado*</h4>
                         <div align="center" class="demo-checkbox">
-                          <input type="checkbox" id="basic_checkbox_4" />
+                          <input type="checkbox" id="basic_checkbox_4" checked/>
                           <label for="basic_checkbox_4">Conformidad-Remision Tribunal</label>
                           <input type="checkbox" id="basic_checkbox_5"  />
                           <label for="basic_checkbox_5">Oposicion-Reconvencion</label>
@@ -240,23 +214,23 @@
                           <input type="checkbox" id="basic_checkbox_7" />
                           <label for="basic_checkbox_7">No responde-Ausente del juicio</label>
                         </div>
-                        <h4>¿El demandado se suma a la demanda?</h4>
+                        <h4>¿El demandado se suma a la demanda?*</h4>
                         <div align="center" class="demo-radio-button">
-                          <input name="group1" type="radio" id="radio_1" checked />
+                          <input name="group1" type="radio" id="radio_1" checked/>
                           <label for="radio_1">Si</label>
                           <input name="group1" type="radio" id="radio_2" />
                           <label for="radio_2">No</label>
                         </div>
-                        <h3>Esta demanda debe pasar a:</h3>
+                        <h3>Esta demanda debe pasar a:*</h3>
                         <div align="center" class="demo-checkbox">
-                          <input type="checkbox" id="basic_checkbox_8" />
+                          <input type="checkbox" id="basic_checkbox_8" checked/>
                           <label for="basic_checkbox_8">Proceso Ordinario</label><br>
                           <input type="checkbox" id="basic_checkbox_9" />
                           <label for="basic_checkbox_9">Proceso Breve</label><br>
                           <input type="checkbox" id="basic_checkbox_10" />
                           <label for="basic_checkbox_10">Proceso Documental</label><br>
                         </div>
-                        <h4>Abogado</h4>
+                        <h4>Abogado*</h4>
                         <div align="center" class="demo-radio-button">
                           <input name="group2" type="radio" id="radio_3" checked />
                           <label for="radio_3">Si</label>
@@ -361,44 +335,26 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-sm-3">
+                            <button type="submit" class="btn btn bg-blue btn-block btn-lg waves-effect">Siguiente</button>
+                          </div>
                         </div>
-                        <a href="citacion.html"><button type="button" class="btn btn-primary m-t-15 waves-effect">Siguiente</button></a>
                     </div>
+                  </form>
                 </div>
             </div>
-            <!-- #END# Advanced Form Example With Validation -->
         </div>
     </section>
-
-    <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core Js -->
     <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
-
-    <!-- Select Plugin Js -->
     <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
-
-    <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <!-- Jquery Validation Plugin Css -->
     <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
-
-    <!-- JQuery Steps Plugin Js -->
     <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
-
-    <!-- Sweet Alert Plugin Js -->
     <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
-
-    <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
-
-    <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
     <script src="../../js/pages/forms/form-wizard.js"></script>
-
-    <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
 </body>
 </html>
