@@ -49,7 +49,7 @@
   <!-- Overlay For Sidebars -->
   <div class="overlay"></div>
   <!-- #END# Overlay For Sidebars -->
-<<<<<<< HEAD
+
   <!-- Search Bar -->
   <!-- <div class="search-bar">
     <div class="search-icon">
@@ -61,8 +61,7 @@
     </div>
   </div> -->
   <!-- #END# Search Bar -->
-=======
->>>>>>> f4a5da6270fd9605f4c6ceaca81004fdf24f24f9
+
   <!-- Top Bar -->
   <nav class="navbar">
     <div class="container-fluid">
@@ -71,7 +70,7 @@
         <a href="javascript:void(0);" class="bars"></a>
         <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
       </div>
-<<<<<<< HEAD
+
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <!-- Call Search -->
@@ -79,8 +78,7 @@
           <!-- #END# Call Search -->
         </ul>
       </div>
-=======
->>>>>>> f4a5da6270fd9605f4c6ceaca81004fdf24f24f9
+
     </div>
   </nav>
   <!-- #Top Bar -->
@@ -103,69 +101,45 @@
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-=======
+
     </div>
->>>>>>> f4a5da6270fd9605f4c6ceaca81004fdf24f24f9
       <!-- #User Info -->
       <!-- Menu -->
       <div class="menu">
         <ul class="list">
           <li>
-            <a href="pages/forms/indagacion.html">
+            <a href="pages/forms/indagacion.php">
                             <i class="material-icons">library_add</i>
                             <span>Nuevo caso</span>
                         </a>
           </li>
           <li class="active">
             <a href="javascript:void(0);" class="menu-toggle">
-<<<<<<< HEAD:pages/forms/indagacion0.html
                             <i class="material-icons">attach_file</i>
                             <span>Dar Seguimiento a caso</span>
                         </a>
-            <ul class="ml-menu">
-              <li>
-                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
-=======
-              <!-- a href="../../pages/bla.php"-->
-              <i class="material-icons">attach_file</i>
-              <span>Dar seguimiento a caso</span>
-            </a>
+
             <ul class="ml-menu">
               <li class="active">
                 <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
->>>>>>> 8e5338cd8169c37897a7f9024f5ee4aeada608ca:pages/forms/indagacion0.php
               </li>
               <li>
                 <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
               </li>
               <li>
-<<<<<<< HEAD:pages/forms/indagacion0.html
-                <a href="pages/indagacion.html">Fase de Instrucción</a>
-              </li>
-              <li>
-                <a href="pages/indagacion.html">Fase Alegatoria</a>
-              </li>
-              <li class="active">
-                <a href="../forms/sentencia.html">Fase Decisoria</a>
-=======
-                <a href="../../pages/forms/instruccion.php">Fase de Instrucción</a>
+                <a href="pages/foms/instruccion.php">Fase de Instrucción</a>
               </li>
               <li>
                 <a href="../../pages/forms/alegatoria.php">Fase Alegatoria</a>
               </li>
               <li>
                 <a href="../forms/sentencia.php">Fase Decisoria</a>
->>>>>>> 8e5338cd8169c37897a7f9024f5ee4aeada608ca:pages/forms/indagacion0.php
               </li>
             </ul>
           </li>
           <li>
-<<<<<<< HEAD:pages/forms/indagacion0.html
-            <a href="../../pages/forms/buscador.html">
-=======
+            <a href="../../pages/forms/buscador.php">
             <a href="../forms/buscador.php">
->>>>>>> 8e5338cd8169c37897a7f9024f5ee4aeada608ca:pages/forms/indagacion0.php
                             <i class="material-icons">search</i>
                             <span>Buscar Caso</span>
                         </a>
