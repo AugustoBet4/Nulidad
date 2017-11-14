@@ -152,7 +152,7 @@ $fanombredemandante= $_POST["$fanombredemandante"];
                             <span>Dar seguimiento a caso</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
+                            <li class="active">
                                 <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
                             </li>
                             <li>
@@ -161,7 +161,7 @@ $fanombredemandante= $_POST["$fanombredemandante"];
                             <li>
                                 <a href="../forms/insctruccion.php">Fase de Instrucción</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="../../pages/forms/alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li>
@@ -727,6 +727,219 @@ $fanombredemandante= $_POST["$fanombredemandante"];
 
                                   </div>
 
+                                  <!--  MATRIMONIOS CONTRAÍDOS ANTERIORMENTE------------------------------------------------------------------------>
+                                  <div role="tabpanel" class="tab-pane fade" id="profile5">
+                                    <textarea id="tinymce">
+                                      <h3>MATRIMONIOS CONTRAÍDOS ANTERIORMENTE</h3>
+                                      <h4>Si contrajo matrimonio antes del contraído con la parte Demandada,
+                                        se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                      </h4>
+                                      <table style="width=100%">
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">1<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">2<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        </b><h4>
+                                      </table>
+                                      <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.
+
+                                        <h3>PARTE DEMANDADA</h3>
+                                        <hr>
+                                        <h4>Si la parte Demandada estuvo casada antes del matrimonio contraído con usted, se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                        </h4>
+                                        <table style="width=100%">
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">1<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">2<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          </b><h4>
+                                        </table>
+                                        <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.</b></h4>
+                                    </textarea>
+
+                                  </div>
+                                  <!--  MATRIMONIOS CONTRAÍDOS ANTERIORMENTE------------------------------------------------------------------------>
+                                  <div role="tabpanel" class="tab-pane fade" id="profile6">
+                                    <textarea id="tinymce">
+                                      <h3>MATRIMONIOS CONTRAÍDOS ANTERIORMENTE</h3>
+                                      <h4>Si contrajo matrimonio antes del contraído con la parte Demandada,
+                                        se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                      </h4>
+                                      <table style="width=100%">
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">1<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">2<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        </b><h4>
+                                      </table>
+                                      <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.
+
+                                        <h3>PARTE DEMANDADA</h3>
+                                        <hr>
+                                        <h4>Si la parte Demandada estuvo casada antes del matrimonio contraído con usted, se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                        </h4>
+                                        <table style="width=100%">
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">1<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">2<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          </b><h4>
+                                        </table>
+                                        <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.</b></h4>
+                                    </textarea>
+
+                                  </div>
+                                  <!--  MATRIMONIOS CONTRAÍDOS ANTERIORMENTE------------------------------------------------------------------------>
+                                  <div role="tabpanel" class="tab-pane fade" id="profile7">
+                                    <textarea id="tinymce">
+                                      <h3>MATRIMONIOS CONTRAÍDOS ANTERIORMENTE</h3>
+                                      <h4>Si contrajo matrimonio antes del contraído con la parte Demandada,
+                                        se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                      </h4>
+                                      <table style="width=100%">
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">1<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">2<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        </b><h4>
+                                      </table>
+                                      <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.
+
+                                        <h3>PARTE DEMANDADA</h3>
+                                        <hr>
+                                        <h4>Si la parte Demandada estuvo casada antes del matrimonio contraído con usted, se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                        </h4>
+                                        <table style="width=100%">
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">1<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">2<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          </b><h4>
+                                        </table>
+                                        <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.</b></h4>
+                                    </textarea>
+
+                                  </div>
 
 
                             </div>
