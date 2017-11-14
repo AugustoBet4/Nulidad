@@ -49,31 +49,13 @@
   <!-- Overlay For Sidebars -->
   <div class="overlay"></div>
   <!-- #END# Overlay For Sidebars -->
-  <!-- Search Bar -->
-  <div class="search-bar">
-    <div class="search-icon">
-      <i class="material-icons">search</i>
-    </div>
-    <input type="text" placeholder="Buscar caso...">
-    <div class="close-search">
-      <i class="material-icons">close</i>
-    </div>
-  </div>
-  <!-- #END# Search Bar -->
   <!-- Top Bar -->
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
         <a href="javascript:void(0);" class="bars"></a>
-        <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <!-- Call Search -->
-          <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-          <!-- #END# Call Search -->
-        </ul>
+        <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
       </div>
     </div>
   </nav>
@@ -92,7 +74,7 @@
           <div class="btn-group user-helper-dropdown">
             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
             <ul class="dropdown-menu pull-right">
-              <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.html">Cerrar Sesion</a></a>
+              <li><a href="../../pages/forms/ingreso.php">Cerrar Sesion<i class="material-icons">input</i></a></li>
               </li>
             </ul>
           </div>
@@ -103,7 +85,7 @@
       <div class="menu">
         <ul class="list">
           <li>
-            <a href="pages/forms/indagacion.html">
+            <a href="../../pages/forms/indagacion.php">
                             <i class="material-icons">library_add</i>
                             <span>Nuevo caso</span>
                         </a>
@@ -114,31 +96,31 @@
                             <span>Dar Seguimiento a caso</span>
                         </a>
             <ul class="ml-menu">
-              <li>
-                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
-              </li>
-              <li>
-                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
-              </li>
-              <li>
-                <a href="pages/indagacion.html">Fase de Instrucción</a>
-              </li>
-              <li>
-                <a href="pages/indagacion.html">Fase Alegatoria</a>
-              </li>
               <li class="active">
-                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
+              </li>
+              <li>
+                <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
+              </li>
+              <li>
+                <a href="pages/forms/indagacion.php">Fase de Instrucción</a>
+              </li>
+              <li>
+                <a href="pages/forms/alegatoria.php">Fase Alegatoria</a>
+              </li>
+              <li>
+                <a href="../forms/sentencia.php">Fase Decisoria</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="../../pages/forms/buscador.html">
+            <a href="../../pages/forms/buscador.php">
                             <i class="material-icons">search</i>
                             <span>Buscar Caso</span>
                         </a>
           </li>
           <li>
-            <a href="../../pages/nuevo_encargado.html">
+            <a href="../../pages/forms/nuevo_encargado.php">
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>
@@ -159,9 +141,16 @@
               <h2>PREPARACIÓN DE SU DEMANDA - INDAGACIÓN PREVIA</h2>
               <h1>Sección 4</h1>
             </div>
-            <form id="wizard_with_validation" method="POST">
-              <align>
-                <ul>
+            <div class="body">
+              <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Preparación de la demanda</a></li>
+                    <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Demanda de nulidad matrimonial</a></li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="home">
+                <form id="wizard_with_validation" method="POST">
+                    <align>
+                      <ul>
                   <h4>A. Al tiempo de contraer matrimonio, uno o ambos:</h4>
                   <li>
                     <h5>No sabía lo que era el matrimonio (una relación permanente, fiel, abierta a la procreación)</h5></li>
@@ -528,9 +517,9 @@
                   <br><br>
 
 
-                    <h4>E. Al tiempo de contraer matrimonio, uno o ambos:</h4>
+                  <h4>E. Al tiempo de contraer matrimonio, uno o ambos:</h4>
 
-                    <li>
+                  <li>
                     <h5>Entendía que la infidelidad era aceptable, si había un motivo para ello</h5></li>
                   <div class="demo-checkbox">
                     <input type="checkbox" id="indg2p40demandante" class="chk-col-light-blue">
@@ -715,84 +704,84 @@
                   <br><br>
 
 
-                    <h4>I. Al tiempo de contraer matrimonio, uno o ambos:</h4>
+                  <h4>I. Al tiempo de contraer matrimonio, uno o ambos:</h4>
 
-                    <li>
-                      <h5>Falsificó su identidad en el momento del matrimonio, de tal manera, que usted pensó que se casó con una persona diferente a quien usted creía que era</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p59demandante" class="chk-col-light-blue">
-                      <label for="indg2p59demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p59demandado" class="chk-col-light-blue">
-                      <label for="indg2p59demandado">Demandado</label>
-                    </div>
-                    <br><br>
-                    <li>
-                      <h5>Quería casarse con una persona que poseyera cierta y determinada cualidad. (virginidad, profesión, estatus social, capacidad para engendrar hijos, etc.)</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p60demandante" class="chk-col-light-blue">
-                      <label for="indg2p60demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p60demandado" class="chk-col-light-blue">
-                      <label for="indg2p60demandado">Demandado</label>
-                    </div>
-                    <br><br>
-                    <li>
-                      <h5>Tenía miedo de que si no se casaba en ese momento después ya no se casaría con nadie</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p61demandante" class="chk-col-light-blue">
-                      <label for="indg2p61demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p61demandado" class="chk-col-light-blue">
-                      <label for="indg2p61demandado">Demandado</label>
-                    </div>
-                    <br><br>
-                    <li>
-                      <h5>Equivocadamente creyó que la otra persona tenía esa determinada cualidad</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p62demandante" class="chk-col-light-blue">
-                      <label for="indg2p62demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p62demandado" class="chk-col-light-blue">
-                      <label for="indg2p62demandado">Demandado</label>
-                    </div>
-                    <br><br>
-                    <li>
-                      <h5>No se hubiera casado de haber sabido la verdad acerca de la cualidad en cuestión (es decir acerca de la presencia o ausencia de la cualidad en cuestión)</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p63demandante" class="chk-col-light-blue">
-                      <label for="indg2p63demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p63demandado" class="chk-col-light-blue">
-                      <label for="indg2p63demandado">Demandado</label>
-                    </div>
-                    <br><br>
+                  <li>
+                    <h5>Falsificó su identidad en el momento del matrimonio, de tal manera, que usted pensó que se casó con una persona diferente a quien usted creía que era</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p59demandante" class="chk-col-light-blue">
+                    <label for="indg2p59demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p59demandado" class="chk-col-light-blue">
+                    <label for="indg2p59demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <li>
+                    <h5>Quería casarse con una persona que poseyera cierta y determinada cualidad. (virginidad, profesión, estatus social, capacidad para engendrar hijos, etc.)</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p60demandante" class="chk-col-light-blue">
+                    <label for="indg2p60demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p60demandado" class="chk-col-light-blue">
+                    <label for="indg2p60demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <li>
+                    <h5>Tenía miedo de que si no se casaba en ese momento después ya no se casaría con nadie</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p61demandante" class="chk-col-light-blue">
+                    <label for="indg2p61demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p61demandado" class="chk-col-light-blue">
+                    <label for="indg2p61demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <li>
+                    <h5>Equivocadamente creyó que la otra persona tenía esa determinada cualidad</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p62demandante" class="chk-col-light-blue">
+                    <label for="indg2p62demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p62demandado" class="chk-col-light-blue">
+                    <label for="indg2p62demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <li>
+                    <h5>No se hubiera casado de haber sabido la verdad acerca de la cualidad en cuestión (es decir acerca de la presencia o ausencia de la cualidad en cuestión)</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p63demandante" class="chk-col-light-blue">
+                    <label for="indg2p63demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p63demandado" class="chk-col-light-blue">
+                    <label for="indg2p63demandado">Demandado</label>
+                  </div>
+                  <br><br>
 
-                      <h4>J. Al tiempo de contraer matrimonio, uno o ambos:</h4>
+                  <h4>J. Al tiempo de contraer matrimonio, uno o ambos:</h4>
 
-                      <li>
-                      <h5>A sabiendas, engañó al otro acerca de algo muy importante referente al matrimonio</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p64demandante" class="chk-col-light-blue">
-                      <label for="indg2p64demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p64demandado" class="chk-col-light-blue">
-                      <label for="indg2p64demandado">Demandado</label>
-                    </div>
-                    <br><br>
-                    <li>
-                      <h5>Engañó a la otra persona para que contrajera matrimonio</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p65demandante" class="chk-col-light-blue">
-                      <label for="indg2p65demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p65demandado" class="chk-col-light-blue">
-                      <label for="indg2p65demandado">Demandado</label>
-                    </div>
-                    <br><br>
-                    <li>
-                      <h5>No se hubiera casado de haber sabido la verdad</h5></li>
-                    <div class="demo-checkbox">
-                      <input type="checkbox" id="indg2p66demandante" class="chk-col-light-blue">
-                      <label for="indg2p66demandante">Demandante</label>
-                      <input type="checkbox" id="indg2p66demandado" class="chk-col-light-blue">
-                      <label for="indg2p66demandado">Demandado</label>
-                    </div>
-                    <br><br>
-                    <h5>Se sintió engañado a casarse</h5></li>
+                  <li>
+                    <h5>A sabiendas, engañó al otro acerca de algo muy importante referente al matrimonio</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p64demandante" class="chk-col-light-blue">
+                    <label for="indg2p64demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p64demandado" class="chk-col-light-blue">
+                    <label for="indg2p64demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <li>
+                    <h5>Engañó a la otra persona para que contrajera matrimonio</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p65demandante" class="chk-col-light-blue">
+                    <label for="indg2p65demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p65demandado" class="chk-col-light-blue">
+                    <label for="indg2p65demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <li>
+                    <h5>No se hubiera casado de haber sabido la verdad</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p66demandante" class="chk-col-light-blue">
+                    <label for="indg2p66demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p66demandado" class="chk-col-light-blue">
+                    <label for="indg2p66demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <h5>Se sintió engañado a casarse</h5></li>
                   <div class="demo-checkbox">
                     <input type="checkbox" id="indg2p67demandante" class="chk-col-light-blue">
                     <label for="indg2p67demandante">Demandante</label>
@@ -806,63 +795,187 @@
 
 
                   <h5>La ratificación por parte de la Iglesia Católica de un matrimonio que ya era válido pero que fue celebrado fuera de la Iglesia Católica</h5></li>
-                <div class="demo-checkbox">
-                  <input type="checkbox" id="indg2p68demandante" class="chk-col-light-blue">
-                  <label for="indg2p68demandante">Demandante</label>
-                  <input type="checkbox" id="indg2p68demandado" class="chk-col-light-blue">
-                  <label for="indg2p68demandado">Demandado</label>
-                </div>
-                <br><br>
-                <h5>Era el primero y único matrimonio auténtico y verdadero</h5></li>
-              <div class="demo-checkbox">
-                <input type="checkbox" id="indg2p69demandante" class="chk-col-light-blue">
-                <label for="indg2p69demandante">Demandante</label>
-                <input type="checkbox" id="indg2p69demandado" class="chk-col-light-blue">
-                <label for="indg2p69demandado">Demandado</label>
-              </div>
-              <br><br>
-              <h5>La ratificación por parte de la Iglesia Católica, de un matrimonio que ya era válido, pero que por medio de la ratificación de la Iglesia, dicha unión se convertía en Sacramental</h5></li>
-            <div class="demo-checkbox">
-              <input type="checkbox" id="indg2p70demandante" class="chk-col-light-blue">
-              <label for="indg2p70demandante">Demandante</label>
-              <input type="checkbox" id="indg2p70demandado" class="chk-col-light-blue">
-              <label for="indg2p70demandado">Demandado</label>
-            </div>
-            <br><br>
-            <h5>Una ceremonia religiosa requerida por la Iglesia Católica, a fin de reconocer oficialmente nuestro matrimonio con el fin de que la parte Católica pudiera estar nuevamente en comunión plena con la Iglesia</h5></li>
-          <div class="demo-checkbox">
-            <input type="checkbox" id="indg2p71demandante" class="chk-col-light-blue">
-            <label for="indg2p71demandante">Demandante</label>
-            <input type="checkbox" id="indg2p71demandado" class="chk-col-light-blue">
-            <label for="indg2p71demandado">Demandado</label>
-          </div>
-          <br><br>
-          <h5>Algo que en verdad no era necesario pero que de todos modos se hizo, por algún motivo específico (por ejemplo: para poder bautizar a nuestro hijo; para complacer a nuestros padres)</h5></li>
-        <div class="demo-checkbox">
-          <input type="checkbox" id="indg2p72demandante" class="chk-col-light-blue">
-          <label for="indg2p72demandante">Demandante</label>
-          <input type="checkbox" id="indg2p72demandado" class="chk-col-light-blue">
-          <label for="indg2p72demandado">Demandado</label>
-        </div>
-        <br><br>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p68demandante" class="chk-col-light-blue">
+                    <label for="indg2p68demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p68demandado" class="chk-col-light-blue">
+                    <label for="indg2p68demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <h5>Era el primero y único matrimonio auténtico y verdadero</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p69demandante" class="chk-col-light-blue">
+                    <label for="indg2p69demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p69demandado" class="chk-col-light-blue">
+                    <label for="indg2p69demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <h5>La ratificación por parte de la Iglesia Católica, de un matrimonio que ya era válido, pero que por medio de la ratificación de la Iglesia, dicha unión se convertía en Sacramental</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p70demandante" class="chk-col-light-blue">
+                    <label for="indg2p70demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p70demandado" class="chk-col-light-blue">
+                    <label for="indg2p70demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <h5>Una ceremonia religiosa requerida por la Iglesia Católica, a fin de reconocer oficialmente nuestro matrimonio con el fin de que la parte Católica pudiera estar nuevamente en comunión plena con la Iglesia</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p71demandante" class="chk-col-light-blue">
+                    <label for="indg2p71demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p71demandado" class="chk-col-light-blue">
+                    <label for="indg2p71demandado">Demandado</label>
+                  </div>
+                  <br><br>
+                  <h5>Algo que en verdad no era necesario pero que de todos modos se hizo, por algún motivo específico (por ejemplo: para poder bautizar a nuestro hijo; para complacer a nuestros padres)</h5></li>
+                  <div class="demo-checkbox">
+                    <input type="checkbox" id="indg2p72demandante" class="chk-col-light-blue">
+                    <label for="indg2p72demandante">Demandante</label>
+                    <input type="checkbox" id="indg2p72demandado" class="chk-col-light-blue">
+                    <label for="indg2p72demandado">Demandado</label>
+                  </div>
+                  <br><br>
 
-        <h4>L. ¿Por qué cree que el matrimonio fracasó y fue inválido desde el comienzo?</h4>
-        <div class="form-group form-float">
-            <div class="form-line">
-                <input type="text" class="form-control" name="indg2p72" required>
-                <label class="form-label">  </label>
-            </div>
-        </div>
+                  <h4>L. ¿Por qué cree que el matrimonio fracasó y fue inválido desde el comienzo?</h4>
+                  <div class="form-group form-float">
+                    <div class="form-line">
+                      <input type="text" class="form-control" name="indg2p72" required>
+                      <label class="form-label">  </label>
+                    </div>
+                  </div>
 
-        <br><br>
+                  <br><br>
 
                 </ul>
               </align>
-            </form>
+
+              </form>
+             </div>
+
+             <div role="tabpanel" class="tab-pane fade active in" id="profile">
+               <textarea id="tinymce">
+                                 <br>
+                                 <center><font color="#000000" face="tahoma" size="4"><b>DEMANDA DE NULIDAD MATRIMONIAL</b></font></center>
+                                 <center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br>
+                                   <center>
+                                     <table style="width:100%">
+                                       <tr>
+                                         <td width="50%" height="30" valign="top">DEMANDANTE:<!--Aqui va el nombre del demandante--></td>
+                                         <td width="50%" valign="top">PARTE DEMANDADA:<!--Aqui va el nombre del demandado--></td>
+                                       </tr>
+                                       <tr>
+                                         <td width="50%" height="30" valign="top">CI Nº:<!--Aqui va el ci del demandante--></td>
+                                         <td width="50%" valign="top">CI Nº:<!--Aqui va el ci del demandado--></td>
+                                       </tr>
+                                       <tr>
+                                         <td width="50%" height="30" valign="top">Dirección:<!--Aqui va la dirección demandante--></td>
+                                         <td width="50%" valign="top">Dirección de residencia: <!--Aqui va la dirección del demandado--></td>
+                                       </tr>
+                                     </table>
+                                     <br><br>
+
+                                     <table style="width:100%">
+                                       <tr>
+                                         <th colspan="3" align="left" valign="top"><b>Por el presente pido al Tribunal Eclesiástico Metropolitano de La Paz que se sirva aceptar y admitir a trámite esta demanda presentada y previos los trámites legales dicte en su día sentencia, declarando la nulidad del matrimonio entre los cónyuges arriba mencionados.
+                                         </b></th>
+                                       </tr>
+                                     </table>
+
+
+
+
+                                     <table style="width:100%">
+                                       <tr>
+                                         <th colspan="3" align="left" valign="top"><b>El matrimonio se celebró en la fecha y el lugar siguiente:</b></th>
+                                       </tr>
+                                       <tr>
+                                         <td width="30%" height="30" valign="top">Fecha:</td>
+                                         <td width="70%" valign="top" colspan="2" align="left">Ciudad y Departamento:</td>
+                                       </tr>
+                                       <tr>
+                                         <td width="30%" height="30" valign="top">Arquidiócesis/Diócesis</td>
+                                         <td width="70%" valign="top" colspan="2" align="left">Nombre de la Parroquia:</td>
+                                       </tr>
+                                       <tr>
+                                         <th colspan="3" align="left" valign="top"><u><b>RELACIÓN DE HECHOS<br><br><br><br></u></b></th>
+                                       </tr>
+                                       <tr>
+                                         <td width="50%" height="30" valign="top">DURACION CONVIVENCIA MATRIM:</td>
+                                         <td width="25%" valign="top">CONCUBINATO PREVIO:</td>
+                                         <td width="25%" valign="top">DURACIÓN:</td>
+                                       </tr>
+                                       <tr>
+                                         <td width="30%" height="30" valign="top">DURACION DEL NOVIAZGO:</td>
+                                         <td width="70%" valign="top" colspan="2" align="left">EMBARAZO PREVIO:</td>
+                                       </tr>
+                                       <tr>
+                                         <td width="50%" height="30" valign="top">Nº HIJOS:</td>
+                                         <td width="25%" valign="top">DIVORCIO:</td>
+                                         <td width="25%" valign="top">Fecha:</td>
+                                       </tr>
+                                       <tr>
+                                         <th colspan="3" align="left" valign="top"><u><b>FUNDAMENTO DE DERECHO:<br><br></u></b>
+                                         Es competente para conocer de esta causa el Tribunal Eclesiástico del Obispado de La Paz, y en mi calidad de esposo(a) me encuentro habilitado para solicitar la declaración de nulidad del matrimonio (c. 1674.1.º).
+                                         <b>Con relación a las causales de solicitud de nulidad de matrimonio:	</b>
+                                         </th>
+                                       </tr>
+                                         <tr>
+                                           <th colspan="3" align="left" valign="top"><b>El matrimonio se celebró en la fecha y el lugar siguiente:</b></th>
+                                         </tr>
+                                         <tr>
+                                           <td width="30%" height="30" valign="top">1.-Cánon:</td>
+                                           <td width="70%" valign="top" colspan="2" align="left">De parte del:</td>
+                                         </tr>
+                                         <tr>
+                                           <td width="30%" height="30" valign="top">2.-Cánon</td>
+                                           <td width="70%" valign="top" colspan="2" align="left">De parte del:</td>
+                                         </tr>
+                                         <tr>
+                                           <td width="30%" height="30" valign="top">3.-Cánon</td>
+                                           <td width="70%" valign="top" colspan="2" align="left">De parte del:</td>
+                                         </tr>
+                                         <tr>
+                                           <th colspan="3" align="left" valign="top"><u><b>PRUEBAS:<br><br></u></b>
+                                           Se propone prueba testifical al amparo del art. 59 de la Instrucción Provida Mater, con lista de testigos e interrogatorio.
+                                           </th>
+                                         </tr>
+                                         <tr>
+                                           <th colspan="3" align="left" valign="top"><u><b>TESTIGOS:<br><br></u></b>
+                                           Nombro los siguientes testigos que tienen conocimiento acerca de los hechos arriba mencionados, quienes están dispuestos a comparecer y a ofrecer sus testimonios:
+                                           </th>
+                                         </tr>
+                                         <tr>
+                                           <td width="30%" height="30" valign="top">1:</td>
+                                           <td width="70%" valign="top" colspan="2" align="left">2:</td>
+                                         </tr>
+                                         <tr>
+                                           <td width="30%" height="30" valign="top">3:</td>
+                                           <td width="70%" valign="top" colspan="2" align="left">4:</td>
+                                         </tr>
+                                     </table>
+                                     <br><br><br><br>
+                                   <br>
+                               <table width=100%>
+                                 <tr>
+                                   <th>Firma: ________________________________</th>
+                                   <th>Fecha: ________________________________</th>
+                                 </tr>
+                               </table>
+                               <br><br><br><br>
+                               <table>
+                                 <th>
+                                  <b>Fecha recibida:</b>
+                                </th>
+                               </table>
+                               </textarea>
+             </div>
           </div>
+          <h3>Siguiente</h3>
+            <button type="button" onclick="window.location='../../pages/forms/indagacion3.php';">Siguiente</buton>
         </div>
       </div>
     </div>
+  </div>
+</div>
   </section>
 
   <!-- Jquery Core Js -->

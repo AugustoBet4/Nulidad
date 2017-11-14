@@ -52,31 +52,13 @@
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
-    <!-- Search Bar -->
-    <!-- <div class="search-bar">
-        <div class="search-icon">
-            <i class="material-icons">search</i>
-        </div>
-        <input type="text" placeholder="Ingrese caso a buscar">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div> -->
-    <!-- #END# Search Bar -->
     <!-- Top Bar -->
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <!-- <ul class="nav navbar-nav navbar-right"> -->
-                    <!-- Call Search -->
-                    <!-- <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li> -->
-                    <!-- #END# Call Search -->
-                </ul>
+                <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
             </div>
         </div>
     </nav>
@@ -95,7 +77,7 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.html">Cerrar Sesion</a></a></li>
+                            <li><a href="../../pages/forms/ingreso.php">Cerrar Sesion<i class="material-icons">input</i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -105,7 +87,7 @@
             <div class="menu">
                 <ul class="list">
                     <li>
-                        <a href="../../index.html">
+                        <a href="../../index.php">
                             <i class="material-icons">library_add</i>
                             <span>Caso nuevo</span>
                         </a>
@@ -117,30 +99,30 @@
                         </a>
                         <ul class="ml-menu">
                             <li class="active">
-                                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+                                <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
                             </li>
                             <li>
-                                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                                <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
                             </li>
                             <li>
-                                <a href="../../pages/indagacion.html">Fase de Instrucción</a>
+                                <a href="../../pages/forms/instruccion.php">Fase de Instrucción</a>
                             </li>
                             <li>
-                                <a href="../../pages/indagacion.html">Fase Alegatoria</a>
+                                <a href="../../pages/forms/alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li>
-                                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                                <a href="../forms/sentencia.php">Fase Decisoria</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../forms/buscador.html">
+                        <a href="../forms/buscador.php">
                             <i class="material-icons">search</i>
                             <span>Buscar caso</span>
                         </a>
                     </li>
                     <li>
-                        <a href="../../pages/nuevo_encargado.html">
+                        <a href="../../pages/forms/nuevo_encargado.php">
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>
@@ -161,7 +143,7 @@
                       </div>
                       <div class="body">
                           <form id="wizard_with_validation" method="POST">
-                              <h3>Informacion Básica</h3>
+                              <h3>Información Básica</h3>
                               <fieldset>
                                 <h3>A)DEMANDANTE</h3>
                                   <div class="form-group form-float">
@@ -296,6 +278,17 @@
                                     </div>
                                     </div>
                                   </div>
+                                  <h5>Usted nos autoriza a dejar un mensaje acerca de su caso en:</h5></li>
+                                <div class="demo-checkbox">
+                                  <input type="checkbox" id="ipibckmensajeemail" class="chk-col-light-blue">
+                                  <label for="ipibckmensajeemail">Email</label>
+                                  <input type="checkbox" id="ipibckmensajecasa" class="chk-col-light-blue">
+                                  <label for="ipibckmensajecasa">Casa</label>
+                                  <input type="checkbox" id="ipibckmensajecelular" class="chk-col-light-blue">
+                                  <label for="ipibckmensajecelular">Celular</label>
+                                  <input type="checkbox" id="ipibckmensajetrabajo" class="chk-col-light-blue">
+                                  <label for="ipibckmensajetrabajo">Trabajo</label>
+                                </div>
                                   <h3>B)DEMANDADO</h3>
                                   <div class="form-group form-float">
                                       <div class="form-line">
@@ -1880,7 +1873,11 @@
                                         <label class="form-label">¿Ha estado su actual o futuro cónyuge casado anteriormente (civil o en la iglesia)?</label>
                                     </div>
                                 </div>
-
+                              </fieldset>
+                              <h3>Siguiente</h3>
+                              <fieldset>
+                                <button type="button" onclick="window.location='../../pages/forms/indagacion0.php';">Siguiente</buton>
+                              </fieldset>
 <!-- end -->
                               </form>
                               </div>

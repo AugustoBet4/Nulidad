@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <title>Nulidad Matrimonial - Caso nuevo</title>
-  <!-- Favicon----->
+  <title>Sentencia - Nulidad Matrimonial</title>
+  <!-- Favicon-->
   <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
@@ -20,9 +20,6 @@
 
   <!-- Animation Css -->
   <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
-
-  <!-- Sweet Alert Css -->
-  <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
 
   <!-- Custom Css -->
   <link href="../../css/style.css" rel="stylesheet">
@@ -45,38 +42,22 @@
           </div>
         </div>
       </div>
-      <p>Porfavor espere...</p>
+      <p>Porfavor espera...</p>
     </div>
   </div>
   <!-- #END# Page Loader -->
   <!-- Overlay For Sidebars -->
   <div class="overlay"></div>
   <!-- #END# Overlay For Sidebars -->
-  <!-- Search Bar -->
-  <!-- <div class="search-bar">
-              <div class="search-icon">
-  <i class="material-icons">search</i>
-</div>
-        <input type="text" placeholder="Ingrese caso a buscar">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div> -->
-  <!-- #END# Search Bar -->
+
+
   <!-- Top Bar -->
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
         <a href="javascript:void(0);" class="bars"></a>
-        <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <!-- <ul class="nav navbar-nav navbar-right"> -->
-        <!-- Call Search -->
-        <!-- <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li> -->
-        <!-- #END# Call Search -->
-        </ul>
+        <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
       </div>
     </div>
   </nav>
@@ -92,68 +73,77 @@
         <div class="info-container">
           <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Roberto Boceta</div>
           <div class="email">roberto.boceta@gmail.com</div>
-          <divclass="btn-group user-helper-dropdown">
+          <div class="btn-group user-helper-dropdown">
             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
             <ul class="dropdown-menu pull-right">
-              <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.html">Cerrar Sesion</a></a>
-              </li>
+              <li><a href="../../pages/forms/ingreso.php">Cerrar Sesion<i class="material-icons">input</i></a></li>
             </ul>
+          </div>
         </div>
       </div>
-      </div>
+
+    </div>
       <!-- #User Info -->
       <!-- Menu -->
       <div class="menu">
         <ul class="list">
           <li>
-
+            <a href="../../pages/forms/indagacion.php">
+                            <i class="material-icons">library_add</i>
+                            <span>Nuevo caso</span>
+                        </a>
           </li>
           <li class="active">
             <a href="javascript:void(0);" class="menu-toggle">
-              <!-- a href="../../pages/bla.html"-->
-              <i class="material-icons">attach_file</i>
-              <span>Dar seguimiento a caso</span>
-            </a>
+                            <i class="material-icons">attach_file</i>
+                            <span>Dar Seguimiento a caso</span>
+                        </a>
+
             <ul class="ml-menu">
               <li class="active">
-                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+                <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
               </li>
               <li>
-                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
               </li>
               <li>
-                <a href="../../pages/indagacion.html">Fase de Instrucción</a>
+                <a href="pages/foms/instruccion.php">Fase de Instrucción</a>
               </li>
               <li>
-                <a href="../../pages/indagacion.html">Fase Alegatoria</a>
+                <a href="../../pages/forms/alegatoria.php">Fase Alegatoria</a>
               </li>
               <li>
-                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                <a href="../forms/sentencia.php">Fase Decisoria</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="../forms/buscador.html">
+            <a href="../../pages/forms/buscador.php">
+            <a href="../forms/buscador.php">
                             <i class="material-icons">search</i>
-                            <span>Buscar caso</span>
+                            <span>Buscar Caso</span>
                         </a>
           </li>
           <li>
-            <a href="../../pages/nuevo_encargado.html">
+            <a href="../../pages/forms/nuevo_encargado.php">
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>
+          </li>
+        </ul>
+      </div>
+      <!-- #Menu -->
     </aside>
     <!-- #END# Left Sidebar -->
   </section>
 
   <section class="content">
     <div class="container-fluid">
-      <!-- Advanced Form Example With Validation -->
       <div class="row clearfix">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-48 col-md-48 col-sm-48 col-xs-48">
           <div class="card">
             <div class="header">
+
               <h2>NUEVO CASO - INDAGACIÓN PREVIA</h2>
               <h1>Sección 2</h1>
               <h2>Sus esfuerzo para localizar al cónyuge</h2>
@@ -369,6 +359,10 @@
 
 
 <!-- end -->        </fieldset>
+<h3>Siguiente</h3>
+<fieldset>
+  <button type="button" onclick="window.location='../../pages/forms/indagacion1.php';">Siguiente</buton>
+</fieldset>
                               </form>
                               </div>
                               </div>
@@ -381,63 +375,63 @@
 
 
 <!-- -->
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Advanced Form Example With Validation -->
-        </div>
-    </section>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Jquery Core Js -->
-    <script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Jquery Core Js -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core Js -->
-    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+<!-- Bootstrap Core Js -->
+<script src="../../plugins/bootstrap/js/bootstrap.js"></script>
 
-    <!-- Select Plugin Js -->
-    <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+<!-- Select Plugin Js -->
+<script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
-    <!-- Slimscroll Plugin Js -->
-    <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+<!-- Slimscroll Plugin Js -->
+<script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- Jquery Validation Plugin Css -->
-    <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+<!-- Jquery Validation Plugin Css -->
+<script src="../../plugins/jquery-validation/jquery.validate.js"></script>
 
-    <!-- JQuery Steps Plugin Js -->
-    <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
+<!-- JQuery Steps Plugin Js -->
+<script src="../../plugins/jquery-steps/jquery.steps.js"></script>
 
-    <!-- Sweet Alert Plugin Js -->
-    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
+<!-- Sweet Alert Plugin Js -->
+<script src="../../plugins/sweetalert/sweetalert.min.js"></script>
 
-    <!-- Waves Effect Plugin Js -->
-    <script src="../../plugins/node-waves/waves.js"></script>
+<!-- Waves Effect Plugin Js -->
+<script src="../../plugins/node-waves/waves.js"></script>
 
-    <!-- Autosize Plugin Js -->
-    <script src="../../plugins/autosize/autosize.js"></script>
+<!-- Autosize Plugin Js -->
+<script src="../../plugins/autosize/autosize.js"></script>
 
-    <!-- Custom JS -->
-    <script src="../../js/pages/forms/basic-form-elements.js"></script>
+<!-- Custom JS -->
+<script src="../../js/pages/forms/basic-form-elements.js"></script>
 
-    <!-- Moment plugin js -->
-    <script src="../../plugins/momentjs/moment.js"></script>
+<!-- Moment plugin js -->
+<script src="../../plugins/momentjs/moment.js"></script>
 
-    <!-- Input Mask Plugin Js -->
-    <script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+<!-- Input Mask Plugin Js -->
+<script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
 
-    <!-- Multi Select Plugin Js -->
-    <script src="../../plugins/multi-select/js/jquery.multi-select.js"></script>
+<!-- Multi Select Plugin Js -->
+<script src="../../plugins/multi-select/js/jquery.multi-select.js"></script>
 
-    <!-- Custom Js -->
-    <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/forms/form-wizard.js"></script>
-    <script src="../../js/pages/forms/basic-form-elements.js"></script>
-    <script src="../../js/pages/forms/advanced-form-elements.js"></script>
+<!-- Custom Js -->
+<script src="../../js/admin.js"></script>
+<script src="../../js/pages/forms/form-wizard.js"></script>
+<script src="../../js/pages/forms/basic-form-elements.js"></script>
+<script src="../../js/pages/forms/advanced-form-elements.js"></script>
 
-    <script src="../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+<script src="../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
-    <!-- Demo Js -->
-    <script src="../../js/demo.js"></script>
+<!-- Demo Js -->
+<script src="../../js/demo.js"></script>
 </body>
 </html>

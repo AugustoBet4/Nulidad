@@ -1,0 +1,32 @@
+Nombre completo del testigo:
+  ipstpnombre
+  ipstsnombre
+  ipstapaterno
+  ipstamaterno
+
+Ultima dirección que conoció de la parte Demandada:
+  ipstdireccion
+  ipstciudad
+  ipstzona
+  ipstci
+  ipstsexo
+
+¿Desde cuándo esta persona le conoce?
+  ipstpersona
+
+¿Qué relación tiene con usted?
+  ipstrelacion
+
+¿Qué relación tiene con la parte Demandada?
+  ipstrelaciondmd
+
+¿Conoció esta persona a ustedes antes de su matrimonio?
+  ipstrbmatrimonio
+    si  rbmatrimoniosi
+    no  rbmatrimoniono
+
+En términos generales, ¿qué estaría esta persona dispuesta a declarar al Tribunal?
+  ipsttribunal
+
+¿Está de acuerdo esta persona en ser testigo?
+  ipsttestigo
