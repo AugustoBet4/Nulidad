@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<!--HELLO-->
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Nulidad matrimonial</title>
-    <!-- Favicon-->
+    <title>Nulidad Matrimonial - Caso nuevo</title>
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
@@ -23,8 +18,8 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Morris Chart Css-->
-    <link href="../../plugins/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Sweet Alert Css -->
+    <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
@@ -54,17 +49,6 @@
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->
-    <!-- Search Bar -->
-    <div class="search-bar">
-        <div class="search-icon">
-            <i class="material-icons">search</i>
-        </div>
-        <input type="text" placeholder="INGRESE CASO A BUSCAR">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div>
-    <!-- #END# Search Bar -->
     <!-- Top Bar -->
     <nav class="navbar">
         <div class="container-fluid">
@@ -72,13 +56,6 @@
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
                 <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Call Search -->
-                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-                    <!-- #END# Call Search -->
-                </ul>
             </div>
         </div>
     </nav>
@@ -109,19 +86,19 @@
                     <li>
                         <a href="indagacion.php">
                             <i class="material-icons">library_add</i>
-                            <span>Nuevo caso</span>
+                            <span>Caso nuevo</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
+                    <li class="active">
+                        <a href="javascript:void(0);" class="menu-toggle">              <!-- a href="../../pages/bla.html"-->
                             <i class="material-icons">attach_file</i>
-                            <span>Dar Seguimiento a caso</span>
+                            <span>Dar seguimiento a caso</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
+                            <li >
                                 <a href="indagacion.php">Indagacion Previa</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="introduccion.php">Fase Introductoria</a>
                             </li>
                             <li>
@@ -135,10 +112,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="buscador.php">
                             <i class="material-icons">search</i>
-                            <span>Buscar Caso</span>
+                            <span>Buscar caso</span>
                         </a>
                     </li>
                     <li>
@@ -146,69 +123,69 @@
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- #Menu -->
         </aside>
         <!-- #END# Left Sidebar -->
-        <!-- Right Sidebar -->
     </section>
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-              <div class="row clearfix">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
-                        <div class="header bg-blue-grey">
-                            <h2>
-                                Nuevo Caso <small>Indagacion Previa</small>
-                            </h2>
-                        </div>
-                    <div class="body">
-                        2/17  Quispe-Mamani
-                    </div>
+                      <div class="header">
+                          <h2>BASIC EXAMPLE - VERTICAL LAYOUT</h2>
+                          <ul class="header-dropdown m-r--5">
+                              <li class="dropdown">
+                                  <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                      <i class="material-icons">more_vert</i>
+                                  </a>
+                                  <ul class="dropdown-menu pull-right">
+                                      <li><a href="javascript:void(0);">Action</a></li>
+                                      <li><a href="javascript:void(0);">Another action</a></li>
+                                      <li><a href="javascript:void(0);">Something else here</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="body">
+                          <div id="wizard_vertical">
+                              <h2>Registro de la demanda</h2>
+                              <section>
+                                  <p>
+                                      Registro del escrito de la demanda
+                                  </p>
+                              </section>
+                              <h2>Aceptación demanda</h2>
+                              <section>
+                                  <p>
+                                    Decreto de admisión de la demanda y formula de dudas
+                                  </p>
+                              </section>
+                              <h2>Third Step</h2>
+                              <section>
+                                  <p>
+                                      Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
+                                      condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
+                                      Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
+                                      Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
+                                      commodo lectus sollicitudin in auctor mauris venenatis.
+                                  </p>
+                              </section>
+                              <h2>Forth Step</h2>
+                              <section>
+                                  <p>
+                                      Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
+                                      vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
+                                      ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
+                                      Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
+                                      tortor.
+                                  </p>
+                              </section>
+                          </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="card">
-                        <div class="header bg-blue-grey">
-                            <h2>
-                                Nuevo Caso <small>Indagacion Previa</small>
-                            </h2>
-                        </div>
-                        <div class="body">
-                        3/17 Hernandez-Diaz
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="card">
-                        <div class="header bg-blue-grey">
-                            <h2>
-                                Nuevo Caso <small>Indagacion Previa</small>
-                            </h2>
-                        </div>
-                    <div class="body">
-                        2/17  Perez-Sanchez
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="card">
-                        <div class="header bg-blue-grey">
-                            <h2>
-                                Nuevo Caso <small>Indagacion Previa</small>
-                            </h2>
-                        </div>
-                    <div class="body">
-                        2/17  Gonzales-Alcala
-                    </div>
-                    </div>
-                </div>
-              </div>
             </div>
+            <!-- #END# Advanced Form Example With Validation -->
         </div>
     </section>
 
@@ -224,35 +201,23 @@
     <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
+    <!-- Jquery Validation Plugin Css -->
+    <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!-- JQuery Steps Plugin Js -->
+    <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
+
+    <!-- Sweet Alert Plugin Js -->
+    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
+
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
-    <!-- Jquery CountTo Plugin Js -->
-    <script src="../../plugins/jquery-countto/jquery.countTo.js"></script>
-
-    <!-- Morris Plugin Js -->
-    <script src="../../plugins/raphael/raphael.min.js"></script>
-    <script src="../../plugins/morrisjs/morris.js"></script>
-
-    <!-- ChartJs -->
-    <script src="../../plugins/chartjs/Chart.bundle.js"></script>
-
-    <!-- Flot Charts Plugin Js -->
-    <script src="../../plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="../../plugins/flot-charts/jquery.flot.js"></script>
-    <script src="../../plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="../../plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="../../plugins/flot-charts/jquery.flot.time.js"></script>
-
-    <!-- Sparkline Chart Plugin Js -->
-    <script src="../../plugins/jquery-sparkline/jquery.sparkline.js"></script>
-
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/index.js"></script>
+    <script src="../../js/pages/forms/form-wizard.js"></script>
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
 </body>
-
 </html>
