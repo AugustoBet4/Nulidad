@@ -102,7 +102,7 @@
                                 <a href="introduccion.php">Fase Introductoria</a>
                             </li>
                             <li>
-                                <a href="indagacion.php">Fase de Instrucción</a>
+                                <a href="instruccion.php">Fase de Instrucción</a>
                             </li>
                             <li>
                                 <a href="alegatoria.php">Fase Alegatoria</a>

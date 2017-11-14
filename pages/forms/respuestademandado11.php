@@ -105,21 +105,22 @@ $nombreabogado="Ejemplo abogado";
                             <i class="material-icons">attach_file</i>
                             <span>Dar Seguimiento a caso</span>
                         </a>
+
                         <ul class="ml-menu">
                             <li>
-                                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+                                <a href="indagacion.php">Indagación previa</a>
                             </li>
                             <li class="active">
-                                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                                <a href="introduccion.php">Fase Introductoria</a>
                             </li>
                             <li>
-                                <a href="pages/indagacion.html">Fase de Instrucción</a>
+                                <a href="instruccion.php">Fase Instructoria</a>
                             </li>
                             <li>
-                                <a href="pages/indagacion.html">Fase Alegatoria</a>
+                                <a href="alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li >
-                                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                                <a href="sentencia.php">Fase Decisoria</a>
                             </li>
                         </ul>
                     </li>
