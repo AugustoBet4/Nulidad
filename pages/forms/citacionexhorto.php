@@ -107,19 +107,19 @@ $nombreabogado="Ejemplo abogado";
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+                                <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
                             </li>
                             <li class="active">
-                                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                                <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
                             </li>
                             <li>
-                                <a href="pages/indagacion.html">Fase de Instrucción</a>
+                                <a href="instruccion.php">Fase de Instrucción</a>
                             </li>
                             <li>
-                                <a href="pages/indagacion.html">Fase Alegatoria</a>
+                                <a href="alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li >
-                                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                                <a href="../forms/sentencia.php">Fase Decisoria</a>
                             </li>
                         </ul>
                     </li>
