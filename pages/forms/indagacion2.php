@@ -49,6 +49,7 @@
   <!-- Overlay For Sidebars -->
   <div class="overlay"></div>
   <!-- #END# Overlay For Sidebars -->
+<<<<<<< HEAD
   <!-- Search Bar -->
   <!-- <div class="search-bar">
     <div class="search-icon">
@@ -60,6 +61,8 @@
     </div>
   </div> -->
   <!-- #END# Search Bar -->
+=======
+>>>>>>> f4a5da6270fd9605f4c6ceaca81004fdf24f24f9
   <!-- Top Bar -->
   <nav class="navbar">
     <div class="container-fluid">
@@ -68,6 +71,7 @@
         <a href="javascript:void(0);" class="bars"></a>
         <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
       </div>
+<<<<<<< HEAD
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <!-- Call Search -->
@@ -75,6 +79,8 @@
           <!-- #END# Call Search -->
         </ul>
       </div>
+=======
+>>>>>>> f4a5da6270fd9605f4c6ceaca81004fdf24f24f9
     </div>
   </nav>
   <!-- #Top Bar -->
@@ -92,7 +98,7 @@
           <div class="btn-group user-helper-dropdown">
             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
             <ul class="dropdown-menu pull-right">
-              <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.php">Cerrar Sesion</a></a>
+              <li><a href="../../pages/forms/ingreso.php">Cerrar Sesion<i class="material-icons">input</i></a></li>
               </li>
             </ul>
           </div>
@@ -114,7 +120,7 @@
                             <span>Dar Seguimiento a caso</span>
                         </a>
             <ul class="ml-menu">
-              <li>
+              <li class="active">
                 <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
               </li>
               <li>
@@ -126,7 +132,7 @@
               <li>
                 <a href="pages/forms/alegatoria.php">Fase Alegatoria</a>
               </li>
-              <li class="active">
+              <li>
                 <a href="../forms/sentencia.php">Fase Decisoria</a>
               </li>
             </ul>
