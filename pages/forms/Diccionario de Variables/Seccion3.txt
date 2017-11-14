@@ -1,0 +1,11 @@
+Nombre completo del testigo:
+  ipstpnombre
+  ipstsnombre
+  ipstapaterno
+  ipstamaterno
+
+Ultima dirección que conoció de la parte Demandada:
+  ipstdireccion
+  ipstciudad
+  ipstzona
+  ipstci
