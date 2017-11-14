@@ -143,7 +143,7 @@
                       </div>
                       <div class="body">
                           <form id="wizard_with_validation" method="POST">
-                              <h3>Informacion Básica</h3>
+                              <h3>Información Básica</h3>
                               <fieldset>
                                 <h3>A)DEMANDANTE</h3>
                                   <div class="form-group form-float">
@@ -278,6 +278,17 @@
                                     </div>
                                     </div>
                                   </div>
+                                  <h5>Usted nos autoriza a dejar un mensaje acerca de su caso en:</h5></li>
+                                <div class="demo-checkbox">
+                                  <input type="checkbox" id="ipibckmensajeemail" class="chk-col-light-blue">
+                                  <label for="ipibckmensajeemail">Email</label>
+                                  <input type="checkbox" id="ipibckmensajecasa" class="chk-col-light-blue">
+                                  <label for="ipibckmensajecasa">Casa</label>
+                                  <input type="checkbox" id="ipibckmensajecelular" class="chk-col-light-blue">
+                                  <label for="ipibckmensajecelular">Celular</label>
+                                  <input type="checkbox" id="ipibckmensajetrabajo" class="chk-col-light-blue">
+                                  <label for="ipibckmensajetrabajo">Trabajo</label>
+                                </div>
                                   <h3>B)DEMANDADO</h3>
                                   <div class="form-group form-float">
                                       <div class="form-line">
