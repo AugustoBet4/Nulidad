@@ -886,16 +886,11 @@
                             <h4>L. ¿Por qué cree que el matrimonio fracasó y fue inválido desde el comienzo?</h4>
                             <div class="form-group form-float">
                               <div class="form-line">
-                                <input type="text" class="form-control" name="indg2p72" required>
+                                <input type="text" class="form-control" name="indg2p72">
                                 <label class="form-label"></label>
                               </div>
                             </div>
                     </align>
-                    <div class="col-sm-3">
-                      <button class="btn btn bg-blue btn-block btn-lg waves-effect" type="submit">Siguiente</button>
-                    </div>
-                    <br>
-                  </form>
                 </div>
                 <div role="tabpanel" class="tab-pane fade actie in" id="profile">
                     <textarea id="tinymce">
@@ -1007,7 +1002,14 @@
                             <b>Fecha recibida:</b>
                           </th>
                          </table>
-                    </textarea>
+                         </textarea>
+                         <br><br>
+                         <div class="col-sm-3">
+                           <button class="btn btn bg-blue btn-block btn-lg waves-effect" type="submit">Siguiente</button>
+                         </div>
+                       </form>
+
+                    <br>
                 </div>
               </div>
             </div>

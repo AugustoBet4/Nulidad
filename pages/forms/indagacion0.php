@@ -188,9 +188,9 @@
 
                   <div class="demo-radio-button">
                     <h5>¿Ha sido esta persona conocida con otro nombre (por ejemplo, apellido de soltera, un alias o apodo)?</h5>
-                    <input name="ipsdrbapodo" type="radio" id="rbapodosi" required>
+                    <input name="ipsdrbapodo" type="radio" id="rbapodosi" value="Si"required>
                     <label for="rbapodosi">Si</label>
-                    <input name="ipsdrbapodo" type="radio" id="rbapodono" required>
+                    <input name="ipsdrbapodo" type="radio" id="rbapodono" value="No"required>
                     <label for="rbapodono">No</label>
                   </div>
                   <br>
@@ -206,11 +206,11 @@
 
                   <div class="demo-radio-button">
                     <h5>¿Cómo fue la última vez que habló con la parte Demandada?</h5>
-                    <input name="ipsdrbdemandada" type="radio" id="rbpersonalmente" required>
+                    <input name="ipsdrbdemandada" type="radio" id="rbpersonalmente" value="Personalmente" required>
                     <label for="rbpersonalmente">Personalmente</label>
-                    <input name="ipsdrbdemandada" type="radio" id="rbtelefono" required>
+                    <input name="ipsdrbdemandada" type="radio" id="rbtelefono" value="Teléfono"required>
                     <label for="rbtelefono">Por telefono</label>
-                    <input name="ipsdrbdemandada" type="radio" id="rbcorreo" required>
+                    <input name="ipsdrbdemandada" type="radio" id="rbcorreo" value="Correo" required>
                     <label for="rbcorreo">Por correo/e-mail</label>
                   </div>
                   <br>

@@ -78,11 +78,11 @@ $matrimonio="X-X";
                             <li >
                                 <a href="indagacion.php">Indagacion Previa</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="introduccion.php">Fase Introductoria</a>
                             </li>
-                            <li>
-                                <a href="indagacion.php">Fase de Instrucción</a>
+                            <li class="active">
+                                <a href="instruccion.php">Fase de Instrucción</a>
                             </li>
                             <li>
                                 <a href="alegatoria.php">Fase Alegatoria</a>
