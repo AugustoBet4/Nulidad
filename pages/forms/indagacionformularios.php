@@ -1,78 +1,26 @@
 <!DOCTYPE html>
 <!-- <?php
   setlocale(LC_ALL,"es_ES");
-  $fanombredemandante = $_POST["fanombredemandante"];
-  $fafechainicio = $_POST["fafechainicio"];
-  $fanombredemandado = $_POST["fanombredemandado"];
-  $fanombredemandante = $_POST["fanombredemandante"];
-  $fadirecciondemandado = $_POST["fadirecciondemandado"];
-  $fadirecciondemandante = $_POST["fadirecciondemandante"];
-  $fafecha = $_POST["fafecha"];
-  $faciudadydepartamento = $_POST["faciudadydepartamento"];
-  $faarquidiocesis = $_POST["faarquidiocesis"];
-  $fanombreparroquia = $_POST["fanombreparroquia"];
-  $faduracionconvivencia = $_POST["faduracionconvivencia"];
-  $faconcubinatoprevio  = $_POST["faconcubinatoprevio"];
-  $faconcubinatioduracion = $_POST["faconcubinatioduracion"];
-  $faduracionnoviazgo = $_POST["faduracionnoviazgo"];
-  $faembarazo = $_POST["faembarazo"];
-  $fanumhijos = $_POST["fanumhijos"];
-  $fadivorcio = $_POST["fadivorcio"];
-  $fadivorciofecha = $_POST["fadivorciofecha"];
-  $fanomcanon1 = $_POST["fanomcanon1"];
-  $fapartecanon1 = $_POST["fapartecanon1"];
-  $fanomcanon2 = $_POST["fanomcanon2"];
-  $fapartecanon2 = $_POST["fapartecanon2"];
-  $fanomcanon3 = $_POST["fanomcanon3"];
-  $fapartecanon3 = $_POST["fapartecanon3"];
-  $fanomcanon4 = $_POST["fanomcanon4"];
-  $fapartecanon4 = $_POST["fapartecanon4"];
-  $fanomcanon5 = $_POST["fanomcanon5"];
-  $fapartecanon5 = $_POST["fapartecanon5"];
-  $fahechos = $_POST["fahechos"];
-  $faderechocanon1 = $_POST["faderechocanon1"];
-  if (empty($_POST["faderechocanon2"])) {
-      $faderechocanon2 = "";
+
+// VARIABLES DE HISTORIA DE Noviazgo ----------------------------------------
+  $iphfmatrimoniodmt= $_POST["iphfmatrimoniodmt"];
+  $iphfseparaciondmt= $_POST["iphfseparaciondmt"];
+
+  if (empty($_POST["iphfmatrimoniodmt"])) {
+      $iphfmatrimoniodmt = "";
   }else {
-      $faderechocanon2 = $_POST["faderechocanon2"];
+      $iphfmatrimoniodmt = $_POST["iphfmatrimoniodmt"];
   }
-  if (empty($_POST["faderechocanon3"])) {
-      $faderechocanon3 = "";
+  if (empty($_POST["iphfseparaciondmt"])) {
+      $iphfseparaciondmt = "";
   }else {
-      $faderechocanon3 = $_POST["faderechocanon3"];
-  }
-  if (empty($_POST["faderechocanon4"])) {
-      $faderechocanon4 = "";
-  }else {
-      $faderechocanon4 = $_POST["faderechocanon4"];
-  }
-  if (empty($_POST["faderechocanon5"])) {
-      $faderechocanon5 = "";
-  }else {
-      $faderechocanon5 = $_POST["faderechocanon5"];
-  }
-  $faobscanon1 = $_POST["faobscanon1"];
-  if (empty($_POST["faobscanon2"])) {
-      $faobscanon2 = "";
-  }else {
-      $faobscanon2 = $_POST["faobscanon2"];
-  }
-  if (empty($_POST["faobscanon3"])) {
-      $faobscanon3 = "";
-  }else {
-      $faobscanon3 = $_POST["faobscanon3"];
-  }
-  if (empty($_POST["faobscanon4"])) {
-      $faobscanon4 = "";
-  }else {
-      $faobscanon4 = $_POST["faobscanon4"];
-  }
-  if (empty($_POST["faobscanon5"])) {
-      $faobscanon5 = "";
-  }else {
-      $faobscanon5 = $_POST["faobscanon5"];
+      $iphfseparaciondmt = $_POST["iphfseparaciondmt"];
   }
 
+
+
+
+// PRINCIPALES
   $matrimonio = "LOPEZ-PEREZ";
   $fanombrenotario = "Notario 1";
   $facanon = "1030";
@@ -233,17 +181,276 @@
                           <h3>Formulario Discusoria</h3>
 
                           <ul class="nav nav-tabs tab-nav-right" role="tablist">
-                                <li role="presentation" class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Información Básica</a></li>
-                                <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Información biográfica</a></li>
-                                <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Historia Familiar</a></li>
-                                <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Noviazgo y matrimonio</a></li>
-                                <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Matrimonios contrídos anteriormente</a></li>
-                                <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Separación y divorcio/disolución</a></li>
-                                <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Hijos</a></li>
-                                <li role="presentation" class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Estado actual</a></li>
+                                <li role="presentation" class="active"><a href="#profile1" data-toggle="tab" aria-expanded="true">Información Básica</a></li>
+                                <li role="presentation" class=""><a href="#profile2" data-toggle="tab" aria-expanded="false">Información biográfica</a></li>
+                                <li role="presentation" class=""><a href="#profile3" data-toggle="tab" aria-expanded="false">Historia Familiar</a></li>
+                                <li role="presentation" class=""><a href="#profile4" data-toggle="tab" aria-expanded="false">Noviazgo y matrimonio</a></li>
+                                <li role="presentation" class=""><a href="#profile5" data-toggle="tab" aria-expanded="false">Matrimonios contrídos anteriormente</a></li>
+                                <li role="presentation" class=""><a href="#profile6" data-toggle="tab" aria-expanded="false">Separación y divorcio/disolución</a></li>
+                                <li role="presentation" class=""><a href="#profile7" data-toggle="tab" aria-expanded="false">Hijos</a></li>
+                                <li role="presentation" class=""><a href="#profile8" data-toggle="tab" aria-expanded="false">Estado actual</a></li>
                           </ul>
                             <div class="tab-content">
-                                  <div role="tabpanel" class="tab-pane fade active in" id="home">
+                                  <div role="tabpanel" class="tab-pane fade active in" id="profile1">
+                                    <textarea id="tinymce">
+                                      <center><h2>Sección 1</h2></center>
+                                      <h3>Parte Demandante:</h3>
+                                      <center><h4>YO JURO ANTE DIOS Y MI CONCIENCIA QUE TODA LA INFORMACIÓN
+                                      QUE PRESENTO ES COMPLETA Y VERDADERA</h4></center>
+                                      <h3>INFORMACIÓN BÁSICA</h3>
+                                      <table style="width:100%">
+                                        <tr>
+                                          <td width="30%" height="30" valign="top">Primer Nombre:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Segundo nombre:<br><?php echo $fanombredemandante ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="30%" height="30" valign="top">Apellido Paterno:<br> <?php echo $faarquidiocesis?></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Apellido Materno::<br> <?php echo $fanombreparroquia?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Dirección:<br> <?php echo $faduracionconvivencia?></td>
+                                          <td width="25%" valign="top">Sexo:<br> <?php echo $faconcubinatoprevio?></td>
+                                          <td width="25%" valign="top">Ci:<br> <?php echo $faconcubinatioduracion?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Ciudad:<br> <?php echo $faduracionconvivencia?></td>
+                                          <td width="25%" valign="top">Zona:<br> <?php echo $faconcubinatoprevio?></td>
+                                          <td width="25%" valign="top">Edad:<br> <?php echo $faconcubinatioduracion?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="30%" height="30" valign="top">Correo Electrónico:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Ocupación:<br><?php echo $fanombredemandante ?></td>
+                                        </tr>
+                                        <tr>
+                                        <tr>
+                                          <th colspan="3" align="left" valign="top">
+                                            Favor indique como podemos comunicarnos con Ud. acerca de su proceso:
+                                          </th>
+                                        </tr>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Teléfono de casa:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Teléfono celular
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Teléfono de trabajo:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            ¿Parroquia donde se celebró su matrimonio?
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            ¿Fecha de celebración de su matrimonio?
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Usted nos autoriza a dejar un mensaje acerca de su caso en:
+                                          </td>
+                                        </tr>
+                                      </table><br><br>
+
+                                    <h3>INFORMACIÓN BIOGRÁFICA:</h3>
+                                    <table style="width:100%">
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Usted nos autoriza a dejar un mensaje acerca de su caso en:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Fecha de nacimiento:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Lugar nacimiento: Ciudad:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" height="30" valign="top">Departamento:<br><?php echo $fanombredemandante ?></td>
+                                        <td width="50%" valign="top" colspan="2" align="left">Estado:<br><?php echo $fanombredemandante ?></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          ¿Recibió el bautismo <b>antes</b> de que su matrimonio se efectuara?
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Si es así,¿En qué religión o denominación fue bautizado (a)? CATÓLICO
+
+                                          Si es <b>no</b>, diga de qué iglesia:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Fecha del bautismo:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Parroquia del bautismo:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Diócesis:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" height="30" valign="top">Libro:<br> <?php echo $faduracionconvivencia?></td>
+                                        <td width="25%" valign="top">Página:<br> <?php echo $faconcubinatoprevio?></td>
+                                        <td width="25%" valign="top">Número:<br> <?php echo $faconcubinatioduracion?></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          ¿Es usted católico practicante?
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          ¿Pertenece o frecuenta a algún grupo o movimiento eclésiastico?
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="3" align="left" valign="top">
+                                          Si es sí, ¿diga cuál?:
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td width="50%" height="30" valign="top">Parroquia:<br> <?php echo $faduracionconvivencia?></td>
+                                        <td width="25%" valign="top">Diócesis:<br> <?php echo $faconcubinatoprevio?></td>
+                                        <td width="25%" valign="top">Estado:<br> <?php echo $faconcubinatioduracion?></td>
+                                      </tr>
+
+
+                                    </table>
+
+                                    <h3>PARTE DEMANDADA <font type="Times New Roman"><i>(cónyugue)</i></h3>
+
+                                      <table style="width:100%">
+                                        <tr>
+                                          <td width="30%" height="30" valign="top">Primer Nombre:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Segundo nombre:<br><?php echo $fanombredemandante ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="30%" height="30" valign="top">Apellido Paterno:<br> <?php echo $faarquidiocesis?></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Apellido Materno::<br> <?php echo $fanombreparroquia?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Dirección:<br> <?php echo $faduracionconvivencia?></td>
+                                          <td width="25%" valign="top">Sexo:<br> <?php echo $faconcubinatoprevio?></td>
+                                          <td width="25%" valign="top">Ci:<br> <?php echo $faconcubinatioduracion?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Ciudad:<br> <?php echo $faduracionconvivencia?></td>
+                                          <td width="25%" valign="top">Zona:<br> <?php echo $faconcubinatoprevio?></td>
+                                          <td width="25%" valign="top">Edad:<br> <?php echo $faconcubinatioduracion?></td>
+                                        </tr>
+                                        <tr>
+                                          <tr>
+                                            <td width="50%" height="30" valign="top">Teléfono:<br> <?php echo $faduracionconvivencia?></td>
+                                            <td width="25%" valign="top">País:<br> <?php echo $faconcubinatoprevio?></td>
+                                            <td width="25%" valign="top">¿Se comunica regularmente con la parte demandada?<br> <?php echo $faconcubinatioduracion?></td>
+                                          </tr>
+                                          <tr>
+                                          <td width="30%" height="30" valign="top">Correo Electrónico:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Ocupación de la parte demandada:<br><?php echo $fanombredemandante ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Usted nos autoriza a dejar un mensaje acerca de su caso en:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Fecha de nacimiento de la parte demandada:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Lugar nacimiento: Ciudad:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Departamento:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="50%" valign="top" colspan="2" align="left">Estado:<br><?php echo $fanombredemandante ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            ¿Fue la parte demandada bautizada antes de casarse con usted?
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Der ser así,¿En qué religión o denominación fue bautizado (a)? CATÓLICO
+
+                                            Si es <b>no</b>, diga de qué iglesia:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Parroquia del bautismo:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Diócesis:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Libro:<br> <?php echo $faduracionconvivencia?></td>
+                                          <td width="25%" valign="top">Página:<br> <?php echo $faconcubinatoprevio?></td>
+                                          <td width="25%" valign="top">Número:<br> <?php echo $faconcubinatioduracion?></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            ¿Es usted católico practicante?
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            ¿Pertenece o frecuenta a algún grupo o movimiento eclésiastico?
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            Si es sí, ¿diga cuál?:
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Parroquia:<br> <?php echo $faduracionconvivencia?></td>
+                                          <td width="25%" valign="top">Diócesis:<br> <?php echo $faconcubinatoprevio?></td>
+                                          <td width="25%" valign="top">Estado:<br> <?php echo $faconcubinatioduracion?></td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="3" align="left" valign="top">
+                                            <b>Nota importante:</b> se tiene que <u>proveer la dirección completa de la parte Demandada.</u>
+                                            Sin esta información el caso no será aceptado. Si se han hecho todos los esfuerzos posibles para localizar la parte Demandada y aún así no puede proveer la dirección completa,
+                                            refiérase a la sección 2 y facilite toda la documentación requerida.
+                                            El Tribunal también tratará de localizar a la parte Demandada; no obstante, esto podría demorar el caso.
+                                          </td>
+                                        </tr>
+
+
+                                      </table>
+
+
+                                    </textarea>
+                                  </div>
+
+                                  <div role="tabpanel" class="tab-pane fade" id="profile2">
                                     <textarea id="tinymce">
                                       <table style="width:100%">
                                         <tr>
@@ -271,27 +478,40 @@
                                             TERRITORIO DEL TRIBUNAL</b></td>
                                         </tr>
                                       </table>
-
                                     </textarea>
                                   </div>
-                                  <div role="tabpanel" class="tab-pane fade" id="profile">
+                                  <div role="tabpanel" class="tab-pane fade" id="profile3">
                                     <textarea id="tinymce">
-                                        <BR>
-                                        <center><font color="#A3A3A3" face="tahoma" size="4"><b>INTRODUCTORIA - DOCUMENTO 3</b></font></center>
-                                        <center><font color="#A3A3A3" face="tahoma" size="3">REGISTRO DE LA DEMANDA</font></center><br>
-                                        <center><font color="#000000" face="tahoma" size="4"><b>NULIDAD DE MATRIMONIO</b></font></center>
-                                        <center><font color="#000000" face="tahoma" size="4"><b><?php echo $matrimonio;?></b></font></center><br><br><br>
-                                        <font color="#000000" face="times new roman" size="4">AL TRIBUNAL ECLESIÁSTICO DE ...</font><br><br>
-                                        <font size="4" face="times new roman">
-                                        <?php echo $fanombrenotario?>, en nombre y representación de <?php echo $fanombredemandate?>, en la causa de nulidad del matrimonio canónico que
-                                        contrajo la misma con <?php echo $fanombredemandado?>, ante este Venerable Tribunal, como mejor proceda en derecho
-                                        comparezco y DIGO:
-                                        Que cumplimentando lo dispuesto por este Tribunal, esta parte, al amparo de lo previsto en el canon
-                                        <?php echo $facanon?> vigente presenta ESCRITO DE DEFENSA, formulando las siguientes.
-                                        <br><br>
-                                                                                </font><br><br>
+                                      <table style="width:100%">
+                                        <tr>
+                                          <td width="100%" height="10" valign="top" colspan="2"><b>Padres</b></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="100%" height="10" valign="top" colspan="2"><b>A) Demandante</b></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Sus padres son Católicos?:<?php ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Sus padres están casados por la Iglesia Católica?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿El matrimonio de sus padres es un matrimonio de toda la vida?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Si no es así, ¿cómo ha sido el matrimonio de sus padres?:<?php echo $iphfmatrimoniodmt?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Si sus padres se han separado, que edad tenía usted al momento de la separación?:<?php echo $iphfseparaciondmt?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Sus padres son católicos practicantes?:<?php  ?></td>
+                                        </tr>
+                                      </table>
                                     </textarea>
                                   </div>
+
+
                             </div>
                         </div>
                     </div>
