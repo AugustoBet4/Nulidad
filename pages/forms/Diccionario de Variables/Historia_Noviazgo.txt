@@ -71,7 +71,7 @@ Si no es así ¿Cómo ha sido el matrimonio de sus padres?
     no  rbcatpracmadredmdno
 
 
-Hermanos
+Hermano
 DEMANDANTE
   varones
     iphfhnovardmt
@@ -105,6 +105,10 @@ Expliquese
 
   Expliquese
     iphfexplidmd
+
+  Observaciones
+    faobscanon1
+
     --------------------------------------------------------
 NOVIAZGO Y MATRIMONIO
 Brevemente ¿Cuándo y cómo conoció a la parte Demandada?
@@ -141,7 +145,7 @@ Si es así, explique ¿Porqué decidió casarse?:
     si  rbsospechasi
     no  rbsospechano
 
->Si es así, ¿Como afecto la desicion de contraer matrimonio?
+Si es así, ¿Como afecto la desicion de contraer matrimonio?
   ipnmcontraer
 
 ¿Usted y la parte demandada firmaron algun acuerdo o convenio prenupcial?
@@ -151,6 +155,8 @@ Si es así, explique ¿Porqué decidió casarse?:
 
 Fecha exacta de la boda:
   ipnmfechaboda
+
+  El matrimonio fue oficiado por un:
     rbsac
     rbdiacono
     rbcivil

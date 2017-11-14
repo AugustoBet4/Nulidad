@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<?php
+  setlocale(LC_ALL,"es_ES");
+  $matrimonio = "LOPEZ-PEREZ";
+
+  if(!empty($_FILES)){
+  $targetDir = "../../Documentos/".$matrimonio."/";
+  $fileName = $_FILES['file']['name'];
+  $targetFile = $targetDir.$fileName;
+
+  if (!file_exists($targetDir)) {
+    mkdir($targetDir, 0777, true);
+  }
+  move_uploaded_file($_FILES['file']['tmp_name'],$targetFile);
+  }
+?>
 <html>
 
 <head>
@@ -27,8 +42,14 @@
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
 
+    <!-- Bootstrap Select Css -->
+    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+
+    <!-- Dropzone Css -->
+    <link href="../../plugins/dropzone/dropzone.css" rel="stylesheet" />
 </head>
 
 <body class="theme-blue">
@@ -136,7 +157,7 @@
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
-                        <div class="header">
+                      <div class="header">
                           <h2>NUEVO CASO - INDAGACIÓN PREVIA</h2>
                           <h1>Sección 1</h1>
                           <h2>Para Demandante</h2>
@@ -270,25 +291,25 @@
                                   <div class="input-group">
                                     <h5>¿Fecha de celebración de su matrimonio?</h5>
                                     <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="material-icons">date_range</i>
-                                    </span>
-                                    <div class="form-line">
+                                      <span class="input-group-addon">
+                                          <i class="material-icons">date_range</i>
+                                      </span>
+                                      <div class="form-line">
                                         <input type="text" class="form-control date" placeholder="30/07/2016" name="ipibfechamatrimonio" required>
                                     </div>
                                     </div>
                                   </div>
                                   <h5>Usted nos autoriza a dejar un mensaje acerca de su caso en:</h5></li>
-                                <div class="demo-checkbox">
-                                  <input type="checkbox" id="ipibckmensajeemail" class="chk-col-light-blue">
-                                  <label for="ipibckmensajeemail">Email</label>
-                                  <input type="checkbox" id="ipibckmensajecasa" class="chk-col-light-blue">
-                                  <label for="ipibckmensajecasa">Casa</label>
-                                  <input type="checkbox" id="ipibckmensajecelular" class="chk-col-light-blue">
-                                  <label for="ipibckmensajecelular">Celular</label>
-                                  <input type="checkbox" id="ipibckmensajetrabajo" class="chk-col-light-blue">
-                                  <label for="ipibckmensajetrabajo">Trabajo</label>
-                                </div>
+                                  <div class="demo-checkbox">
+                                    <input type="checkbox" id="ipibckmensajeemail" class="chk-col-light-blue">
+                                    <label for="ipibckmensajeemail">Email</label>
+                                    <input type="checkbox" id="ipibckmensajecasa" class="chk-col-light-blue">
+                                    <label for="ipibckmensajecasa">Casa</label>
+                                    <input type="checkbox" id="ipibckmensajecelular" class="chk-col-light-blue">
+                                    <label for="ipibckmensajecelular">Celular</label>
+                                    <input type="checkbox" id="ipibckmensajetrabajo" class="chk-col-light-blue">
+                                    <label for="ipibckmensajetrabajo">Trabajo</label>
+                                  </div>
                                   <h3>B)DEMANDADO</h3>
                                   <div class="form-group form-float">
                                       <div class="form-line">
@@ -459,12 +480,12 @@
                                   <div class="input-group">
                                     <h5>Fecha del bautismo:</h5>
                                     <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="material-icons">date_range</i>
-                                    </span>
-                                    <div class="form-line">
-                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipbfdemandantefechabautismo">
-                                    </div>
+                                      <span class="input-group-addon">
+                                          <i class="material-icons">date_range</i>
+                                      </span>
+                                      <div class="form-line">
+                                          <input type="text" class="form-control date" placeholder="30/07/2016" name="ipbfdemandantefechabautismo">
+                                      </div>
                                     </div>
                                   </div>
                                   <div class="form-group form-float">
@@ -532,6 +553,7 @@
                                       <div class="form-line">
                                           <input type="text" class="form-control" name="ipbfdemandanteestado">
                                           <label class="form-label">Estado:</label>
+                                        </div>
                                       <h3>B) DEMANDADO</h3>
                                       <div class="input-group">
                                         <h5>Fecha de nacimiento</h5>
@@ -664,9 +686,10 @@
                                             <div class="form-line">
                                                 <input type="text" class="form-control" name="ipbfdemandadoestado">
                                                 <label class="form-label">Estado:</label>
+                                            </div>
+                                        </div>
+                                      </div>
                               </fieldset>
-
-
                                 <h3>Historia Familiar</h3>
                                 <fieldset>
 
@@ -724,6 +747,9 @@
                                       <div class="form-line focused">
                                       </p>
                                       <br>
+                                    </div>
+                                  </div>
+                                </div>
                                       <!-- DEMANDADO PADRES -->
                                       <h3>B) DEMANDADO</h3>
                                         <div class="demo-radio-button">
@@ -779,6 +805,9 @@
                                           <br>
                                           <br>
                                           <hr>
+                                        </div>
+                                        </div>
+                                        </div>
                                       <!-- -->
 
                                       <h2>HERMANOS</h3>
@@ -862,12 +891,7 @@
                                           </div>
                                         </div>
                                       </div>
-
-
-
                                 </fieldset>
-
-
                                 <h3>Noviazgo y matrimonio</h3>
                                 <fieldset>
                                   <label class="form-label">Brevemente ¿Cuándo y cómo conoció a la parte Demandada?</label>
@@ -947,7 +971,7 @@
                                     <label for="rbacuedono">No</label>
                                     <div class="form-line focused">
                                       <h5>Si es así, porfavor agregue una copia de este acuerdo:</h5>
-                                      <h2>SUBIR ARCHIVO</h2>
+                                      <h3>Carga de archivos al final de la pagina</h3>
                                     </div>
                                   </div>
                                   <div class="input-group">
@@ -1740,174 +1764,181 @@
                                   <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilcasadocivilmente"  value="Casado(a)" >
                                   <label for="rbestadocivilcasadocivilmente">Casado(a) civilmente</label>
                                   <h5>Si está casado(a) nuevamente, conviviendo o comprometido(a)</h5>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeaprimernombre">
-                                        <label class="form-label">Primer Nombre*</label>
-                                    </div>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeasegundonomrbre">
-                                        <label class="form-label">Segundo Nombre</label>
-                                    </div>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeaapellidopaterno">
-                                        <label class="form-label">Apellido paterno*</label>
-                                    </div>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeaapellidomaterno">
-                                        <label class="form-label">Apellido materno*</label>
-                                    </div>
-                                </div>
-                                <div class="demo-radio-button">
-                                  <h5>Sexo</h1>
-                                  <input name="ipearbsexo" type="radio" id="rbeasexomasculino"  value="Masculino" required>
-                                  <label for="rbeasexomasculino">Masculino</label>
-                                  <input name="ipearbsexo" type="radio" id="rbeasexofemenino"  value="Femenino" required>
-                                  <label for="rbeasexofemenino">Femenino</label>
-                                </div>
-                                <br>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeatiempojuntos">
-                                        <label class="form-label">¿Cuánto tiempo llevan juntos?</label>
-                                    </div>
-                                </div>
-                                <div class="demo-radio-button">
-                                  <h5>¿Tienen Hijos?</h1>
-                                  <input name="ipearbhijos" type="radio" id="rbhijossi"  value="Si" required>
-                                  <label for="rbhijossi">Si</label>
-                                  <input name="ipearbhijos" type="radio" id="rbhijosno"  value="No" required>
-                                  <label for="rbhijosno">No</label>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="number" class="form-control" name="ipeanumerohijos">
-                                        <label class="form-label">¿Cuántos hijos?</label>
-                                    </div>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                      <h5>Edades de los hijos</h5>
-                                        <input type="text" class="form-control" name="ipeaedadeshijos" placeholder="2/18/25(años)">
-                                        <label class="form-label"></label>
-                                    </div>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeareligionconyuge">
-                                        <label class="form-label">Religión de su actual ó futuro(a) cónyuge</label>
-                                    </div>
-                                </div>
-                                <div class="input-group">
-                                  <h5>Fecha de nacimiento</h5>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeaprimernombre">
+                                          <label class="form-label">Primer Nombre*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeasegundonomrbre">
+                                          <label class="form-label">Segundo Nombre</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeaapellidopaterno">
+                                          <label class="form-label">Apellido paterno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeaapellidomaterno">
+                                          <label class="form-label">Apellido materno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Sexo</h1>
+                                    <input name="ipearbsexo" type="radio" id="rbeasexomasculino"  value="Masculino" required>
+                                    <label for="rbeasexomasculino">Masculino</label>
+                                    <input name="ipearbsexo" type="radio" id="rbeasexofemenino"  value="Femenino" required>
+                                    <label for="rbeasexofemenino">Femenino</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeatiempojuntos">
+                                          <label class="form-label">¿Cuánto tiempo llevan juntos?</label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Tienen Hijos?</h1>
+                                    <input name="ipearbhijos" type="radio" id="rbhijossi"  value="Si" required>
+                                    <label for="rbhijossi">Si</label>
+                                    <input name="ipearbhijos" type="radio" id="rbhijosno"  value="No" required>
+                                    <label for="rbhijosno">No</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipeanumerohijos">
+                                          <label class="form-label">¿Cuántos hijos?</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                        <h5>Edades de los hijos</h5>
+                                          <input type="text" class="form-control" name="ipeaedadeshijos" placeholder="2/18/25(años)">
+                                          <label class="form-label"></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeareligionconyuge">
+                                          <label class="form-label">Religión de su actual ó futuro(a) cónyuge</label>
+                                      </div>
+                                  </div>
                                   <div class="input-group">
-                                  <span class="input-group-addon">
-                                      <i class="material-icons">date_range</i>
-                                  </span>
-                                  <div class="form-line">
-                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipeafechanacimiento">
+                                    <h5>Fecha de nacimiento</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipeafechanacimiento">
+                                    </div>
+                                    </div>
                                   </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Si no es católico(a)¿está usted o su actual/futuro(a)cónyuge en el programa católico Rito de iniciación cristiana para adultos?</h1>
+                                    <input name="ipearbrito" type="radio" id="rbritosi"  value="Si" required>
+                                    <label for="rbritosi">Si</label>
+                                    <input name="ipearbrito" type="radio" id="rbritono"  value="No" required>
+                                    <label for="rbritono">No</label>
+                                    <h5>Si es así, ¿En que parroquia?</h5>
+                                      <input type="text" class="form-control" value="" placeholder="Otro:" name="ipeaparroquia">
                                   </div>
-                                </div>
-                                <div class="demo-radio-button">
-                                  <h5>Si no es católico(a)¿está usted o su actual/futuro(a)cónyuge en el programa católico Rito de iniciación cristiana para adultos?</h1>
-                                  <input name="ipearbrito" type="radio" id="rbritosi"  value="Si" required>
-                                  <label for="rbritosi">Si</label>
-                                  <input name="ipearbrito" type="radio" id="rbritono"  value="No" required>
-                                  <label for="rbritono">No</label>
-                                  <h5>Si es así, ¿En que parroquia?</h5>
-                                    <input type="text" class="form-control" value="" placeholder="Otro:" name="ipeaparroquia">
-                                </div>
-                                <div class="form-group form-float">
-                                        <label class="form-label"></label>
-                                        <div class="row clearfix">
-                                            <div class="col-sm-5">
-                                                <div class="form-group">
-                                                  <div class="form-line focused">
-                                                    <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipeaciudad">
-                                                  </div>
-                                                </div>
-                                              </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label"></label>
+                                          <div class="row clearfix">
                                               <div class="col-sm-5">
-                                                <div class="form-group">
-                                                  <div class="form-line focused">
-                                                    <input type="text" class="form-control" value="" placeholder="Estado:" name="ipeaestado">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipeaciudad">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-5">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Estado:" name="ipeaestado">
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
-                                            </div>
-                                </div>
-                                <div class="input-group">
-                                  <h5>Si su actual/futuro cónyuge está bautizado¿Cuál es la fecha del bautismo?</h5>
+                                  </div>
                                   <div class="input-group">
-                                  <span class="input-group-addon">
-                                      <i class="material-icons">date_range</i>
-                                  </span>
-                                  <div class="form-line">
-                                      <input type="text" class="form-control date" placeholder="30/07/2016" name="ipeaconyuguefechabautismo">
-                                  </div>
-                                  </div>
-                                </div>
-                                <div class="form-group form-float">
+                                    <h5>Si su actual/futuro cónyuge está bautizado¿Cuál es la fecha del bautismo?</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
                                     <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeacambioreligionconyuge">
-                                        <label class="form-label">¿Ha cambiado alguna vez de religión su actual/futuro cónyuge?</label>
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipeaconyuguefechabautismo">
                                     </div>
-                                </div>
-                                <div class="demo-radio-button">
-                                  <h5>¿Es este su único matrimonio después del contraído con la parte Demandada?</h1>
-                                  <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniosi" value="Si" >
-                                  <label for="rbunicomatrimoniosi">Si</label>
-                                  <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniono" value="No" >
-                                  <label for="rbunicomatrimoniono">No</label>
-                                </div>
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control" name="ipeaantiguoconyuge">
-                                        <label class="form-label">¿Ha estado su actual o futuro cónyuge casado anteriormente (civil o en la iglesia)?</label>
                                     </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeacambioreligionconyuge">
+                                          <label class="form-label">¿Ha cambiado alguna vez de religión su actual/futuro cónyuge?</label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Es este su único matrimonio después del contraído con la parte Demandada?</h1>
+                                    <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniosi" value="Si" >
+                                    <label for="rbunicomatrimoniosi">Si</label>
+                                    <input name="ipearbunicomatrimonio" type="radio" id="rbunicomatrimoniono" value="No" >
+                                    <label for="rbunicomatrimoniono">No</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipeaantiguoconyuge">
+                                          <label class="form-label">¿Ha estado su actual o futuro cónyuge casado anteriormente (civil o en la iglesia)?</label>
+                                      </div>
+                                  </div>
+                                </fieldset>
+                                <h3>Siguiente</h3>
+                                <fieldset>
+                                  <button type="button" onclick="window.location='../../pages/forms/indagacion0.php';">Siguiente</buton>
+                                </fieldset>
+                          </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="header">
+                        <h3>Ingreso de documentación</h3>
+                      </div>
+                      <div class="body">
+                        <form action="indagacion.php" id="frmFileUpload" enctype="multipart/form-data" class="dropzone dz-clickable" method="post" enctype="multipart/form-data">
+                                <div class="dz-message">
+                                    <div class="drag-icon-cph">
+                                        <i class="material-icons">touch_app</i>
+                                    </div>
+                                    <h3>Suelta archivos aqui o haz click para subirlos.</h3>
                                 </div>
-                              </fieldset>
-                              <h3>Siguiente</h3>
-                              <fieldset>
-                                <button type="button" onclick="window.location='../../pages/forms/indagacion0.php';">Siguiente</buton>
-                              </fieldset>
-<!-- end -->
-                              </form>
-                              </div>
-                              </div>
-                              </div>
-                              </div>
-                              <!-- #END# Advanced Form Example With Validation -->
-                              </div>
-                              </section>
 
-
-
-<!-- -->
                             </form>
-                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
-            <!-- #END# Advanced Form Example With Validation -->
         </div>
     </section>
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
 
+    <!-- Autosize Js -->
+    <script src="../../plugins/autosize/autosize.js"></script>
+
     <!-- Bootstrap Core Js -->
     <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
     <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="../../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script src="../../plugins/nouislider/nouislider.js"></script>
 
     <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
@@ -1924,11 +1955,11 @@
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
+    <!-- Dropzone Plugin Js -->
+    <script src="../../plugins/dropzone/dropzone.js"></script>
+
     <!-- Autosize Plugin Js -->
     <script src="../../plugins/autosize/autosize.js"></script>
-
-    <!-- Custom JS -->
-    <script src="../../js/pages/forms/basic-form-elements.js"></script>
 
     <!-- Moment plugin js -->
     <script src="../../plugins/momentjs/moment.js"></script>
