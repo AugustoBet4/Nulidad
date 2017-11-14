@@ -85,7 +85,7 @@
       <div class="menu">
         <ul class="list">
           <li>
-            <a href="pages/forms/indagacion.php">
+            <a href="../../pages/forms/indagacion.php">
                             <i class="material-icons">library_add</i>
                             <span>Nuevo caso</span>
                         </a>
