@@ -72,10 +72,11 @@
   }else {
       $faobscanon5 = $_POST["faobscanon5"];
   }
-
+  $fechaactual = date("d")."/".date("m")."/".date("Y");
   $matrimonio = "LOPEZ-PEREZ";
   $fanombrenotario = "Notario 1";
   $facanon = "1030";
+
 ?>
 <html>
 <head>
@@ -284,12 +285,12 @@
                                               <th width="70%" valign="top" colspan="2" align="left">Nombre de la Parroquia:<br> <?php echo $fanombreparroquia?></th>
                                             </tr>
                                             <tr>
-                                              <td width="50%" height="30" valign="top">DURACION CONVIVENCIA MATRIM:<br> <?php echo $faduracionconvivencia?></td>
+                                              <td width="50%" height="30" valign="top">DURACIÓN CONVIVENCIA MATRIMONIO:<br> <?php echo $faduracionconvivencia?></td>
                                               <td width="25%" valign="top">CONCUBINATO PREVIO:<br> <?php echo $faconcubinatoprevio?></td>
                                               <td width="25%" valign="top">DURACIÓN:<br> <?php echo $faconcubinatioduracion?></td>
                                             </tr>
                                             <tr>
-                                              <td width="30%" height="30" valign="top">DURACION DEL NOVIAZGO:<br> <?php echo $faduracionnoviazgo?></td>
+                                              <td width="30%" height="30" valign="top">DURACIÓN DEL NOVIAZGO:<br> <?php echo $faduracionnoviazgo?></td>
                                               <th width="70%" valign="top" colspan="2" align="left">EMBARAZO PREVIO:<br> <?php echo $faembarazo?></th>
                                             </tr>
                                             <tr>
@@ -305,23 +306,23 @@
                                               año</b></th>
                                             </tr>
                                             <tr>
-                                              <td width="70%" height="30" valign="top">1.- Canon:<br> <?php echo $fanomcanon1?></td>
+                                              <td width="70%" height="30" valign="top">1.- Cánon:<br> <?php echo $fanomcanon1?></td>
                                               <td width="30%" valign="top" align="left">De parte del:<br> <?php echo $fapartecanon1?></td>
                                             </tr>
                                             <tr>
-                                              <td width="70%" height="30" valign="top">2.- Canon:<br> <?php echo $fanomcanon2?></td>
+                                              <td width="70%" height="30" valign="top">2.- Cánon:<br> <?php echo $fanomcanon2?></td>
                                               <td width="30%" valign="top" align="left">De parte del:<br> <?php echo $fapartecanon2?></td>
                                             </tr>
                                             <tr>
-                                              <td width="70%" height="30" valign="top">3.- Canon:<br> <?php echo $fanomcanon3?></td>
+                                              <td width="70%" height="30" valign="top">3.- Cánon:<br> <?php echo $fanomcanon3?></td>
                                               <td width="30%" valign="top" align="left">De parte del:<br> <?php echo $fapartecanon3?></td>
                                             </tr>
                                             <tr>
-                                              <td width="70%" height="30" valign="top">4.- Canon:<br> <?php echo $fanomcanon4?></td>
+                                              <td width="70%" height="30" valign="top">4.- Cánon:<br> <?php echo $fanomcanon4?></td>
                                               <td width="30%" valign="top" align="left">De parte del:<br> <?php echo $fapartecanon4?></td>
                                             </tr>
                                             <tr>
-                                              <td width="70%" height="30" valign="top">5.- Canon:<br> <?php echo $fanomcanon5?></td>
+                                              <td width="70%" height="30" valign="top">5.- Cánon:<br> <?php echo $fanomcanon5?></td>
                                               <td width="30%" valign="top" align="left">De parte del:<br> <?php echo $fapartecanon5?></td>
                                             </tr>
                                             <tr>
@@ -347,23 +348,23 @@
                                                 únicamente algunas cuestiones sobre las causales:</b></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="100">1. Canon:
+                                              <td align="left" valign="top" height="100">1. Cánon:
                                               <br> <?php echo $faderechocanon1?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="100">2. Canon:
+                                              <td align="left" valign="top" height="100">2. Cánon:
                                               <br> <?php echo $faderechocanon2?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="100">3. Canon:
+                                              <td align="left" valign="top" height="100">3. Cánon:
                                               <br> <?php echo $faderechocanon3?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="100">4. Canon:
+                                              <td align="left" valign="top" height="100">4. Cánon:
                                               <br> <?php echo $faderechocanon4?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="100">5. Canon:
+                                              <td align="left" valign="top" height="100">5. Cánon:
                                               <br> <?php echo $faderechocanon5?></td>
                                             </tr>
                                           </table>
@@ -374,31 +375,31 @@
                                         <center>
                                           <table style="width:100%">
                                             <tr>
-                                              <td align="left" valign="top" height="20">1. Canon:</td>
+                                              <td align="left" valign="top" height="20">1. Cánon:</td>
                                             </tr>
                                             <tr>
                                               <td align="left" valign="top" height="100"><?php echo $faobscanon1?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="20">2. Canon:</td>
+                                              <td align="left" valign="top" height="20">2. Cánon:</td>
                                             </tr>
                                             <tr>
                                               <td align="left" valign="top" height="100"><?php echo $faobscanon2?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="20">3. Canon:</td>
+                                              <td align="left" valign="top" height="20">3. Cánon:</td>
                                             </tr>
                                             <tr>
                                               <td align="left" valign="top" height="100"><?php echo $faobscanon3?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="20">4. Canon:</td>
+                                              <td align="left" valign="top" height="20">4. Cánon:</td>
                                             </tr>
                                             <tr>
                                               <td align="left" valign="top" height="100"><?php echo $faobscanon4?></td>
                                             </tr>
                                             <tr>
-                                              <td align="left" valign="top" height="20">5. Canon:</td>
+                                              <td align="left" valign="top" height="20">5. Cánon:</td>
                                             </tr>
                                             <tr>
                                               <td align="left" valign="top" height="100"><?php echo $faobscanon5?></td>
@@ -411,7 +412,7 @@
                                             <td align="left" valign="bottom" height="100" width="50%">Firma</td>
                                             <td align="left" valign="bottom" height="100">
                                               <font size="5" face="times new roman">
-                                                <b>10-09-2017</b><br>
+                                                <b><?php echo $fechaactual?></b><br>
                                               </font>
                                               <br>Fecha</td>
                                           </tr>
