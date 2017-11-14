@@ -3,10 +3,12 @@
   setlocale(LC_ALL,"es_ES");
 
 // VARIABLES DE INFORMACION BASICA ---------------------------------------------------------
-
+$fanombredemandante= $_POST["$fanombredemandante"];
 // VARIABLES DE HISTORIA DE Noviazgo -------------------------------------------------------
   $iphfmatrimoniodmt= $_POST["iphfmatrimoniodmt"];
   $iphfseparaciondmt= $_POST["iphfseparaciondmt"];
+  $iphfmatrimoniodmd= $_POST["iphfmatrimoniodmd"];
+  $iphfseparaciondmd= $_POST["iphfseparaciondmd"];
 
   if (empty($_POST["iphfmatrimoniodmt"])) {
       $iphfmatrimoniodmt = "";
@@ -17,6 +19,16 @@
       $iphfseparaciondmt = "";
   }else {
       $iphfseparaciondmt = $_POST["iphfseparaciondmt"];
+  }
+  if (empty($_POST["iphfmatrimoniodmd"])) {
+      $iphfmatrimoniodmd = "";
+  }else {
+      $iphfmatrimoniodmd = $_POST["iphfmatrimoniodmd"];
+  }
+  if (empty($_POST["iphfseparaciondmd"])) {
+      $iphfseparaciondmd = "";
+  }else {
+      $iphfseparaciondmd = $_POST["iphfseparaciondmd"];
   }
 // VARIABLES DE Matrimonios contrídos anteriormente ----------------------------------------
 // VARIABLES DE Separación y divorcio/disolución--------------------------------------------
@@ -188,7 +200,7 @@
                                 <li role="presentation" class="active"><a href="#profile1" data-toggle="tab" aria-expanded="true">Información Básica</a></li>
                                 <li role="presentation" class=""><a href="#profile2" data-toggle="tab" aria-expanded="false">Historia Familiar</a></li>
                                 <li role="presentation" class=""><a href="#profile3" data-toggle="tab" aria-expanded="false">Noviazgo y matrimonio</a></li>
-                                <li role="presentation" class=""><a href="#profile4" data-toggle="tab" aria-expanded="false">Matrimonios contrídos anteriormente</a></li>
+                                <li role="presentation" class=""><a href="#profile4" data-toggle="tab" aria-expanded="false">Matrimonios contraídos anteriormente</a></li>
                                 <li role="presentation" class=""><a href="#profile5" data-toggle="tab" aria-expanded="false">Separación y divorcio/disolución</a></li>
                                 <li role="presentation" class=""><a href="#profile6" data-toggle="tab" aria-expanded="false">Hijos</a></li>
                                 <li role="presentation" class=""><a href="#profile7" data-toggle="tab" aria-expanded="false">Estado actual</a></li>
@@ -205,26 +217,26 @@
                                       <h3>INFORMACIÓN BÁSICA</h3>
                                       <table style="width:100%">
                                         <tr>
-                                          <td width="30%" height="30" valign="top">Primer Nombre:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="30%" height="30" valign="top">Primer Nombre:<br><!--<?php echo $fanombredemandante ?>--></td>
                                           <td width="70%" valign="top" colspan="2" align="left">Segundo nombre:<br><?php echo $fanombredemandante ?></td>
                                         </tr>
                                         <tr>
-                                          <td width="30%" height="30" valign="top">Apellido Paterno:<br> <?php echo $faarquidiocesis?></td>
-                                          <td width="70%" valign="top" colspan="2" align="left">Apellido Materno::<br> <?php echo $fanombreparroquia?></td>
+                                          <td width="30%" height="30" valign="top">Apellido Paterno:<br> <!--<?php echo $faarquidiocesis?>--></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Apellido Materno::<br> <!--<?php echo $fanombreparroquia?>--></td>
                                         </tr>
                                         <tr>
-                                          <td width="50%" height="30" valign="top">Dirección:<br> <?php echo $faduracionconvivencia?></td>
-                                          <td width="25%" valign="top">Sexo:<br> <?php echo $faconcubinatoprevio?></td>
-                                          <td width="25%" valign="top">Ci:<br> <?php echo $faconcubinatioduracion?></td>
+                                          <td width="50%" height="30" valign="top">Dirección:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                          <td width="25%" valign="top">Sexo:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                          <td width="25%" valign="top">Ci:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                         </tr>
                                         <tr>
-                                          <td width="50%" height="30" valign="top">Ciudad:<br> <?php echo $faduracionconvivencia?></td>
-                                          <td width="25%" valign="top">Zona:<br> <?php echo $faconcubinatoprevio?></td>
-                                          <td width="25%" valign="top">Edad:<br> <?php echo $faconcubinatioduracion?></td>
+                                          <td width="50%" height="30" valign="top">Ciudad:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                          <td width="25%" valign="top">Zona:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                          <td width="25%" valign="top">Edad:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                         </tr>
                                         <tr>
-                                          <td width="30%" height="30" valign="top">Correo Electrónico:<br><?php echo $fanombredemandante ?></td>
-                                          <td width="70%" valign="top" colspan="2" align="left">Ocupación:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="30%" height="30" valign="top">Correo Electrónico:<br><!--<?php echo $fanombredemandante ?>--></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Ocupación:<br><!--<?php echo $fanombredemandante ?>--></td>
                                         </tr>
                                         <tr>
                                         <tr>
@@ -283,8 +295,8 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td width="50%" height="30" valign="top">Departamento:<br><?php echo $fanombredemandante ?></td>
-                                        <td width="50%" valign="top" colspan="2" align="left">Estado:<br><?php echo $fanombredemandante ?></td>
+                                        <td width="50%" height="30" valign="top">Departamento:<!--<br><?php echo $fanombredemandante ?>--></td>
+                                        <td width="50%" valign="top" colspan="2" align="left">Estado:<br><!--<?php echo $fanombredemandante ?>--></td>
                                       </tr>
                                       <tr>
                                         <td colspan="3" align="left" valign="top">
@@ -314,9 +326,9 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td width="50%" height="30" valign="top">Libro:<br> <?php echo $faduracionconvivencia?></td>
-                                        <td width="25%" valign="top">Página:<br> <?php echo $faconcubinatoprevio?></td>
-                                        <td width="25%" valign="top">Número:<br> <?php echo $faconcubinatioduracion?></td>
+                                        <td width="50%" height="30" valign="top">Libro:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                        <td width="25%" valign="top">Página:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                        <td width="25%" valign="top">Número:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                       </tr>
                                       <tr>
                                         <td colspan="3" align="left" valign="top">
@@ -334,9 +346,9 @@
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td width="50%" height="30" valign="top">Parroquia:<br> <?php echo $faduracionconvivencia?></td>
-                                        <td width="25%" valign="top">Diócesis:<br> <?php echo $faconcubinatoprevio?></td>
-                                        <td width="25%" valign="top">Estado:<br> <?php echo $faconcubinatioduracion?></td>
+                                        <td width="50%" height="30" valign="top">Parroquia:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                        <td width="25%" valign="top">Diócesis:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                        <td width="25%" valign="top">Estado:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                       </tr>
 
 
@@ -346,32 +358,32 @@
 
                                       <table style="width:100%">
                                         <tr>
-                                          <td width="30%" height="30" valign="top">Primer Nombre:<br><?php echo $fanombredemandante ?></td>
-                                          <td width="70%" valign="top" colspan="2" align="left">Segundo nombre:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="30%" height="30" valign="top">Primer Nombre:<br><!--<?php echo $fanombredemandante ?>--></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Segundo nombre:<br><!--<?php echo $fanombredemandante ?>--></td>
                                         </tr>
                                         <tr>
-                                          <td width="30%" height="30" valign="top">Apellido Paterno:<br> <?php echo $faarquidiocesis?></td>
-                                          <td width="70%" valign="top" colspan="2" align="left">Apellido Materno::<br> <?php echo $fanombreparroquia?></td>
+                                          <td width="30%" height="30" valign="top">Apellido Paterno:<br> <!--<?php echo $faarquidiocesis?>--></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Apellido Materno::<br> <!--<?php echo $fanombreparroquia?>--></td>
                                         </tr>
                                         <tr>
-                                          <td width="50%" height="30" valign="top">Dirección:<br> <?php echo $faduracionconvivencia?></td>
-                                          <td width="25%" valign="top">Sexo:<br> <?php echo $faconcubinatoprevio?></td>
-                                          <td width="25%" valign="top">Ci:<br> <?php echo $faconcubinatioduracion?></td>
+                                          <td width="50%" height="30" valign="top">Dirección:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                          <td width="25%" valign="top">Sexo:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                          <td width="25%" valign="top">Ci:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                         </tr>
                                         <tr>
-                                          <td width="50%" height="30" valign="top">Ciudad:<br> <?php echo $faduracionconvivencia?></td>
-                                          <td width="25%" valign="top">Zona:<br> <?php echo $faconcubinatoprevio?></td>
-                                          <td width="25%" valign="top">Edad:<br> <?php echo $faconcubinatioduracion?></td>
+                                          <td width="50%" height="30" valign="top">Ciudad:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                          <td width="25%" valign="top">Zona:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                          <td width="25%" valign="top">Edad:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                         </tr>
                                         <tr>
                                           <tr>
-                                            <td width="50%" height="30" valign="top">Teléfono:<br> <?php echo $faduracionconvivencia?></td>
-                                            <td width="25%" valign="top">País:<br> <?php echo $faconcubinatoprevio?></td>
-                                            <td width="25%" valign="top">¿Se comunica regularmente con la parte demandada?<br> <?php echo $faconcubinatioduracion?></td>
+                                            <td width="50%" height="30" valign="top">Teléfono:<br> <!--<?php echo $faduracionconvivencia?>-->></td>
+                                            <td width="25%" valign="top">País:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                            <td width="25%" valign="top">¿Se comunica regularmente con la parte demandada?<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                           </tr>
                                           <tr>
-                                          <td width="30%" height="30" valign="top">Correo Electrónico:<br><?php echo $fanombredemandante ?></td>
-                                          <td width="70%" valign="top" colspan="2" align="left">Ocupación de la parte demandada:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="30%" height="30" valign="top">Correo Electrónico:<br><!--<?php echo $fanombredemandante ?>--></td>
+                                          <td width="70%" valign="top" colspan="2" align="left">Ocupación de la parte demandada:<br><!--<?php echo $fanombredemandante ?>--></td>
                                         </tr>
                                         <tr>
                                           <td colspan="3" align="left" valign="top">
@@ -389,8 +401,8 @@
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td width="50%" height="30" valign="top">Departamento:<br><?php echo $fanombredemandante ?></td>
-                                          <td width="50%" valign="top" colspan="2" align="left">Estado:<br><?php echo $fanombredemandante ?></td>
+                                          <td width="50%" height="30" valign="top">Departamento:<br><!--<?php echo $fanombredemandante ?>--></td>
+                                          <td width="50%" valign="top" colspan="2" align="left">Estado:<br><!--<?php echo $fanombredemandante ?>--></td>
                                         </tr>
                                         <tr>
                                           <td colspan="3" align="left" valign="top">
@@ -415,9 +427,9 @@
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td width="50%" height="30" valign="top">Libro:<br> <?php echo $faduracionconvivencia?></td>
-                                          <td width="25%" valign="top">Página:<br> <?php echo $faconcubinatoprevio?></td>
-                                          <td width="25%" valign="top">Número:<br> <?php echo $faconcubinatioduracion?></td>
+                                          <td width="50%" height="30" valign="top">Libro:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                          <td width="25%" valign="top">Página:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                          <td width="25%" valign="top">Número:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                         </tr>
                                         <tr>
                                           <td colspan="3" align="left" valign="top">
@@ -435,9 +447,9 @@
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td width="50%" height="30" valign="top">Parroquia:<br> <?php echo $faduracionconvivencia?></td>
-                                          <td width="25%" valign="top">Diócesis:<br> <?php echo $faconcubinatoprevio?></td>
-                                          <td width="25%" valign="top">Estado:<br> <?php echo $faconcubinatioduracion?></td>
+                                          <td width="50%" height="30" valign="top">Parroquia:<br> <!--<?php echo $faduracionconvivencia?>--></td>
+                                          <td width="25%" valign="top">Diócesis:<br> <!--<?php echo $faconcubinatoprevio?>--></td>
+                                          <td width="25%" valign="top">Estado:<br> <!--<?php echo $faconcubinatioduracion?>--></td>
                                         </tr>
                                         <tr>
                                           <td colspan="3" align="left" valign="top">
@@ -459,10 +471,9 @@
                                   <div role="tabpanel" class="tab-pane fade" id="profile2">
                                     <textarea id="tinymce">
                                       <h3>HISTORIA FAMILIAR</h3>
+                                      <!--  -->
                                       <table style="width:100%">
-                                        <tr>
-                                          <td width="100%" height="10" valign="top" colspan="2"><b>Padres</b></td>
-                                        </tr>
+                                        <h3><b>PADRES:</b></h3>
                                         <tr>
                                           <td width="100%" height="10" valign="top" colspan="2"><b>A) Demandante</b></td>
                                         </tr>
@@ -484,9 +495,238 @@
                                         <tr>
                                           <td width="50%" height="30" valign="top" colspan="2">¿Sus padres son católicos practicantes?:<?php  ?></td>
                                         </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" >Padre:<?php  ?></td>
+                                          <td width="50%" height="30" valign="top" >Madre:<?php  ?></td>
+                                        </tr>
                                       </table>
+                                      <table style="width:100%">
+                                        <tr>
+                                          <td width="100%" height="10" valign="top" colspan="2"><b>B) Demandado</b></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Sus padres son Católicos?:<?php ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Sus padres están casados por la Iglesia Católica?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿El matrimonio de sus padres es un matrimonio de toda la vida?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Si no es así, ¿cómo ha sido el matrimonio de sus padres?:<?php echo $iphfmatrimoniodmd?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Si sus padres se han separado, que edad tenía usted al momento de la separación?:<?php echo $iphfseparaciondmd?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Sus padres son católicos practicantes?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" >Padre:<?php  ?></td>
+                                          <td width="50%" height="30" valign="top" >Madre:<?php  ?></td>
+                                        </tr>
+                                      </table>
+                                      <!--  -->
+                                      <br>
+                                      <!--  -->
+                                      <table style="width:100%">
+                                        <h3><b>HERMANOS:</b></h3>
+                                        <tr>
+                                          <td width="100%" height="10" valign="top" colspan="2"><b>A) Demandante</b></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Cuántos hermanos son, incluido usted?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Varones:<?php  ?></td>
+                                          <td width="50%" height="30" valign="top">Mujeres:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Qué número ocupa usted entre sus hermanos:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Ha fracasado el matrimonio de alguno de sus hermanos?:<?php ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Expliquese:<?php ?></td>
+                                        </tr>
+                                      </table>
+                                      <table style="width:100%">
+                                        <tr>
+                                          <td width="100%" height="10" valign="top" colspan="2"><b>B) Demandado</b></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Cuántos hermanos son, incluido usted?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top">Varones:<?php  ?></td>
+                                          <td width="50%" height="30" valign="top">Mujeres:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Qué número ocupa usted entre sus hermanos:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Ha fracasado el matrimonio de alguno de sus hermanos?:<?php ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Expliquese:<?php ?></td>
+                                        </tr>
+                                      </table>
+
                                     </textarea>
                                   </div>
+
+                                  <!--  NOVIAZGO Y MATRIMONIO------------------------------------------------------------------------>
+                                  <div role="tabpanel" class="tab-pane fade" id="profile3">
+                                    <textarea id="tinymce">
+                                      <h3>NOVIAZGO Y MATRIMONIO</h3>
+                                      <!--  -->
+                                      <table style="width:100%">
+                                        <tr>
+                                          <td width="70%" height="10" valign="top" colspan="2">Brevemente ¿Cuándo y cómo conoció a la parte Demandada?:<?php  ?><?php //Fecha ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Cuánto duró el noviazgo antes de tomar la desición de casarse?<?php ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Hubo un compromiso formal antes del matrimonio?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Si es así, fecha del compromiso:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Cuánto tiempo duró el compromiso?:<?php ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Vivieron juntos antes de casarse?:<?php ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Si es así, ¿Cuánto tiempo vivieron juntos antes de casarse?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Si es así, explique ¿Porqué decidió casarse?::<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Hubo algun embarazo o sospecha de un embarazo antes de contraer matrimonio?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Si es así, ¿Como afecto la desicion de contraer matrimonio?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Usted y la parte demandada firmaron algun acuerdo o convenio prenupcial?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Fecha exacta de la boda:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">El matrimonio fue oficiado por un:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Nombre del sacerdote, ministro u oficiante:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Parroquia o lugar donde se contrajo matrimonio:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="1">Ciudad:<?php  ?></td>
+                                          <td width="50%" height="30" valign="top" colspan="1">Departamento:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="1">Estado:<?php  ?></td>
+                                          <td width="50%" height="30" valign="top" colspan="1">Pais:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Donde realizo el matrimonio civil?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Si hubo un matrimonio civil antes del matrimonio de la Iglesia, fecha:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Fue su matrimonio con la parte demandada, su primer matrimonio?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">¿Fue el matrimonio con usted el primer matrimonio para la parte Demandada?:<?php  ?></td>
+                                        </tr>
+                                        <tr>
+                                          <td width="50%" height="30" valign="top" colspan="2">Duracion del Noviazgo:<?php  ?></td>
+                                        </tr>
+
+                                    </textarea>
+                                  </div>
+
+                                  <!--  MATRIMONIOS CONTRAÍDOS ANTERIORMENTE------------------------------------------------------------------------>
+                                  <div role="tabpanel" class="tab-pane fade" id="profile4">
+                                    <textarea id="tinymce">
+                                      <h3>MATRIMONIOS CONTRAÍDOS ANTERIORMENTE</h3>
+                                      <h4>Si contrajo matrimonio antes del contraído con la parte Demandada,
+                                        se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                      </h4>
+                                      <table style="width=100%">
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                          <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">1<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="16.6%" height="30" valign="top">2<br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top"><br> </td>
+                                          <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                          <td width="16.6%" valign="top"><br> </td>
+                                        </tr>
+                                        </b><h4>
+                                      </table>
+                                      <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.
+
+                                        <h3>PARTE DEMANDADA</h3>
+                                        <hr>
+                                        <h4>Si la parte Demandada estuvo casada antes del matrimonio contraído con usted, se completa la siguiente información de todos y cada uno de dichos matrimonios:
+                                        </h4>
+                                        <table style="width=100%">
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top"><b>Matrimonio Nº:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Nombre de su ex-cónyuge:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>Fecha y lugar de la boda.<br><br> Tipo de ceremonia:</b><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><b>¿Fue este el primer matrimonio para su cónyuge?:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>Si es aplicable, Fecha y lugar de la muerte de la muerte del cónyuge:</b><br> </td>
+                                            <td width="16.6%" valign="top"><b>¿Fue anulado este matrimonio por la Iglesia Católica? (Tribunal, lugar y Nº de caso o fecha)</b><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">1<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          <tr>
+                                            <td width="16.6%" height="30" valign="top">2<br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top"><br> </td>
+                                            <td width="16.6%" height="30" valign="top">Si<br><br>De NO ser así: </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                            <td width="16.6%" valign="top"><br> </td>
+                                          </tr>
+                                          </b><h4>
+                                        </table>
+                                        <h4><b>Si tiene Decretos de nulidad de otro Tribunal relacionados a matrimonios anteriores, favor de agregarlos a esta Demanda.</b></h4>
+                                    </textarea>
+
+                                  </div>
+
 
 
                             </div>
