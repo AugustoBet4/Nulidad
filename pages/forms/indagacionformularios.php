@@ -2,7 +2,9 @@
 <!-- <?php
   setlocale(LC_ALL,"es_ES");
 
-// VARIABLES DE HISTORIA DE Noviazgo ----------------------------------------
+// VARIABLES DE INFORMACION BASICA ---------------------------------------------------------
+
+// VARIABLES DE HISTORIA DE Noviazgo -------------------------------------------------------
   $iphfmatrimoniodmt= $_POST["iphfmatrimoniodmt"];
   $iphfseparaciondmt= $_POST["iphfseparaciondmt"];
 
@@ -16,8 +18,10 @@
   }else {
       $iphfseparaciondmt = $_POST["iphfseparaciondmt"];
   }
-
-
+// VARIABLES DE Matrimonios contrídos anteriormente ----------------------------------------
+// VARIABLES DE Separación y divorcio/disolución--------------------------------------------
+// VARIABLES DE Hijos ----------------------------------------------------------------------
+// VARIABLES DE Estado actual---------------------------------------------------------------
 
 
 // PRINCIPALES
@@ -182,15 +186,16 @@
 
                           <ul class="nav nav-tabs tab-nav-right" role="tablist">
                                 <li role="presentation" class="active"><a href="#profile1" data-toggle="tab" aria-expanded="true">Información Básica</a></li>
-                                <li role="presentation" class=""><a href="#profile2" data-toggle="tab" aria-expanded="false">Información biográfica</a></li>
-                                <li role="presentation" class=""><a href="#profile3" data-toggle="tab" aria-expanded="false">Historia Familiar</a></li>
-                                <li role="presentation" class=""><a href="#profile4" data-toggle="tab" aria-expanded="false">Noviazgo y matrimonio</a></li>
-                                <li role="presentation" class=""><a href="#profile5" data-toggle="tab" aria-expanded="false">Matrimonios contrídos anteriormente</a></li>
-                                <li role="presentation" class=""><a href="#profile6" data-toggle="tab" aria-expanded="false">Separación y divorcio/disolución</a></li>
-                                <li role="presentation" class=""><a href="#profile7" data-toggle="tab" aria-expanded="false">Hijos</a></li>
-                                <li role="presentation" class=""><a href="#profile8" data-toggle="tab" aria-expanded="false">Estado actual</a></li>
+                                <li role="presentation" class=""><a href="#profile2" data-toggle="tab" aria-expanded="false">Historia Familiar</a></li>
+                                <li role="presentation" class=""><a href="#profile3" data-toggle="tab" aria-expanded="false">Noviazgo y matrimonio</a></li>
+                                <li role="presentation" class=""><a href="#profile4" data-toggle="tab" aria-expanded="false">Matrimonios contrídos anteriormente</a></li>
+                                <li role="presentation" class=""><a href="#profile5" data-toggle="tab" aria-expanded="false">Separación y divorcio/disolución</a></li>
+                                <li role="presentation" class=""><a href="#profile6" data-toggle="tab" aria-expanded="false">Hijos</a></li>
+                                <li role="presentation" class=""><a href="#profile7" data-toggle="tab" aria-expanded="false">Estado actual</a></li>
                           </ul>
                             <div class="tab-content">
+
+                              <!--  INFORMACION BASICA------------------------------------------------------------------------>
                                   <div role="tabpanel" class="tab-pane fade active in" id="profile1">
                                     <textarea id="tinymce">
                                       <center><h2>Sección 1</h2></center>
@@ -450,38 +455,10 @@
                                     </textarea>
                                   </div>
 
+                                  <!--  HISTORIA FAMILIAR------------------------------------------------------------------------>
                                   <div role="tabpanel" class="tab-pane fade" id="profile2">
                                     <textarea id="tinymce">
-                                      <table style="width:100%">
-                                        <tr>
-                                          <td width="50%" height="30" valign="top">Primer Nombre:<br><?php echo $fanombredemandante ?></td>
-                                          <td width="50%" valign="top">Segundo nombre:<br><?php echo $fanombredemandante ?></td>
-                                        </tr>
-                                        <tr>
-                                          <td width="50%" height="30" valign="top">Apellido Paterno:<br><?php echo $fanombredemandante ?></td>
-                                          <td width="50%" valign="top">Apellido Materno:<br><?php echo $fanombredemandante ?></td>
-                                        </tr>
-                                        <tr>
-                                          <td width="50%" height="30" valign="top">Dirección:<br><?php echo $fadirecciondemandante ?></td>
-                                          <td width="50%" valign="top">Dirección de residencia:<br><?php echo $fadirecciondemandado ?></td>
-                                        </tr>
-                                        <tr>
-                                          <td width="50%" height="80" valign="top">FECHA DE LA DEMANDA DE LA NULIDAD DEL
-                                            MATRIMONIO:<br> <?php echo $fafechainicio?></td>
-                                          <td width="50%"><b>EL TRIBUNAL ACEPTO LA CAUSA Y TIENE
-                                            JURISDICCIÓN POR :<br>
-                                            1. EL M. FUE CELEBRADO EN EL TERRITORIO DEL TRIBUNAL<br>
-                                            2. LA PARTE DEMANDADA RESIDE EN EL TERRITORIO DEL
-                                            TRIBUNAL<br>
-                                            3. LA PARTE DEMANDADA OTORGA EL CONSENTIMIENTO<br>
-                                            4. LA MAYORIA DE LAS PRUEBAS ESTÁN DENTRO DEL
-                                            TERRITORIO DEL TRIBUNAL</b></td>
-                                        </tr>
-                                      </table>
-                                    </textarea>
-                                  </div>
-                                  <div role="tabpanel" class="tab-pane fade" id="profile3">
-                                    <textarea id="tinymce">
+                                      <h3>HISTORIA FAMILIAR</h3>
                                       <table style="width:100%">
                                         <tr>
                                           <td width="100%" height="10" valign="top" colspan="2"><b>Padres</b></td>
