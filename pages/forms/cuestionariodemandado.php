@@ -113,7 +113,7 @@ $matrimonio="X-X";
                     <div class="card">
                       <div class="header">
                           <b><h2>CUESTIONARIOS</h2></b><br>
-                          <b><h2>Cuestionario del demandante</h2></b><br>
+                          <b><h2>Cuestionario del demandado</h2></b><br>
                           <font color=red>* Dato requerido</font><br><br>
                           <div class="col-md-6">
                               <div class="form-group">
