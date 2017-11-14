@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
 <?php
-  setlocale(LC_ALL,”es_ES”);
-  $username;
-  $password;
+  setlocale(LC_ALL,"es_ES");
+  $newURL = "../../index.php";
+  $user = "";
+  if (!empty($_POST["username"])){
+    $user = $_POST["username"];
+  }
+  $pass = "";
+  if (!empty($_POST["password"])){
+    $pass = $_POST["password"];
+  }
+  if (($user == "admin") && ($pass == "admin")) {
+    header('Location: '.$newURL);
+  }
 ?>
 <head>
     <meta charset="UTF-8">

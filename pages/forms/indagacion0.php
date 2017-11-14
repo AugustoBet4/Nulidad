@@ -66,7 +66,7 @@
       <div class="navbar-header">
         <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
         <a href="javascript:void(0);" class="bars"></a>
-        <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
+        <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -92,7 +92,7 @@
           <div class="btn-group user-helper-dropdown">
             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
             <ul class="dropdown-menu pull-right">
-              <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.html">Cerrar Sesion</a></a>
+              <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.php">Cerrar Sesion</a></a>
               </li>
             </ul>
           </div>
@@ -110,17 +110,28 @@
           </li>
           <li class="active">
             <a href="javascript:void(0);" class="menu-toggle">
+<<<<<<< HEAD:pages/forms/indagacion0.html
                             <i class="material-icons">attach_file</i>
                             <span>Dar Seguimiento a caso</span>
                         </a>
             <ul class="ml-menu">
               <li>
                 <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+=======
+              <!-- a href="../../pages/bla.php"-->
+              <i class="material-icons">attach_file</i>
+              <span>Dar seguimiento a caso</span>
+            </a>
+            <ul class="ml-menu">
+              <li class="active">
+                <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
+>>>>>>> 8e5338cd8169c37897a7f9024f5ee4aeada608ca:pages/forms/indagacion0.php
               </li>
               <li>
-                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
               </li>
               <li>
+<<<<<<< HEAD:pages/forms/indagacion0.html
                 <a href="pages/indagacion.html">Fase de Instrucción</a>
               </li>
               <li>
@@ -128,17 +139,30 @@
               </li>
               <li class="active">
                 <a href="../forms/sentencia.html">Fase Decisoria</a>
+=======
+                <a href="../../pages/forms/instruccion.php">Fase de Instrucción</a>
+              </li>
+              <li>
+                <a href="../../pages/forms/alegatoria.php">Fase Alegatoria</a>
+              </li>
+              <li>
+                <a href="../forms/sentencia.php">Fase Decisoria</a>
+>>>>>>> 8e5338cd8169c37897a7f9024f5ee4aeada608ca:pages/forms/indagacion0.php
               </li>
             </ul>
           </li>
           <li>
+<<<<<<< HEAD:pages/forms/indagacion0.html
             <a href="../../pages/forms/buscador.html">
+=======
+            <a href="../forms/buscador.php">
+>>>>>>> 8e5338cd8169c37897a7f9024f5ee4aeada608ca:pages/forms/indagacion0.php
                             <i class="material-icons">search</i>
                             <span>Buscar Caso</span>
                         </a>
           </li>
           <li>
-            <a href="../../pages/nuevo_encargado.html">
+            <a href="../../pages/forms/nuevo_encargado.php">
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>
@@ -372,6 +396,10 @@
 
 
 <!-- end -->        </fieldset>
+<h3>Siguiente</h3>
+<fieldset>
+  <button type="button" onclick="window.location='../../pages/forms/indagacion1.php';">Siguiente</buton>
+</fieldset>
                               </form>
                               </div>
                               </div>
