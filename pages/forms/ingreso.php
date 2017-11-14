@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-
+<?php
+  setlocale(LC_ALL,”es_ES”);
+  $username;
+  $password;
+?>
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -53,10 +57,6 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-8 p-t-5">
-                            <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
-                            <label for="rememberme">Recordar</label>
-                        </div>
                         <div class="col-xs-4">
                             <button class="btn btn-block bg-pink waves-effect" type="submit">INGRESAR</button>
                         </div>
