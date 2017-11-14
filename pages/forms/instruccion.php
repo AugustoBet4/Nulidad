@@ -128,7 +128,9 @@
                                   <p>
                                       <a href="cuestionariodemandante.php">Preguntas divididas en diferentes secciones para recopilar información de parte del demandante.</a>
                                       <center>
-                                        <button type="submit" class="btn btn bg-blue btn-block btn-lg waves-effect">Imprimir Cuestionario</button>
+                                        <a href="cuestionariodemandanteimprimir.php">
+                                <button type="button" class="btn btn-primary m-t-15 waves-effect">Imprimir Cuestionario</button>
+                              </a>
                                       </center>
                                   </p>
                               </section>
@@ -137,7 +139,9 @@
                                   <p>
                                     <a href="cuestionariodemandado.php">Preguntas divididas en diferentes secciones para recopilar información de parte del demandado.</a>
                                     <center>
-                                      <a href="imprimirdemandado"><button type="submit" class="btn btn bg-blue btn-block btn-lg waves-effect">Imprimir Cuestionario</button></a>
+                                      <a href="cuestionariodemandadoimprimir.php">
+                              <button type="button" class="btn btn-primary m-t-15 waves-effect">Imprimir Cuestionario</button>
+                            </a>
                                     </center>
                                   </p>
                               </section>
@@ -146,7 +150,9 @@
                                   <p>
                                     <a href="cuestionariotestigos.php">Preguntas divididas en diferentes secciones para recopilar información de parte externa a los exposos.</a>
                                     <center>
-                                      <button type="submit" class="btn btn bg-blue btn-block btn-lg waves-effect">Imprimir Cuestionario</button>
+                                      <a href="cuestionariotestigoimprimir.php">
+                              <button type="button" class="btn btn-primary m-t-15 waves-effect">Imprimir Cuestionario</button>
+                            </a>
                                     </center>
                                   </p>
                                 </section>
