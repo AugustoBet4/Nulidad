@@ -133,19 +133,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                       <div class="header">
-                          <h2>BASIC EXAMPLE - VERTICAL LAYOUT</h2>
-                          <ul class="header-dropdown m-r--5">
-                              <li class="dropdown">
-                                  <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                      <i class="material-icons">more_vert</i>
-                                  </a>
-                                  <ul class="dropdown-menu pull-right">
-                                      <li><a href="javascript:void(0);">Action</a></li>
-                                      <li><a href="javascript:void(0);">Another action</a></li>
-                                      <li><a href="javascript:void(0);">Something else here</a></li>
-                                  </ul>
-                              </li>
-                          </ul>
+                          <h2>DOCUMENTOS GENERADOS PARA LA FASE DE INTRODUCCIÓN</h2>
                       </div>
                       <div class="body">
                           <div id="wizard_vertical">
@@ -216,39 +204,18 @@
                     </div>
                 </div>
             </div>
-            <!-- #END# Advanced Form Example With Validation -->
         </div>
     </section>
-
-    <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core Js -->
     <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
-
-    <!-- Select Plugin Js -->
     <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
-
-    <!-- Slimscroll Plugin Js -->
     <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <!-- Jquery Validation Plugin Css -->
     <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
-
-    <!-- JQuery Steps Plugin Js -->
     <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
-
-    <!-- Sweet Alert Plugin Js -->
     <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
-
-    <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
-
-    <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
     <script src="../../js/pages/forms/form-wizard.js"></script>
-
-    <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
 </body>
 </html>
