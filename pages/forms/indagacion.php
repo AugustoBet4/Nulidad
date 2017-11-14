@@ -108,7 +108,7 @@
                                 <a href="../../pages/forms/instruccion.php">Fase de Instrucción</a>
                             </li>
                             <li>
-                                <a href="../../pages/forms/indagacion.php">Fase Alegatoria</a>
+                                <a href="../../pages/forms/alegatoria.php">Fase Alegatoria</a>
                             </li>
                             <li>
                                 <a href="../forms/sentencia.php">Fase Decisoria</a>
