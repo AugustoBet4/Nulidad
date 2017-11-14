@@ -328,6 +328,17 @@
                                             </tr>
                                           </table>
                                         </center>
+                                        <br><br><br><br><br>
+                                        <table style="width:100%">
+                                          <tr>
+                                            <td align="left" valign="bottom" height="100" width="50%">Firma</td>
+                                            <td align="left" valign="bottom" height="100">
+                                              <font size="5" face="times new roman">
+                                                <b>10-09-2017</b><br>
+                                              </font>
+                                              <br>Fecha</td>
+                                          </tr>
+                                        </table>
                                     </textarea>
                                   </div>
                                   <div role="tabpanel" class="tab-pane fade" id="profile">
