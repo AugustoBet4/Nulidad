@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<script type="text/javascript">
+  function busqueda(valor){
+    var codigo = valor.value;
+    alert(codigo);
+  }
+</script>
+
 <!--HELLO-->
 <html>
 
@@ -59,7 +66,7 @@
         <div class="search-icon">
             <i class="material-icons">search</i>
         </div>
-        <input type="text" placeholder="INGRESE CASO A BUSCAR">
+        <input type="text" placeholder="INGRESE CASO A BUSCAR" onchange="busqueda(this)">
         <div class="close-search">
             <i class="material-icons">close</i>
         </div>
