@@ -49,31 +49,13 @@
   <!-- Overlay For Sidebars -->
   <div class="overlay"></div>
   <!-- #END# Overlay For Sidebars -->
-  <!-- Search Bar -->
-  <div class="search-bar">
-    <div class="search-icon">
-      <i class="material-icons">search</i>
-    </div>
-    <input type="text" placeholder="Buscar caso...">
-    <div class="close-search">
-      <i class="material-icons">close</i>
-    </div>
-  </div>
-  <!-- #END# Search Bar -->
   <!-- Top Bar -->
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
         <a href="javascript:void(0);" class="bars"></a>
-        <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <!-- Call Search -->
-          <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-          <!-- #END# Call Search -->
-        </ul>
+        <a class="navbar-brand" href="../../index.php">SEMINARIO</a>
       </div>
     </div>
   </nav>
@@ -92,7 +74,7 @@
           <div class="btn-group user-helper-dropdown">
             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
             <ul class="dropdown-menu pull-right">
-              <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.html">Cerrar Sesion</a></a>
+              <li><a href="../../pages/forms/ingreso.php">Cerrar Sesion<i class="material-icons">input</i></a></li>
               </li>
             </ul>
           </div>
@@ -103,7 +85,7 @@
       <div class="menu">
         <ul class="list">
           <li>
-            <a href="pages/forms/indagacion.html">
+            <a href="pages/forms/indagacion.php">
                             <i class="material-icons">library_add</i>
                             <span>Nuevo caso</span>
                         </a>
@@ -114,31 +96,31 @@
                             <span>Dar Seguimiento a caso</span>
                         </a>
             <ul class="ml-menu">
-              <li>
-                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
-              </li>
-              <li>
-                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
-              </li>
-              <li>
-                <a href="pages/indagacion.html">Fase de Instrucción</a>
-              </li>
-              <li>
-                <a href="pages/indagacion.html">Fase Alegatoria</a>
-              </li>
               <li class="active">
-                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                <a href="../../pages/forms/indagacion.php">Indagacion Previa</a>
+              </li>
+              <li>
+                <a href="../../pages/forms/introduccion.php">Fase Introductoria</a>
+              </li>
+              <li>
+                <a href="pages/forms/indagacion.php">Fase de Instrucción</a>
+              </li>
+              <li>
+                <a href="pages/forms/alegatoria.php">Fase Alegatoria</a>
+              </li>
+              <li>
+                <a href="../forms/sentencia.php">Fase Decisoria</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="../../pages/forms/buscador.html">
+            <a href="../../pages/forms/buscador.php">
                             <i class="material-icons">search</i>
                             <span>Buscar Caso</span>
                         </a>
           </li>
           <li>
-            <a href="../../pages/nuevo_encargado.html">
+            <a href="../../pages/forms/nuevo_encargado.php">
                             <i class="material-icons">account_box</i>
                             <span>Agregar nuevo encargado</span>
                         </a>
@@ -987,6 +969,8 @@
                                </textarea>
              </div>
           </div>
+          <h3>Siguiente</h3>
+            <button type="button" onclick="window.location='../../pages/forms/indagacion3.php';">Siguiente</buton>
         </div>
       </div>
     </div>
