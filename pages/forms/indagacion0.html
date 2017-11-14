@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Nulidad Matrimonial - Caso nuevo</title>
+    <!-- Favicon----->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Sweet Alert Css -->
+    <link href="../../plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-blue">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Porfavor espere...</p>
+        </div>
+    </div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <!-- <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="Ingrese caso a buscar">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div> -->
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="../../index.html">SEMINARIO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <!-- <ul class="nav navbar-nav navbar-right"> -->
+                    <!-- Call Search -->
+                    <!-- <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li> -->
+                    <!-- #END# Call Search -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="../../images/user.png" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Roberto Boceta</div>
+                    <div class="email">roberto.boceta@gmail.com</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">input</i><a href="../../pages/forms/ingreso.html">Cerrar Sesion</a></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <a href="../../index.html">
+                            <i class="material-icons">library_add</i>
+                            <span>Caso nuevo</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:void(0);" class="menu-toggle">              <!-- a href="../../pages/bla.html"-->
+                            <i class="material-icons">attach_file</i>
+                            <span>Dar seguimiento a caso</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li class="active">
+                                <a href="../../pages/forms/indagacion.html">Indagacion Previa</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/forms/introduccion.html">Fase Introductoria</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/indagacion.html">Fase de Instrucción</a>
+                            </li>
+                            <li>
+                                <a href="../../pages/indagacion.html">Fase Alegatoria</a>
+                            </li>
+                            <li>
+                                <a href="../forms/sentencia.html">Fase Decisoria</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../forms/buscador.html">
+                            <i class="material-icons">search</i>
+                            <span>Buscar caso</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../pages/nuevo_encargado.html">
+                            <i class="material-icons">account_box</i>
+                            <span>Agregar nuevo encargado</span>
+                        </a>
+        </aside>
+        <!-- #END# Left Sidebar -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Advanced Form Example With Validation -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                          <h2>NUEVO CASO - INDAGACIÓN PREVIA</h2>
+                          <h1>Sección 2</h1>
+                          <h2>Sus esfuerzo para localizar al cónyuge</h2>
+                      </div>
+                      <div class="body">
+                          <form id="wizard_with_validation" method="POST">
+                              <h3>Informacion Básica</h3>
+                              <fieldset>
+
+                                  <div class="form-group form-float">
+                                      <h5>Nombre completo de la parte Demandada:</h5>
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibprimernomrbredemandante" required>
+                                          <label class="form-label">Primer Nombre*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibsegundonomrbredemandante">
+                                          <label class="form-label">Segundo Nombre</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibapellidopaternodemandante" required>
+                                          <label class="form-label">Apellido paterno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibapellidomaternodemandante" required>
+                                          <label class="form-label">Apellido materno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipibdemandanteci" required>
+                                          <label class="form-label">Cédula de Identidad*</label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Sexo</h1>
+                                    <input name="ipibrbsexo" type="radio" id="rbsexomasculino" required>
+                                    <label for="rbsexomasculino">Masculino</label>
+                                    <input name="ipibrbsexo" type="radio" id="rbsexofemenino" required>
+                                    <label for="rbsexofemenino">Femenino</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Dirección:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Calle:" name="ipibdemandantediraccioncalle">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Número:" name="ipibdemandantedireccionnumero">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Zona:" name="ipibdemandantedireccionzona">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipibdemandantedireccionciudad">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipibdemandanteedad" required>
+                                          <label class="form-label">Edad*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibdemandantecorreo">
+                                          <label class="form-label">Correo Electrónico</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibdemandanteocupacion">
+                                          <label class="form-label">Ocupación</label>
+                                      </div>
+                                  </div>
+                                  <h5>Favor indique como podemos comunicarnos con Ud. acerca de su proceso:</h5>
+                                  <div class="form-group form-float">
+                                          <label class="form-label"></label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-3">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Teléfono de casa:" name="ipibdemandantetelefonocasa">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Teléfono de celular:" name="ipibdemandantetelefonocelular">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Teléfono de trabajo:" name="ipibdemandantetelefonotrabajo">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibparroquiamatrimonio" required>
+                                          <label class="form-label">¿Parroquia donde se celebró el matrimonio?*</label>
+                                      </div>
+                                  </div>
+                                  <div class="input-group">
+                                    <h5>¿Fecha de celebración de su matrimonio?</h5>
+                                    <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                    <div class="form-line">
+                                        <input type="text" class="form-control date" placeholder="30/07/2016" name="ipibfechamatrimonio" required>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <h3>B)DEMANDADO</h3>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibprimernomrbredemandado" required>
+                                          <label class="form-label">Primer Nombre*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibsegundonomrbredemandado">
+                                          <label class="form-label">Segundo Nombre</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibapellidopaternodemandado" required>
+                                          <label class="form-label">Apellido paterno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipapellidomaternodemandado" required>
+                                          <label class="form-label">Apellido materno*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipibdemandadoci" required>
+                                          <label class="form-label">Cédula de Identidad*</label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>Sexo</h1>
+                                    <input name="ipibrbsexo1" type="radio" id="rbsexomasculino1" required>
+                                    <label for="rbsexomasculino1">Masculino</label>
+                                    <input name="ipibrbsexo1" type="radio" id="rbsexofemenino1" required>
+                                    <label for="rbsexofemenino1">Femenino</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <label class="form-label">Dirección:</label>
+                                          <div class="row clearfix">
+                                              <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Calle:" name="ipibdemandadodiraccioncalle">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="number" class="form-control" value="" placeholder="Número:" name="ipibdemandadodireccionnumero">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Zona:" name="ipibdemandadodireccionzona">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                    <div class="form-line focused">
+                                                      <input type="text" class="form-control" value="" placeholder="Ciudad:" name="ipibdemandadodireccionciudad">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipibdemandadoedad" required>
+                                          <label class="form-label">Edad*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="number" class="form-control" name="ipibdemandadotelefono" required>
+                                          <label class="form-label">Teléfono*</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibdemandadopais" required>
+                                          <label class="form-label">País*</label>
+                                      </div>
+                                  </div>
+                                  <div class="demo-radio-button">
+                                    <h5>¿Se comunica regularmente con la parte Demandada?</h1>
+                                    <input name="ipibrbcomunicacion" type="radio" id="rbcomunicacionsi" required>
+                                    <label for="rbcomunicacionsi">Si</label>
+                                    <input name="ipibrbcomunicacion" type="radio" id="rbcomunicacionno" required>
+                                    <label for="rbcomunicacionno">No</label>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibdemandadocorreo">
+                                          <label class="form-label">Correo Electrónico</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <div class="form-line">
+                                          <input type="text" class="form-control" name="ipibdemandanteocupacion">
+                                          <label class="form-label">Ocupación</label>
+                                      </div>
+                                  </div>
+                              </fieldset>
+
+
+<!-- end -->
+                              </form>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+                              <!-- #END# Advanced Form Example With Validation -->
+                              </div>
+                              </section>
+
+
+
+<!-- -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Advanced Form Example With Validation -->
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Jquery Validation Plugin Css -->
+    <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!-- JQuery Steps Plugin Js -->
+    <script src="../../plugins/jquery-steps/jquery.steps.js"></script>
+
+    <!-- Sweet Alert Plugin Js -->
+    <script src="../../plugins/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../../plugins/node-waves/waves.js"></script>
+
+    <!-- Autosize Plugin Js -->
+    <script src="../../plugins/autosize/autosize.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../../js/pages/forms/basic-form-elements.js"></script>
+
+    <!-- Moment plugin js -->
+    <script src="../../plugins/momentjs/moment.js"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="../../plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+    <!-- Multi Select Plugin Js -->
+    <script src="../../plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/pages/forms/form-wizard.js"></script>
+    <script src="../../js/pages/forms/basic-form-elements.js"></script>
+    <script src="../../js/pages/forms/advanced-form-elements.js"></script>
+
+    <script src="../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+    <!-- Demo Js -->
+    <script src="../../js/demo.js"></script>
+</body>
+</html>
