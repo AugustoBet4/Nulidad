@@ -4,17 +4,20 @@ $(function () {
 
     //TinyMCE
     tinymce.init({
+        menubar: false,
+        statusbar: false,
+        language: 'es',
         selector: "textarea#tinymce",
         theme: "modern",
         height: 300,
         plugins: [
             'advlist autolink lists link image charmap print preview hr anchor pagebreak',
-            'searchreplace visualblocks visualchars code fullscreen',
+            'searchreplace visualblocks visualchars fullscreen',
             'insertdatetime media nonbreaking save table contextmenu directionality',
-            'emoticons template paste textcolor colorpicker textpattern imagetools print'
+            'emoticons paste textcolor colorpicker textpattern imagetools print'
         ],
-        toolbar1: 'insertfile undo redo | styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
-        toolbar2: 'print preview media | forecolor backcolor',
+        toolbar1: 'undo redo bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent',
+        toolbar2: 'print preview | forecolor backcolor | save',
         image_advtab: true,
         content_style: "body {padding: 10px}"
     });
