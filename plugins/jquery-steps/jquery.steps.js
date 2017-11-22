@@ -1974,7 +1974,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Cancel"
          * @for defaults
          **/
-        cancel: "Cancel",
+        cancel: "Cancelar",
 
         /**
          * This label is important for accessability reasons.
@@ -1985,7 +1985,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "current step:"
          * @for defaults
          **/
-        current: "Current Step:",
+        current: "Paso Actual:",
 
         /**
          * This label is important for accessability reasons and describes the kind of navigation.
@@ -1996,7 +1996,7 @@ var defaults = $.fn.steps.defaults = {
          * @for defaults
          * @since 0.9.7
          **/
-        pagination: "Pagination",
+        pagination: "Paginación",
 
         /**
          * Label for the finish button.
@@ -2006,7 +2006,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Finish"
          * @for defaults
          **/
-        finish: "Finish",
+        finish: "Finalizar",
 
         /**
          * Label for the next button.
@@ -2016,7 +2016,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Next"
          * @for defaults
          **/
-        next: "SNext",
+        next: "Siguiente",
 
         /**
          * Label for the previous button.
@@ -2026,7 +2026,7 @@ var defaults = $.fn.steps.defaults = {
          * @default "Previous"
          * @for defaults
          **/
-        previous: "Previous",
+        previous: "Anterior",
 
         /**
          * Label for the loading animation.
