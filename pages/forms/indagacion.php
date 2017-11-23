@@ -158,14 +158,15 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                       <div class="header">
-                          <h2>NUEVO CASO - INDAGACIÓN PREVIA</h2>
+                          <h2>INDAGACIÓN PREVIA</h2>
                           <h1>Sección 1</h1>
                           <h2>Para Demandante</h2>
                       </div>
                       <div class="body">
                           <form id="wizard_with_validation" method="POST">
-                              <h3>Información Básica</h3>
+                              <h3> &ensp; </h3>
                               <fieldset>
+                                <h3>Información Básica</h3>
                                 <h3>A)DEMANDANTE</h3>
                                   <div class="form-group form-float">
                                       <div class="form-line">
@@ -419,8 +420,9 @@
                                       </div>
                                   </div>
                               </fieldset>
-                              <h3>Información Biográfica</h3>
+                              <h3>&ensp;</h3>
                               <fieldset>
+                                <h3>Información Biográfica</h3>
                                 <h3>A) DEMANDANTE</h3>
                                 <div class="input-group">
                                   <h5>Fecha de nacimiento</h5>
@@ -690,9 +692,9 @@
                                         </div>
                                       </div>
                               </fieldset>
-                                <h3>Historia Familiar</h3>
+                                <h3>&ensp;</h3>
                                 <fieldset>
-
+                                  <h3>Historia Familiar</h3>
                                   <!-- DEMANDANTE PADRES -->
                                   <h2>PADRES</h2>
                                   <h3>A) DEMANDANTE</h3>
@@ -892,8 +894,9 @@
                                         </div>
                                       </div>
                                 </fieldset>
-                                <h3>Noviazgo y matrimonio</h3>
+                                <h3>&ensp;</h3>
                                 <fieldset>
+                                  <h3>Noviazgo y matrimonio</h3>
                                   <label class="form-label">Brevemente ¿Cuándo y cómo conoció a la parte Demandada?</label>
                                   <div class="row clearfix">
                                       <div class="col-sm-4">
@@ -1092,8 +1095,9 @@
 
 
                                 </fieldset>
-                                <h3>Matrimonios contraídos anteriormente</h3>
+                                <h3>&ensp;</h3>
                                 <fieldset>
+                                  <h3>Matrimonios contraídos anteriormente</h3>
                                   <h3>A)DEMANDANTE</h3>
                                   <h4>Matrimonio Nº1</h4>
                                   <div class="form-group form-float">
@@ -1536,8 +1540,9 @@
                                       </div>
                                   </div>
                                 </fieldset>
-                                <h3>Separación y Divorcio/Disolución</h3>
+                                <h3>&ensp;</h3>
                                 <fieldset>
+                                  <h3>Separación y Divorcio/Disolución</h3>
                                   <div class="form-group form-float">
                                       <div class="form-line">
                                         <h5>¿Cuánto tiempo (aproximadamente) vivieron casados antes de la separación final?</h5>
@@ -1654,9 +1659,10 @@
                                   </div>
 
                                 </fieldset>
-                                <!-- HIJOSSSSSSSSSSSSSSSSSSSSSSSSSSS -->
-                                <h3>Hijos</h3>
+                                <!-- HIJOS -->
+                                <h3>&ensp;</h3>
                                 <fieldset>
+                                  <h3>Hijos</h3>
                                   <div class="form-group form-float">
                                       <div class="form-line">
                                         <h5>Si no hubo hijos durante su matrimonio, ¿por qué no?</h5>
@@ -1752,8 +1758,9 @@
 
                                 </fieldset>
 
-                                <h3>Estado actual</h3>
+                                <h3>&ensp;</h3>
                                 <fieldset>
+                                  <h3>Estado actual</h3>
                                   <h5>¿Cuál es su estado civil actual?</h5>
                                   <input name="ipearbestadocivilactual" type="radio" id="rbestadocivilsoltero"  value="Soltero(a)" >
                                   <label for="rbestadocivilsoltero">Soltero(a)</label>
@@ -1898,8 +1905,9 @@
                                       </div>
                                   </div>
                                 </fieldset>
-                                <h3>Siguiente</h3>
+                                <h3>&ensp;</h3>
                                 <fieldset>
+                                  <h3>Siguiente</h3>
                                   <button type="button" onclick="window.location='../../pages/forms/indagacion0.php';">Siguiente</buton>
                                 </fieldset>
                           </form>
