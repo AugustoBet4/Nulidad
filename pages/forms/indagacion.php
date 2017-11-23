@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+  error_reporting (0);
   setlocale(LC_ALL,"es_ES");
   $matrimonio = "LOPEZ-PEREZ";
 
@@ -14,12 +15,50 @@
   move_uploaded_file($_FILES['file']['tmp_name'],$targetFile);
   }
   // init BD
+  /*
   include ("/bd/conn.php");
   $link = Conectarse ();
   // definimos la consulta que necesitamos
-  $nombre_a =  mysql_query (select a.nombre_a from demandante a where  )
+  $nombre_a =  mysql_query (select a.nombre_a from demandante a where );
+  */
+  //VARIABLES
+  setlocale(LC_ALL,"es_ES");
+  $nombre_a= $_POST["ipibprimernomrbredemandante"];
+  $nombre_b = $_POST["ipibsegundonomrbredemandante"];
+  $apellido_pat = $_POST["ipibapellidopaternodemandante"];
+  $apellido_mat = $_POST["ipibapellidomaternodemandante"];
+  /*
+  $ = $_POST["ipibdemandanteci"];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  $ = $_POST[""];
+  */
 
 
+  // insert
+  $link = mysqli_connect("localhost","root","","basico_nulidad");
+  $query1 = "INSERT INTO demandante ('iddemandante','nombre_a','nombre_b','apellido_pat','apellido_mat') values (1,$nombre_a,$nombre_b,$apellido_pat,$apellido_mat)";
+
+  if(mysqli_query($link,$query1)){
+
+  }else{
+    echo "ERROR: no se puede ejecutar" . mysqli_error($link);
+  }
 ?>
 <html>
 
