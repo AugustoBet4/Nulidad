@@ -1,0 +1,151 @@
+Lista de variables: Indagación previa/ información básica
+¥	ipibprimernomrbredemandante
+¥	ipibsegundonomrbredemandante
+¥	ipibapellidopaternodemandante
+¥	ipibapellidomaternodemandante
+¥	ipibdemandanteci
+¥	Radio button: ipibrbsexo
+¥	ipibdemandantediraccioncalle
+¥	ipibdemandantedireccionnumero
+¥	ipibdemandantedireccionzona
+¥	Ipibdemandantedireccionciudad
+¥	ipibdemandanteedad
+¥	ipibdemandantecorreo
+¥	ipibdemandanteocupacion
+¥	ipibdemandantetelefonocasa
+¥	ipibdemandantetelefonocelular
+¥	ipibdemandantetelefonotrabajo
+¥	ipibparroquiamatrimonio
+¥	Check box: ipibckmensajeemail
+¥	Check box: ipibckmensajecasa
+¥	Check box: ipibckmensajecelular
+¥	Check box: ipibckmensajetrabajo
+
+B) Demandado:
+¥	ipibprimernomrbredemandado
+¥	ipibsegundonomrbredemandado
+¥	ipibapellidopaternodemandado
+¥	ipapellidomaternodemandado
+¥	ipibdemandadoci
+¥	Radio button: ipibrbsexo1
+¥	ipibdemandadodiraccioncalle
+¥	ipibdemandadodireccionnumero
+¥	ipibdemandadodireccionzona
+¥	ipibdemandadodireccionciudad
+¥	ipibdemandadoedad
+¥	Radio button: ipibrbcomunicacion
+¥	ipibdemandadotelefono
+¥	ipibdemandadopais
+
+Indagación previa/ información biográfica
+A) Demandante:
+¥	ipbdemandantefechanacimiento
+¥	ipbfdemandanteciudadnacimiento
+¥	ipbfdemandantedepartamentonacimiento
+¥	ipbfdemandanteestadonacimiento
+¥	Radio button: ipbfrbbautismo
+¥	Radio button:ipbfrbgrupoeclesiastico
+¥	ipbfdemandantebautizoiglesia
+¥	ipbfdemandantediocesisbautismo
+¥	ipbfdemandantelibrobautismo
+¥	ipbfdemandantepaginabautismo
+¥	ipbfdemandantenumerobautismo
+¥	ipbfdemandantecatolico
+¥	Radio Button: ipbfrbgrupoeclesiastico
+¥	ipbfdemandanteparroquia
+¥	ipbfdemandantediocesis
+¥	ipbfdemandanteestado
+
+B) Demandado:
+¥	ipbfdemandadofechanacimiento
+¥	ipbfdemandadociudadnacimiento
+¥	ipbfdemandadodepartamentonacimiento
+¥	ipbfdemandadoestadonacimiento
+¥	Radio button: ipbfrbbautismo1
+¥	Radio button: ipbfrbbautizado1
+¥	ipbfdemandadobautizoiglesia
+¥	ipbfdemandadofechabautismo
+¥	ipbfdemandadodiocesisbautismo
+¥	ipbfdemandadolibrobautismo
+¥	ipbfdemandadopaginabautismo
+¥	ipbfdemandadonumerobautismo
+¥	ipbfdemandadocatolico
+¥	Radio button: ipbfrbgrupoeclesiastico1
+¥	ipbfgrupoespecificacion1
+¥	ipbfdemandadoparroquia
+¥	ipbfdemandadodiocesis
+¥	ipbfdemandadoestado
+
+Indagación previa/ matrimonios contraídos anteriormente
+Matrimonio Nº1
+¥	ipmcademandantenombreexconyuge
+¥	ipmcademandantefechamatrimonio
+¥	ipbfdemandanteciudadmatrimonio
+¥	ipmcademandantedepartamentomatrimonio
+¥	ipmcademandanteestadomatrimonio
+¥	Radio button: ipmcarbtipoceremonia
+¥	Radio button: ipmcarbdemandantematrimonioconyuge
+¥	ipmcademandantedescripcionmatrimonioconyuge
+¥	ipmcademandantefechamuerteconyugue
+¥	ipmcademandantelugarmuerteconyugue
+¥	Radio button: ipmcarbdemandantematrimonioconyugeanulado
+¥	ipmcademandantetribunalmatrimonioconyugeanulado
+¥	ipmcademandantelugarmatrimonioconyugeanulado
+¥	ipmcademandantenrocasomatrimonioconyugeanulado
+¥	ipmcademandantefechamatrimonioconyugeanulado
+Matrimonio Nº2
+¥	ipmcademandantenombreexconyuge2
+¥	ipmcademandantefechamatrimonio2
+¥	ipbfdemandanteciudadmatrimonio2
+¥	ipmcademandantedepartamentomatrimonio2
+¥	ipmcademandanteestadomatrimonio2
+¥	Radio button: ipmcarbtipoceremonia2
+¥	Radio button: ipmcarbdemandantematrimonioconyuge2
+¥	ipmcademandantedescripcionmatrimonioconyuge2
+¥	ipmcademandantefechamuerteconyugue2
+¥	ipmcademandantelugarmuerteconyugue2
+¥	Radio button: ipmcarbdemandantematrimonioconyugeanulado2
+¥	ipmcademandantetribunalmatrimonioconyugeanulado2
+¥	ipmcademandantelugarmatrimonioconyugeanulado2
+¥	ipmcademandantenrocasomatrimonioconyugeanulado2
+¥	ipmcademandantefechamatrimonioconyugeanulado2
+
+Indagación previa/Separación y Divorcio/Disolución
+¥	ipsdtiempocasados
+¥	ipsdnumeroseparaciones
+¥	ipsdfechaprimeraseparacion
+¥	ipsdcausaprimeraseparacion
+¥	ipsdotrasseparaciones
+¥	ipsdañoseparacion
+¥	ipsdmesseparacion
+¥	ipsdfechadivorciocivil
+¥	Radio button: ipsdrbdivorcioanulacion
+¥	ipsdcausaldivorciocivil
+¥	ipsddepartamentodivorciocivil
+¥	ipsdestadodivorciocivil
+¥	ipsdpaisdivorciocivil
+¥	Radio button: ipsdrbpedidodivorcio
+¥	ipsdduracionconvivenciamatrimonio
+
+Indagación previa/Estado actual
+¥	Radio button: ipearbestadocivilactual
+¥	ipeaprimernombre
+¥	ipeasegundonomrbre
+¥	ipeaapellidopaterno
+¥	ipeaapellidomaterno
+¥	Radio button: ipearbsexo
+¥	ipeatiempojuntos
+¥	Radio button: ipearbhijos
+¥	ipeatiempojuntos
+¥	ipeanumerohijos
+¥	ipeaedadeshijos
+¥	ipeareligionconyuge
+¥	ipeafechanacimiento
+¥	Radio button: ipearbrito
+¥	ipeaparroquia
+¥	Ipeaciudad
+¥	ipeaestado
+¥	ipeaconyuguefechabautismo
+¥	ipeacambioreligionconyuge
+¥	Radio button: ipearbunicomatrimonio
+ipeaantiguoconyuge
