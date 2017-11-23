@@ -13,6 +13,13 @@
   }
   move_uploaded_file($_FILES['file']['tmp_name'],$targetFile);
   }
+  // init BD
+  include ("/bd/conn.php");
+  $link = Conectarse ();
+  // definimos la consulta que necesitamos
+  $nombre_a =  mysql_query (select a.nombre_a from demandante a where  )
+
+
 ?>
 <!--Comentarios-->
 <html>
