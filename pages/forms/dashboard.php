@@ -142,12 +142,111 @@
         <!-- #END# Left Sidebar -->
     </section>
     <section class="content">
+      <div class="container-fluid">
+        <div class="block-header">
+          <h2>
+              MORRIS
+              <small>Taken from <a href="https://github.com/morrisjs/morris.js" target="_blank">github.com/morrisjs/morris.js</a></small>
+          </h2>
+          <div class="row cleanfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="card">
+
+
+                        <div class="header">
+                            <h2>Estado de los casos</h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
+                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <table class="table table-hover dashboard-task-infos">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Caso</th>
+                                            <th>Estado</th>
+                                            <th>Encargado</th>
+                                            <th>Progreso</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Caso 1</td>
+                                            <td><span class="label bg-green">En En proceso</span></td>
+                                            <td>Roberto Boceta</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Caso 2</td>
+                                            <td><span class="label bg-blue">Realizandose</span></td>
+                                            <td>Roberto Boceta</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Caso 3</td>
+                                            <td><span class="label bg-light-blue">A realizarse</span></td>
+                                            <td>Roberto Boceeta</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-light-blue" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Caso 4</td>
+                                            <td><span class="label bg-orange">A la espera de aprovación</span></td>
+                                            <td>Roberto Boceta</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Caso 5</td>
+                                            <td>
+                                                <span class="label bg-red">Suspendido</span>
+                                            </td>
+                                            <td>Roberto Boceta</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-red" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+    </section>
+    <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>
-                    MORRIS
-                    <small>Taken from <a href="https://github.com/morrisjs/morris.js" target="_blank">github.com/morrisjs/morris.js</a></small>
-                </h2>
             </div>
             <div class="row clearfix">
                 <!-- Line Chart -->
@@ -251,6 +350,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
