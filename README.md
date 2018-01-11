@@ -1,7 +1,7 @@
 # Nulidad
 ========================
 
-En este repositorio se encuentra la interfaz del template del sistema.
+En este repositorio se encuentra la interfaz del template del sistema
 **GRUPO 2 - SISTEMA DE NULIDAD**
 
 Requerimientos
